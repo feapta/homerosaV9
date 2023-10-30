@@ -6,7 +6,7 @@ namespace Model;
 
 class Usuarios extends ActiveRecord {
     protected static $tabla = 'usuarios';
-    protected static $columnasDB = ['id', 'nombre', 'apellidos', 'email', 'password', 'imagen', 'token', 'confirmado', 'creado'];
+    protected static $columnasDB = ['id', 'nombre', 'apellidos', 'email', 'password', 'imagen', 'token', 'confirmada', 'creado'];
 
     public $id;
     public $nombre;
@@ -16,7 +16,7 @@ class Usuarios extends ActiveRecord {
     public $password2;
     public $imagen;
     public $token;
-    public $confirmado;
+    public $confirmada;
     public $creado;
 
 
@@ -28,7 +28,7 @@ class Usuarios extends ActiveRecord {
         $this->password = $args['password'] ?? '';
         $this->password2 = $args['password2'] ?? '';
         $this->token = $args['token'] ?? '0';
-        $this->confirmado = $args['confirmado'] ?? '0';
+        $this->confirmada = $args['confirmada'] ?? '0';
         $this->creado = date('Y/m/d');
     }
 
@@ -77,7 +77,7 @@ class Usuarios extends ActiveRecord {
         $resultado = password_verify($password, $this->password);
         if(!$resultado) {
             self::$alertas['error'][] = 'Password Incorrecto';
-        } else if(!$this->confirmado){
+        } else if(!$this->confirmada){
             self::$alertas['error'][] = 'Cuenta no confirmada, por favor valla a su Email y confirmela';
         }else{
             return true;
