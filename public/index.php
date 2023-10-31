@@ -15,4 +15,6 @@ $router = new Router();
 $router->get('/', [UsuariosControllers::class, 'login']);
 $router->post('/', [UsuariosControllers::class, 'login']);
 
-$router->get('/', [UsuariosControllers::class, 'domo']);
+$router->get('/domo', [UsuariosControllers::class, 'domo']);
+
+$router->get('/logout', [UsuariosControllers::class, 'logout']);
