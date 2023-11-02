@@ -30,7 +30,7 @@
         </div>
     </header>
     
-    <main class="contenidoMaster">
+    <main class="contenedor domo">
         <?php echo $contenido; ?>
     </main>
 
