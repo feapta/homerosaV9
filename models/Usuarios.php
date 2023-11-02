@@ -27,7 +27,7 @@ class Usuarios extends ActiveRecord {
 
 
     // Mensajes de validacion para el login y password
-    public function validarLogin(){
+    public function validarDatos(){
         if(!$this->email){
             self::$alertas['error'] [] = 'El email es obligatorio';
         }
@@ -43,7 +43,7 @@ class Usuarios extends ActiveRecord {
     // Comprobar el password confirmado y verificado
     public function validarPass($password) {
         $resultado = password_verify($password, $this->password);
-       
+
         if(!$resultado) {
             self::$alertas['error'][] = 'Password Incorrecto';
         } else {

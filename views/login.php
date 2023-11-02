@@ -1,64 +1,41 @@
 
 
-?>
+<!-- Pagina de login -->
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <title>Home Rosa</title>
-  <meta name="description" content=""/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<div class="contenedorLogin">
 
-  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="">
+    
+    <?php if($alertas) { ?>
+            <?php include_once __DIR__ . "/../templates/alertas.php";  ?>
+    <?php } ?>
 
-  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
-  <meta name="mobile-web-app-capable" content="yes">
-  
- <!--bootstrap-->
- <link rel="stylesheet" href="/libs/bootstrap.min.css">
+    <form class="formulario sombraCaja" method="POST" novalidate>
+        <div class="campo">
+            <p class="titulo">Introduzca datos de acceso</p>
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Tu Email" name="email" required>
+        </div>
 
-<!-- estilos propios -->
-  <link rel="stylesheet" href="/styles/estilos_login.css">
-  <link rel="stylesheet" href="/styles/colores.css">
+        <div class="mostrarPassword">
+            <div class="campo Pass">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="campo Img">
+                <img id="ima-1" class="ocultarPass"src="/build/img/mostrar.webp" alt="">
+                <img id="ima-2" src="/build/img/esconder.webp" alt="">
+            </div>
+        </div>
 
-</head>
-
-
-
-<body class="teal-50">
-  <div class="card position-absolute start-50 translate-middle rounded shadow p-3 sigin">
-
-    <div class="card-header mb-5 light-green-500 text-center text-white rounded">
-        <h4>Introduzca sus datos de acceso</h4>
-    </div>
-
-    <form name="form" method="POST">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" require>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control"  name="password" id="exampleInputPassword1" require>
-      </div>
-
-      <button type="submit" class="btn btn-primary btn-lg btn-en w-100 mt-5">Enviar</button>
+        <div class="contenedor">
+            <input type="submit" class="boton_verde" value="Iniciar sesión">
+        </div>
     </form>
-      <div class=" text-center fs-2 text-color danger">
-      <?php echo $msg ?>
-      </div>
-  </div>
-   
+
+</div>
+
+<?php $script = '<script src="/build/js/mostrar_pass_acceso.js"></script>'; ?>
 
 
-
-
-    <!--Bottstrap -->
-    <script src="/libs/bootstrap.min.js"></script>
-</body>
-</html>

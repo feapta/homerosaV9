@@ -1,4 +1,3 @@
-
 <?php 
 
 // Pagina public/index.php
@@ -10,7 +9,6 @@ use Controllers\UsuariosControllers;
 
 $router = new Router();
 
-
 // Paginas
 $router->get('/', [UsuariosControllers::class, 'login']);
 $router->post('/', [UsuariosControllers::class, 'login']);
@@ -18,3 +16,9 @@ $router->post('/', [UsuariosControllers::class, 'login']);
 $router->get('/domo', [UsuariosControllers::class, 'domo']);
 
 $router->get('/logout', [UsuariosControllers::class, 'logout']);
+
+
+
+$router->comprobarRutas();
+
+?>
