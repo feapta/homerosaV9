@@ -1,6 +1,4 @@
 
-        <div class="contenedor domo">
-
             <!-- Tarejtas bateria y temperatura -->
             <div class="tarjetas">
                 <!-- Bateria 24V -->
@@ -262,11 +260,7 @@
                 </div>
             </div>
 
-        </div>
 
-
-
-       
         <?php $script = '<script src="/build/js/script.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
