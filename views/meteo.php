@@ -1,4 +1,4 @@
-<div class="meteo"> 
+
     <div class="conte_uno">
         <h5 id="cityName"></h5>
         <h5 id="nubes_des"></h5>
@@ -192,4 +192,3 @@
         </div>
     
     </div>
-</div>

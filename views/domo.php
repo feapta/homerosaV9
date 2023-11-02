@@ -262,7 +262,7 @@
 
 
        
-        <?php $script .= '<script src="/build/js/script.js"></script>'; ?>
+        <?php $script = '<script src="/build/js/script.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/tension24V.js"></script>'; ?>
