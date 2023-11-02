@@ -252,10 +252,15 @@
                 </div>
             </div>
 
-
             <!-- Meteo -->
-            <div class="contenedor_meteo"></div>
-            <?php include_once __DIR__ . "/meteo.php";  ?>
+            <div class="meteo">
+                <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Meteorología</button>
+                <div class="desple">
+                    <div class="contenedor_meteo">
+                        <?php include_once __DIR__ . "/meteo.php";  ?>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
