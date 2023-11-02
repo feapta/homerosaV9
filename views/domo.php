@@ -180,7 +180,7 @@
 
         <!-- Motor -->
         <div class="motor">
-        <button type="button" class="boton_verde btn_desplegable titulo_puerta"> <img class="img" src="/build/img/puertas.png" alt=""> Motor</button>
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Motor</button>
             <div class="desple">
                 <div class="contenedor_motor">
                     <div class="contenedor_arriba">
@@ -231,6 +231,7 @@
 
         <!-- iluminacion -->
         <div class="ilu">
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt="">Iluminación</button>
             <div class="desple">
                 <div class="contenedor_ilu">
                     <div class="contenedor_arriba">
