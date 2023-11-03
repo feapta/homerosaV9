@@ -282,10 +282,10 @@
 
         <!-- Cerrar sesion -->
         <div class="cerrar">
-            <button type="button" class="boton_rojo cerrar_sesion"> 
+            <a class="boton_rojo cerrar_sesion" href="/logout"> 
                 <img class="img" src="/build/img/cerrar-sesion.png" alt=""> 
                 <p>Cerrar sesión</p>
-            </button>
+            </a>
         </div>
 
 

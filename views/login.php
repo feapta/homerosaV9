@@ -6,12 +6,12 @@
 
     
     <?php if($alertas) { ?>
-            <?php include_once __DIR__ . "/../templates/alertas.php";  ?>
+            <?php include_once __DIR__ . "/templates/alertas.php";  ?>
     <?php } ?>
 
     <form class="formulario sombraCaja" method="POST" novalidate>
         <div class="campo">
-            <p class="titulo">Introduzca datos de acceso</p>
+            <p class="titulo_login">Introduzca datos de acceso</p>
         </div>
         <div class="campo">
             <label for="email">Email</label>
