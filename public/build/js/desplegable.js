@@ -1,1 +1,1 @@
-function desplegables(){document.querySelectorAll(".btn_desplegable").forEach(e=>{e.addEventListener("click",()=>{document.querySelector(".desple").classList.toggle("abrir")})})}document.addEventListener("DOMContentLoaded",(function(){desplegables()}));
+function desplegables(){document.querySelectorAll(".btn_desplegable").forEach(e=>{e.addEventListener("click",()=>{e.parentElement.querySelector(".desple").classList.toggle("abrir")})})}document.addEventListener("DOMContentLoaded",(function(){desplegables()}));

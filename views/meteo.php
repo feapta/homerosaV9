@@ -31,7 +31,7 @@
 
         <div class="derecha">
             <div class="uno">
-                <i class="fas fa-wind" style="color: rgb(130, 157, 245);"></i>
+                <img src="/build/img/altitud.png" alt="">
                 <div class="contenido">
                     <p id="pres"></p>
                     <p>mlb</p>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="dos">
-                <i class="fas fa-compress-arrows-alt" style="color: rgb(130, 157, 245);"></i>
+                <img src="/build/img/presion.png" alt="">
                 <div class="contenido">
                     <p id="alt"></p>
                     <p>mtr</p>
@@ -191,4 +191,9 @@
             </div>
         </div>
     
+    </div>
+
+    <div class="conte_cinco">
+        <span>Hora amanece:&nbsp;&nbsp;</span><span id="hora_ama"></span>
+        <span>Hora anochece:&nbsp;&nbsp;</span><span id="hora_no" ></span>
     </div>
