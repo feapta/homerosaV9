@@ -131,7 +131,11 @@
 
         <!-- Puerta verja -->
         <div class="puerta">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Puertas</button>
+            <button type="button" class="boton_verde btn_desplegable">
+                 <img class="img" src="/build/img/puertas.png" alt=""> 
+                 Puertas
+            </button>
+
             <div class="desple">
                 <div class="contenedor_puerta">
                     <div class="abrir_puerta">
@@ -156,7 +160,7 @@
 
         <!-- Mando del taller -->
         <div class="mando">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Mando taller</button>
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/mando.png" alt=""> Mando taller</button>
             <div class="desple">
                 <div class="contenedor_mando">
                     <div class="inversor">
@@ -180,7 +184,7 @@
 
         <!-- Motor -->
         <div class="motor">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Motor</button>
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/grupo.png" alt=""> Motor</button>
             <div class="desple">
                 <div class="contenedor_motor">
                     <div class="contenedor_arriba">
@@ -231,7 +235,7 @@
 
         <!-- iluminacion -->
         <div class="ilu">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt="">Iluminación</button>
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/ilu.png" alt="">Iluminación</button>
             <div class="desple">
                 <div class="contenedor_ilu">
                     <div class="contenedor_arriba">
@@ -254,12 +258,21 @@
 
         <!-- Meteo -->
         <div class="meteo">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/puertas.png" alt=""> Meteorología</button>
+            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/meteorologia.png" alt=""> Meteorología</button>
             <div class="desple">
                 <div class="contenedor_meteo">
                     <?php include_once __DIR__ . "/meteo.php";  ?>
                 </div>
             </div>
+        </div>
+
+
+        <!-- Cerrar sesion -->
+        <div class="cerrar">
+            <button type="button" class="boton_rojo cerrar_sesion"> 
+                <img class="img" src="/build/img/cerrar-sesion.png" alt=""> 
+                Cerrar sesión
+            </button>
         </div>
 
 
@@ -270,4 +283,3 @@
     <?php $script .= '<script src="/build/js/tension48V.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/clima.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/relog.js"></script>'; ?>
-    <?php $script .= '<script src="/build/js/desplegable.js"></script>'; ?>
