@@ -17,21 +17,27 @@ class UsuariosControllers{
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $usuario = new Usuarios($_POST);
-            
+
+            // para poder hasear el password y guardarlo en la base de datos
+                //$pass = password_hash($usuario->password, PASSWORD_BCRYPT);
+                //debuguear($pass);
+
             $alertas = $usuario->validarDatos();
- 
+
             if(empty($alertas)){
-                $usuarios =  Usuarios::whereValor('email', $usuario->email);
-                $alertas = $usuario->validarPass($usuario->password);
-                
-                session_start();
+                $user =  Usuarios::whereValor('email', $usuario->email);
 
-                $_SESSION['id'] = $usuarios->id;
-                $_SESSION['imagen'] = $usuarios->imagen;
-                $_SESSION['nombre'] = $usuarios->nombre . " " . $usuarios->apellidos;
+                if($user) {
+                    if($user->validarPass($usuario->password)){
+                        session_start();
 
-                header('Location: /domo');
-                
+                        $_SESSION['id'] = $user->id;
+                        $_SESSION['imagen'] = $user->imagen;
+                        $_SESSION['nombre'] = $user->nombre . " " . $user->apellidos;
+
+                        header('Location: /domo');
+                    }
+                }
             } else {
                 Usuarios::setAlerta('error', 'Usuario no encontrado');
             }

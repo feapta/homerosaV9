@@ -13,9 +13,7 @@ class Usuarios extends ActiveRecord {
     public $apellidos;
     public $email;
     public $password;
-    public $password2;
     public $imagen;
-
 
     public function __construct($args = []) {
         $this->id = $args['id'] ?? null;
@@ -23,6 +21,7 @@ class Usuarios extends ActiveRecord {
         $this->apellidos = $args['apellidos'] ?? '';
         $this->email = $args['email'] ?? '';
         $this->password = $args['password'] ?? '';
+        $this->imagen = $args['imagen'] ?? '';
     }
 
 

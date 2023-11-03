@@ -9,7 +9,7 @@
                 <div class="conte">
                     <img class="img_24" alt="Bateria">
                     <p class= "Bat24_card"></p> 
-                    <p>&nbsp;V</p>
+                    <p>V</p>
                 </div>
             </div>
 
@@ -22,7 +22,7 @@
                 <div class="conte">
                     <img class="img_48" alt="Bateria">
                     <p class= "Bat48_card"></p> 
-                    <p>&nbsp;V</p>
+                    <p>V</p>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
                         <p>Interior</p>
                         <div class="parrafo">
                             <p class= "temp_inte"></p> 
-                            <p>&nbsp;º</p>
+                            <p>º</p>
                         </div>
                     </div>
                 
@@ -49,7 +49,7 @@
                         <p>Exterior</p>
                         <div class="parrafo">
                             <p class= "temp_exte"></p> 
-                            <p>&nbsp;º</p>
+                            <p>º</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                 
                     <div class="parrafo">
                         <p id="agua"></p>
-                        <p>&nbsp;L</p>
+                        <p>L</p>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
 
                     <div class="parrafo">
                         <p id="watios"></p>
-                        <p>&nbsp;W/pico</p>
+                        <p>W/pico</p>
                     </div>
                     
 
@@ -142,7 +142,7 @@
                         <button type="button" class="boton_verde"  id="paso" onclick="puerta(2)">Puerta paso</button>
                         <button type="button" class="boton_verde"  id="vehiculos" onclick="puerta(1)">Puerta vehiculos</button>
                     </div>
-                    <div class="cerrar">
+                    <div class="cerrar_puerta">
                         <button type="button" class="boton_rojo"  id="cierro" onclick="puerta(3)">Cerrar</button>
                     </div>
 
@@ -215,9 +215,11 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="contenedor_boton">
                         <button class="boton_verde" id="btn_motor" type="button" onclick="motor()"></button>
                     </div>
+
                     <div class="contenedor_contadores">
                         <h5>Contadores</h5>
                         <div class="contadores">
