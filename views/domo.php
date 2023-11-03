@@ -133,7 +133,7 @@
         <div class="puerta">
             <button type="button" class="boton_verde btn_desplegable">
                  <img class="img" src="/build/img/puertas.png" alt=""> 
-                 Puertas
+                 <p>Puertas</p>
             </button>
 
             <div class="desple">
@@ -160,7 +160,10 @@
 
         <!-- Mando del taller -->
         <div class="mando">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/mando.png" alt=""> Mando taller</button>
+            <button type="button" class="boton_verde btn_desplegable">
+                <img class="img" src="/build/img/mando.png" alt="">
+                <p>Mando</p>
+            </button>
             <div class="desple">
                 <div class="contenedor_mando">
                     <div class="inversor">
@@ -184,7 +187,10 @@
 
         <!-- Motor -->
         <div class="motor">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/grupo.png" alt=""> Motor</button>
+            <button type="button" class="boton_verde btn_desplegable"> 
+                <img class="img" src="/build/img/grupo.png" alt="">
+                <p>Motor</p>
+            </button>
             <div class="desple">
                 <div class="contenedor_motor">
                     <div class="contenedor_arriba">
@@ -235,7 +241,10 @@
 
         <!-- iluminacion -->
         <div class="ilu">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/ilu.png" alt="">Iluminación</button>
+            <button type="button" class="boton_verde btn_desplegable"> 
+                <img class="img" src="/build/img/ilu.png" alt="">
+                <p>Iluminación</p>
+            </button>
             <div class="desple">
                 <div class="contenedor_ilu">
                     <div class="contenedor_arriba">
@@ -258,7 +267,11 @@
 
         <!-- Meteo -->
         <div class="meteo">
-            <button type="button" class="boton_verde btn_desplegable"> <img class="img" src="/build/img/meteorologia.png" alt=""> Meteorología</button>
+            <button type="button" class="boton_verde btn_desplegable">
+                <img class="img" src="/build/img/meteorologia.png" alt="">
+                <p>Meteorología</p>
+            </button>
+
             <div class="desple">
                 <div class="contenedor_meteo">
                     <?php include_once __DIR__ . "/meteo.php";  ?>
@@ -271,7 +284,7 @@
         <div class="cerrar">
             <button type="button" class="boton_rojo cerrar_sesion"> 
                 <img class="img" src="/build/img/cerrar-sesion.png" alt=""> 
-                Cerrar sesión
+                <p>Cerrar sesión</p>
             </button>
         </div>
 
