@@ -54,28 +54,110 @@
     <hr>
 
     <div class="conte_tres">
+        <h5>Vientos</h5>
         <div class="viento">
             <p>Velocidad:</p>
-            <div class="contenido">
-                <p id=velo_win></p>
-                <p>m/s</p>
-            </div>
-
+            <p id=velo_win></p>
+            <p>m/s</p>
         </div>
+
         <div class="viento">
             <p>Dirección:</p>
-            <div class="contenido">
-                <p id=dire_win></p>
-                <p>º</p>
-            </div>
+            <p id=dire_win></p>
+            <p>º</p>
         </div>
         <div class="viento">
             <p>Rafagas:</p>
-            <div class="contenido">
-                <p id=gust_win></p>
-                <p>m/s</p>
+            <p id=gust_win></p>
+            <p>m/s</p>
+        </div>
+    </div>
+    
+    <hr>
+
+    <div class="conte_aire">
+        <div class="calidad">
+            <h5>Indice calidad del aire:</h5>
+            <p class="ica"></p>
+        </div>
+
+        <div class="contenido_aire">
+            <div class="contenido_uno">
+                
+                <div class="c_uno">
+                    <h5>co:</h5>
+                    <p class="co"></p>
+                </div>
+
+                <div class="c_dos">
+                    <h5>nh3:</h5>
+                    <p class="nh3"></p>
+                </div>
+
+                <div class="c_tres">
+                    <h5>no:</h5>
+                    <p class="no"></p>
+                </div>
+
+                <div class="c_cuatro">
+                    <h5>pm 2.5:</h5>
+                    <p class="pm2_5"></p>
+                </div>
+
+            </div>
+            
+            <div class="contenido_dos">
+                <div class="c_uno">
+                    <h5>o3:</h5>
+                    <p class="o3"></p>
+                </div>
+
+                <div class="c_dos">
+                    <h5>so2:</h5>
+                    <p class="so2"></p>
+                </div>
+
+                <div class="c_tres">
+                    <h5>no2:</h5>
+                    <p class="no2"></p>
+                </div>
+
+                <div class="c_cuatro">
+                    <h5>pm 10:</h5>
+                    <p class="pm10"></p>
+                </div>
+
             </div>
         </div>
+
+        <button type="button" class="btn-leyenda">
+            <p>Leyenda</p>   
+        </button>
+
+        <div class="conte_leyenda ocultar">
+            <div class="conte_indi">
+                <p>Indice: <br>
+                    1 = Bueno, <br> 
+                    2 = Normal, <br>
+                    3 = Moderado, <br>
+                    4 = Bajo, <br>
+                    5 = Muy bajo. 
+                </p>
+            </div>
+
+            <div class="conte_nobre">
+                <p>Medidas en μg/m3</p>
+                <p>CO: Monoxido de carbono</p>
+                <p>NO: Monoxido de nitrogeno</p>
+                <p>NO2: Dioxido de nitrogeno</p>
+                <p>O3: Ozono</p>
+                <p>SO2: Dioxido de azufre</p>
+                <p>PM 2.5: Particulas finas</p>
+                <p>PM 10: Particulas gruesas</p>
+                <p>NH3: Amoniaco</p>
+            </div>
+        </div>
+
     </div>
 
     <div class="conte_cuatro">
@@ -105,6 +187,19 @@
                     </div>
                 </div>
             </div>
+            <div class="conte_temp_max">
+                <div class="tmax">
+                    <p>T. max:</p>
+                    <p id="temp_x0"></p>
+                    <p>&deg;</p>
+                </div>
+
+                <div class="tmin">
+                    <p>T. min:</p>
+                    <p id="temp_m0"></p>
+                    <p>&deg;</p>
+                </div>
+            </div>
         </div>
 
         <div class="conte_dia1">
@@ -114,10 +209,10 @@
             </div>
             <div class="columnas">
                 <div class="iz">
-                    <p>Tem:&nbsp;</p>
+                    <p>Tem:</p>
                     <div class="contenido">
                         <p id="temp1"></p>
-                        <p>&nbsp;&deg;</p>
+                        <p>&deg;</p>
                     </div>
                 </div>
         
@@ -126,26 +221,39 @@
                 </div>
                 
                 <div class="iz">
-                    <p>Hum:&nbsp;</p>
+                    <p>Hum:</p>
                     <div class="contenido">
                         <p id="humi1"></p>
-                        <p>&nbsp;%</p>
+                        <p>%</p>
                     </div>
+                </div>
+            </div>
+            <div class="conte_temp_max">
+                <div class="tmax">
+                    <p>T. max:</p>
+                    <p id="temp_x1"></p>
+                    <p>&deg;</p>
+                </div>
+
+                <div class="tmin">
+                    <p>T. min:</p>
+                    <p id="temp_m1"></p>
+                    <p>&deg;</p>
                 </div>
             </div>
         </div>
 
         <div class="conte_dia2">
             <div class="titulo">
-                <p>Dia:&nbsp;</p>
+                <p>Dia:</p>
                 <p id="diaa2"></p>
             </div>
             <div class="columnas">
                 <div class="iz">
-                    <p>Tem:&nbsp;</p>
+                    <p>Tem:</p>
                     <div class="contenido">
                         <p id="temp2"></p>
-                        <p>&nbsp;&deg;</p>
+                        <p>&deg;</p>
                     </div>
                 </div>
         
@@ -154,26 +262,39 @@
                 </div>
                 
                 <div class="iz">
-                    <p>Hum:&nbsp;</p>
+                    <p>Hum:</p>
                     <div class="contenido">
                         <p id="humi2"></p>
-                        <p>&nbsp;%</p>
+                        <p>%</p>
                     </div>
+                </div>
+            </div>
+            <div class="conte_temp_max">
+                <div class="tmax">
+                    <p>T. max:</p>
+                    <p id="temp_x2"></p>
+                    <p>&deg;</p>
+                </div>
+
+                <div class="tmin">
+                    <p>T. min:&nbsp;</p>
+                    <p id="temp_m2"></p>
+                    <p>&deg;</p>
                 </div>
             </div>
         </div>
         
         <div class="conte_dia3">
             <div class="titulo">
-                <p>Dia:&nbsp;</p>
+                <p>Dia:</p>
                 <p id="diaa3"></p>
             </div>
             <div class="columnas">
                 <div class="iz">
-                    <p>Tem:&nbsp;</p>
+                    <p>Tem:</p>
                     <div class="contenido">
                         <p id="temp3"></p>
-                        <p>&nbsp;&deg;</p>
+                        <p>&deg;</p>
                     </div>
                 </div>
         
@@ -182,11 +303,24 @@
                 </div>
                 
                 <div class="iz">
-                    <p>Hum:&nbsp;</p>
+                    <p>Hum:</p>
                     <div class="contenido">
                         <p id="humi3"></p>
-                        <p>&nbsp;%</p>
+                        <p>%</p>
                     </div>
+                </div>
+            </div>
+            <div class="conte_temp_max">
+                <div class="tmax">
+                    <p>T. max:</p>
+                    <p id="temp_x3"></p>
+                    <p>&deg;</p>
+                </div>
+
+                <div class="tmin">
+                    <p>T. min:</p>
+                    <p id="temp_m3"></p>
+                    <p>&deg;</p>
                 </div>
             </div>
         </div>

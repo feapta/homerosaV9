@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <header>
+    <header> 
         <div class="contenedor">
             <h5 id="hora">Hora</h5>
             <h3>Home Rosa</h3>
@@ -38,6 +38,7 @@
         <?php $fecha = date('Y'); ?>
         <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
     </footer>
+
 
     <script src="/build/js/modernizr.js"></script>
     <script src="/build/js/jquery-3-7-1.js"></script>
