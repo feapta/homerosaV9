@@ -2,26 +2,29 @@
     <div class="conte_uno">
         <h5 id="cityName"></h5>
         <h5 id="nubes_des"></h5>
+        
         <div class="parra">
-            <p>Temp:&nbsp;</p>
+            <p>Temp:</p>
             <p id="temp_m"></p>
-            <p>&nbsp;&deg;</p>
+            <p>&deg;</p>
         </div>
     </div>
+    
+    <hr>
 
     <div class="conte_dos">
         <div class="izquierda">
-            <div class="uno">
+            <div class="unoI">
                 <img src="/build/img/temp-max.png" alt="">
-                <p id="te_max"></p><p>&nbsp;&deg;</p>
+                <p id="te_max"></p><p>&deg;</p>
             </div>
-            <div class="dos">
+            <div class="dosI">
                 <img src="/build/img/temp-min.png" alt="">
-                <p id="te_min"></p><p>&nbsp;&deg;</p>
+                <p id="te_min"></p><p>&deg;</p>
             </div>
-            <div class="tres">
+            <div class="tresI">
                 <img src="/build/img/hume.png" alt="">
-                <p id="humi_m"></p><p>&nbsp;%</p>
+                <p id="humi_m"></p><p>%</p>
             </div>
         </div>
 
@@ -30,7 +33,7 @@
         </div>
 
         <div class="derecha">
-            <div class="uno">
+            <div class="unoD">
                 <img src="/build/img/altitud.png" alt="">
                 <div class="contenido">
                     <p id="pres"></p>
@@ -38,7 +41,7 @@
                 </div>
             </div>
 
-            <div class="dos">
+            <div class="dosD">
                 <img src="/build/img/presion.png" alt="">
                 <div class="contenido">
                     <p id="alt"></p>
@@ -52,7 +55,7 @@
 
     <div class="conte_tres">
         <div class="viento">
-            <p>Veloc:&nbsp;</p>
+            <p>Velocidad:</p>
             <div class="contenido">
                 <p id=velo_win></p>
                 <p>m/s</p>
@@ -60,14 +63,14 @@
 
         </div>
         <div class="viento">
-            <p>Direc:&nbsp;</p>
+            <p>Dirección:</p>
             <div class="contenido">
                 <p id=dire_win></p>
-                <p>&nbsp;º</p>
+                <p>º</p>
             </div>
         </div>
         <div class="viento">
-            <p>Rafag:</p>
+            <p>Rafagas:</p>
             <div class="contenido">
                 <p id=gust_win></p>
                 <p>m/s</p>
@@ -75,11 +78,8 @@
         </div>
     </div>
 
-    <hr>
-
     <div class="conte_cuatro">
-        
-        <div class="conte_dia0 sombraTarjetas">
+        <div class="conte_dia0">
             <div class="titulo">
                 <p>Dia:&nbsp;</p>
                 <p id="diaa0"></p>
@@ -107,7 +107,7 @@
             </div>
         </div>
 
-        <div class="conte_dia1 sombraTarjetas">
+        <div class="conte_dia1">
             <div class="titulo">
                 <p>Dia:&nbsp;</p>
                 <p id="diaa1"></p>
@@ -135,7 +135,7 @@
             </div>
         </div>
 
-        <div class="conte_dia2 sombraTarjetas">
+        <div class="conte_dia2">
             <div class="titulo">
                 <p>Dia:&nbsp;</p>
                 <p id="diaa2"></p>
@@ -163,7 +163,7 @@
             </div>
         </div>
         
-        <div class="conte_dia3 sombraTarjetas">
+        <div class="conte_dia3">
             <div class="titulo">
                 <p>Dia:&nbsp;</p>
                 <p id="diaa3"></p>
@@ -194,6 +194,13 @@
     </div>
 
     <div class="conte_cinco">
-        <span>Hora amanece:&nbsp;&nbsp;</span><span id="hora_ama"></span>
-        <span>Hora anochece:&nbsp;&nbsp;</span><span id="hora_no" ></span>
+        <div class="horaamanece">
+            <h5>Hora amanece:</h5>
+            <h5 id="hora_ama"></h5>
+        </div>
+
+        <div class="horaanochece">
+            <h5>Hora anochece:</h5>
+            <h5 id="hora_no" ></h5>
+        </div>
     </div>

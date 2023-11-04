@@ -1,4 +1,5 @@
 
+
         <!-- Tarejtas bateria y temperatura -->
         <div class="tarjetas">
             <!-- Bateria 24V -->
@@ -13,8 +14,7 @@
                 </div>
             </div>
 
-            <!-- Temperatura casa -->
-            <!-- Bateria 24V -->
+            <!-- Bateria 48V -->
             <div class="bat_48 sombraTarjetas">
                 <div class="tit">
                     <h5>Batería 48V</h5>
@@ -27,7 +27,8 @@
             </div>
         </div>
 
-        <!-- Humedad ambiente y suelo -->
+
+        <!-- Temperatura y humedad -->
         <div class="tarjetas">
             <!-- Temperatura casa -->
             <div class="temp sombraTarjetas">
@@ -69,6 +70,7 @@
                         </div>
                     
                     </div>
+
                     <img class="img_humedad" src="/build/img/humedad.png"  alt="humedad">
                     
                     <div class="cont">
@@ -133,7 +135,7 @@
         <div class="puerta">
             <button type="button" class="boton_verde btn_desplegable">
                  <img class="img" src="/build/img/puertas.png" alt=""> 
-                 <p>Puertas</p>
+                 <h4>Puertas</h4>
             </button>
 
             <div class="desple">
@@ -162,7 +164,7 @@
         <div class="mando">
             <button type="button" class="boton_verde btn_desplegable">
                 <img class="img" src="/build/img/mando.png" alt="">
-                <p>Mando</p>
+                <h4>Mando</h4>
             </button>
             <div class="desple">
                 <div class="contenedor_mando">
@@ -189,8 +191,9 @@
         <div class="motor">
             <button type="button" class="boton_verde btn_desplegable"> 
                 <img class="img" src="/build/img/grupo.png" alt="">
-                <p>Motor</p>
+                <h4>Motor</h4>
             </button>
+
             <div class="desple">
                 <div class="contenedor_motor">
                     <div class="contenedor_arriba">
@@ -198,7 +201,9 @@
                             <h5>Litros</h5>
                             <p id="litros_gasoil"></p><p id="l">L</p>
                         </div>
+
                         <img  id="img_motor" src="/build/img/motor.png" alt="">
+                        
                         <div class="deposito">
                             <h5>Deposito</h5>
                             <div>
@@ -219,23 +224,27 @@
                     <div class="contenedor_boton">
                         <button class="boton_verde" id="btn_motor" type="button" onclick="motor()"></button>
                     </div>
+                    
+                    <hr>
 
                     <div class="contenedor_contadores">
                         <h5>Contadores</h5>
+
                         <div class="contadores">
                             <div class="totalHoras">
                                 <h5>Total</h5>
-                                <div id="total_horas" class="total"></div>
+                                <p id="total_horas" class="total"></p>
                             </div>
                             <div class="totalMes">
                                 <h5>Horas mes</h5>
-                                <div id="total_mes" class="mes"></div>
+                                <p id="total_mes" class="mes"></p>
                             </div>
                             <div class="totalAhora">
                                 <h5>Ahora</h5>
-                                <div id="total_ahora" class="ahora"></div>
+                                <p id="total_ahora" class="ahora"></p>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -245,7 +254,7 @@
         <div class="ilu">
             <button type="button" class="boton_verde btn_desplegable"> 
                 <img class="img" src="/build/img/ilu.png" alt="">
-                <p>Iluminación</p>
+                <h4>Iluminación</h4>
             </button>
             <div class="desple">
                 <div class="contenedor_ilu">
@@ -271,7 +280,7 @@
         <div class="meteo">
             <button type="button" class="boton_verde btn_desplegable">
                 <img class="img" src="/build/img/meteorologia.png" alt="">
-                <p>Meteorología</p>
+                <h4>Meteorología</h4>
             </button>
 
             <div class="desple">
@@ -286,7 +295,7 @@
         <div class="cerrar">
             <a class="boton_rojo cerrar_sesion" href="/logout"> 
                 <img class="img" src="/build/img/cerrar-sesion.png" alt=""> 
-                <p>Cerrar sesión</p>
+                <h4>Cerrar sesión</h4>
             </a>
         </div>
 
