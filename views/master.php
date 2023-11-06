@@ -22,22 +22,26 @@
 </head>
 
 <body>
-    <header> 
-        <div class="contenedor">
-            <h5 id="hora">Hora</h5>
-            <h3>Home Rosa</h3>
-            <h5 id="fecha">Fecha</h5>
-        </div>
-    </header>
-    
-    <main class="contenedor domo">
-        <?php echo $contenido; ?>
-    </main>
 
-    <footer>
-        <?php $fecha = date('Y'); ?>
-        <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
-    </footer>
+    <div class="content">
+        <header> 
+            <div class="contenedor">
+                <h5 id="hora"></h5>
+                <h3>Home Rosa</h3>
+                <h5 id="fecha"></h5>
+            </div>
+        </header>
+        
+        <main class="contenedor domo">
+            <?php echo $contenido; ?>
+        </main>
+
+        <footer>
+            <?php $fecha = date('Y'); ?>
+            <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
+        </footer>
+    </div>
+
 
 
     <script src="/build/js/modernizr.js"></script>

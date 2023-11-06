@@ -82,7 +82,6 @@
         </div>
 
         <div class="contenido_aire">
-            <div class="contenido_uno">
                 
                 <div class="c_uno">
                     <h5>co:</h5>
@@ -104,9 +103,6 @@
                     <p class="pm2_5"></p>
                 </div>
 
-            </div>
-            
-            <div class="contenido_dos">
                 <div class="c_uno">
                     <h5>o3:</h5>
                     <p class="o3"></p>
@@ -127,7 +123,6 @@
                     <p class="pm10"></p>
                 </div>
 
-            </div>
         </div>
 
         <button type="button" class="btn-leyenda">

@@ -27,6 +27,7 @@
             </div>
         </div>
 
+
         <!-- Temperatura y humedad -->
         <div class="tarjetas">
             <!-- Temperatura casa -->
@@ -130,11 +131,9 @@
             </div>
         </div>
 
-        
-
         <!-- Puerta verja -->
         <div class="puerta">
-            <button type="button" class="boton_verde">
+            <button type="button" class="boton_verde btn_desplegable">
                 <img class="img" src="/build/img/puertas.png" alt=""> 
                 <h4>Puertas</h4>
             </button>
@@ -163,7 +162,7 @@
 
         <!-- Mando del taller -->
         <div class="mando">
-            <button type="button" class="boton_verde">
+            <button type="button" class="boton_verde btn_desplegable">
                 <img class="img" src="/build/img/mando.png" alt="">
                 <h4>Mando</h4>
             </button>
@@ -190,7 +189,7 @@
 
         <!-- Motor -->
         <div class="motor">
-            <button type="button" class="boton_verde"> 
+            <button type="button" class="boton_verde btn_desplegable"> 
                 <img class="img" src="/build/img/grupo.png" alt="">
                 <h4>Motor</h4>
             </button>
@@ -253,66 +252,21 @@
 
         <!-- iluminacion -->
         <div class="ilu">
-            <button type="button" class="boton_verde"> 
+            <button type="button" class="boton_verde btn_desplegable"> 
                 <img class="img" src="/build/img/ilu.png" alt="">
                 <h4>Iluminación</h4>
             </button>
-
             <div class="desple">
                 <div class="contenedor_ilu">
                     <div class="contenedor_arriba">
-                        <div class="conte_img">
-                                <img  id="bombilla" src="/build/img/bombilla.jpg" alt="">
+                        <div class="lumenes">
+                            <h5>Lumenes</h5>
+                            <p id="lux" ></p>
+                            <p>Lux</p>
                         </div>
-                        
-                        <div class="conte_centro">
-                            <div class="horas_placa">
-                                <h5>Hora de encendido</h5>
-                                <input type="text" class="placaenciende">
-                                <h5>Hora de apagado</h5>
-                                <input type="text" class="placaapaga">
-                            </div>
-                            <div class="lumenes">
-                                <h5>Lumenes</h5>
-                                <div class="conte_lux">
-                                    <p id="lux"></p>
-                                    <p>Lux</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="conte_modifica">
-                            <h5>Modificaciones</h5>
-                            <hr>
-                            <div class="conte_modificadores">
-                                <div class="horas_modifica">
-                                    <h5>Encendido</h5>
-                                    <input type="text" class=" anochecer">
-                                    <h5>Apagado</h5>
-                                    <input type="text" class="amanecer">
-                                </div>
-
-                                <div class="botones_modifica">
-                                    <div class="on">
-                                        <input class="minutoson" type="text">
-                                        <input class="btnmason" type="button" value="+">
-                                        <input class="btnmenoson" type="button" value="-">
-                                    </div>
-                                    
-                                    <div class="off">
-                                        <input class="minutosoff" type="text">
-                                        <input class="btnmasoff" type="button" value="+">
-                                        <input class="btnmenosoff" type="button" value="-">
-                                    </div>          
-                                    
-                                    <div class="conte_boton">
-                                        <input class="guardar_retraso" type="button" value="Enviar">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img  id="bombilla" src="/build/img/bombilla.jpg" alt="">
+                        <div class="vacio">  </div>
                     </div>
-
                     <div class="contenedor_botones" role="group" aria-label="Basic outlined example">
                         <button id="btn_on"   class="boton_verde" type="button" onclick="ilu_envio(1)">On</button>
                         <button id="btn_auto" class="boton_verde" type="button" onclick="ilu_envio(2)">Auto</button>
@@ -324,7 +278,7 @@
 
         <!-- Meteo -->
         <div class="meteo">
-            <button type="button" class="boton_verde">
+            <button type="button" class="boton_verde btn_desplegable">
                 <img class="img" src="/build/img/meteorologia.png" alt="">
                 <h4>Meteorología</h4>
             </button>
