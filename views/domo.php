@@ -260,18 +260,12 @@
 
             <div class="desple">
                 <div class="contenedor_ilu">
-                    <div class="contenedor_arriba">
-                        <div class="conte_img">
-                                <img  id="bombilla" src="/build/img/bombilla.jpg" alt="">
-                        </div>
-                        
-                        <div class="conte_centro">
-                            <div class="horas_placa">
-                                <h5>Hora de encendido</h5>
-                                <input type="text" class="placaenciende">
-                                <h5>Hora de apagado</h5>
-                                <input type="text" class="placaapaga">
-                            </div>
+
+                    <div class="contenedor_info">
+                        <div class="conte_izquierda">
+                            
+                            <img  id="bombilla" src="/build/img/bombilla.jpg" alt="">
+
                             <div class="lumenes">
                                 <h5>Lumenes</h5>
                                 <div class="conte_lux">
@@ -280,40 +274,49 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="conte_centro">
+                            <div class="horas_placa">
+                                <h5 class="titulo_horas">Horas</h5>
+                                
+                                <hr>
+                                
+                                <h5>Encendido</h5>
+                                <input type="text" class="anochecer" disabled>
+                                
+                                <h5>Apagado</h5>
+                                <input type="text" class="amanecer" disabled>
+                            </div>
 
-                        <div class="conte_modifica">
-                            <h5>Modificaciones</h5>
-                            <hr>
-                            <div class="conte_modificadores">
-                                <div class="horas_modifica">
-                                    <h5>Encendido</h5>
-                                    <input type="text" class=" anochecer">
-                                    <h5>Apagado</h5>
-                                    <input type="text" class="amanecer">
-                                </div>
+                            <div class="horas_informacion">
+                                <p>Noche</p>
+                                <p class="anochecer"></p>
 
-                                <div class="botones_modifica">
-                                    <div class="on">
-                                        <input class="minutoson" type="text">
-                                        <input class="btnmason" type="button" value="+">
-                                        <input class="btnmenoson" type="button" value="-">
-                                    </div>
-                                    
-                                    <div class="off">
-                                        <input class="minutosoff" type="text">
-                                        <input class="btnmasoff" type="button" value="+">
-                                        <input class="btnmenosoff" type="button" value="-">
-                                    </div>          
-                                    
-                                    <div class="conte_boton">
-                                        <input class="guardar_retraso" type="button" value="Enviar">
-                                    </div>
-                                </div>
+                                <p>Dia</p>
+                                <p class="amanecer"></p>
+                            </div>
+                        </div>
+
+                        <div class="conte_derecha">
+                            <div class="nuevas_horas">
+                                <h5 class="titulo_horas">Nueva hora</h5>
+                                
+                                <hr>
+                                
+                                <h5>Encendido</h5>
+                                <input type="text" class="anochecer">
+                                
+                                <h5>Apagado</h5>
+                                <input type="text" class="amanecer">
+                            </div>
+
+                            <div class="conte_boton">
+                                <input class="guardar_retraso" type="button" value="Enviar">
                             </div>
                         </div>
                     </div>
 
-                    <div class="contenedor_botones" role="group" aria-label="Basic outlined example">
+                    <div class="contenedor_botones">
                         <button id="btn_on"   class="boton_verde" type="button" onclick="ilu_envio(1)">On</button>
                         <button id="btn_auto" class="boton_verde" type="button" onclick="ilu_envio(2)">Auto</button>
                         <button id="btn_off"  class="boton_verde" type="button" onclick="ilu_envio(0)">Off</button>
