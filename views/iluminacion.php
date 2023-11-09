@@ -29,10 +29,10 @@
                                 <hr>
                                 
                                 <h5>Encendido</h5>
-                                <input type="text" class="anochecer" disabled>
+                                <p class="anochecer"></p>
                                 
                                 <h5>Apagado</h5>
-                                <input type="text" class="amanecer" disabled>
+                                <p class="amanecer"></p>
                             </div>
 
                             <div class="horas_informacion">
@@ -55,22 +55,22 @@
                                 <hr>
                                 
                                 <h5>Encendido</h5>
-                                <input type="text" class="anochecer">
+                                <input type="time" class="nuevo_anochecer" placeholder="00:00">
                                 
                                 <h5>Apagado</h5>
-                                <input type="text" class="amanecer">
+                                <input type="time" class="nuevo_amanecer" placeholder="00:00">
                             </div>
 
                             <div class="conte_boton">
-                                <input class="guardar_retraso" type="button" value="Enviar">
+                                <input class="guardar_nueva_hora" type="button" value="Enviar">
                             </div>
                         </div>
                     </div>
 
                     <div class="contenedor_botones">
-                        <button id="btn_on"   class="boton_verde" type="button" onclick="ilu_envio(1)">On</button>
-                        <button id="btn_auto" class="boton_verde" type="button" onclick="ilu_envio(2)">Auto</button>
-                        <button id="btn_off"  class="boton_verde" type="button" onclick="ilu_envio(0)">Off</button>
+                        <button id="btn_on"   class="btn_pulsado" type="button" onclick="ilu_envio(1)">On</button>
+                        <button id="btn_auto" class="btn_pulsado" type="button" onclick="ilu_envio(2)">Auto</button>
+                        <button id="btn_off"  class="btn_pulsado" type="button" onclick="ilu_envio(0)">Off</button>
                     </div>
                 </div>
             </div>

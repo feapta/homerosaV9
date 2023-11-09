@@ -77,11 +77,41 @@
 
     <div class="conte_aire">
         <div class="calidad">
-            <h5>Indice calidad del aire:</h5>
-            <p class="ica"></p>
+            <div class="izd">
+                <h5>Indice calidad del aire:</h5>
+                <p class="ica"></p>
+            </div>
+            
+            <button type="button" class="btn-leyenda">
+                <p>Leyenda</p>   
+            </button>
         </div>
 
-        <div class="contenido_aire">
+        <div class="conte_leyenda ocultar">
+            <div class="conte_indi">
+                <p>Indice: <br>
+                    1 = Bueno, <br> 
+                    2 = Normal, <br>
+                    3 = Moderado, <br>
+                    4 = Bajo, <br>
+                    5 = Muy bajo. 
+                </p>
+            </div>
+
+            <div class="conte_nobre">
+                <p>Medidas en μg/m3</p>
+                <p>CO: Monoxido de carbono</p>
+                <p>NO: Monoxido de nitrogeno</p>
+                <p>NO2: Dioxido de nitrogeno</p>
+                <p>O3: Ozono</p>
+                <p>SO2: Dioxido de azufre</p>
+                <p>PM 2.5: Particulas finas</p>
+                <p>PM 10: Particulas gruesas</p>
+                <p>NH3: Amoniaco</p>
+            </div>
+        </div>
+       
+            <div class="contenido_aire">
                 
                 <div class="c_uno">
                     <h5>co:</h5>
@@ -125,33 +155,7 @@
 
         </div>
 
-        <button type="button" class="btn-leyenda">
-            <p>Leyenda</p>   
-        </button>
 
-        <div class="conte_leyenda ocultar">
-            <div class="conte_indi">
-                <p>Indice: <br>
-                    1 = Bueno, <br> 
-                    2 = Normal, <br>
-                    3 = Moderado, <br>
-                    4 = Bajo, <br>
-                    5 = Muy bajo. 
-                </p>
-            </div>
-
-            <div class="conte_nobre">
-                <p>Medidas en μg/m3</p>
-                <p>CO: Monoxido de carbono</p>
-                <p>NO: Monoxido de nitrogeno</p>
-                <p>NO2: Dioxido de nitrogeno</p>
-                <p>O3: Ozono</p>
-                <p>SO2: Dioxido de azufre</p>
-                <p>PM 2.5: Particulas finas</p>
-                <p>PM 10: Particulas gruesas</p>
-                <p>NH3: Amoniaco</p>
-            </div>
-        </div>
 
     </div>
 
