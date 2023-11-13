@@ -19,6 +19,7 @@ class Router {
 
     // Comprobar rutas
     public function comprobarRutas() {
+        //$urlActual = $_SERVER['PATH_INFO'] ?? '/';
         $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
         $method = $_SERVER['REQUEST_METHOD'];
 
