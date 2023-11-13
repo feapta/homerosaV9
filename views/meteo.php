@@ -10,7 +10,9 @@
         </div>
     </div>
     
-    <hr>
+    <div class="conte_linea">
+        <hr>
+    </div>
 
     <div class="conte_dos">
         <div class="izquierda">
@@ -51,7 +53,9 @@
         </div>
     </div>
 
-    <hr>
+    <div class="conte_linea">
+        <hr>
+    </div>
 
     <div class="conte_tres">
         <h5>Vientos</h5>
@@ -73,7 +77,9 @@
         </div>
     </div>
     
-    <hr>
+    <div class="conte_linea">
+        <hr>
+    </div>
 
     <div class="conte_aire">
         <div class="calidad">

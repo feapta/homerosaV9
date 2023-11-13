@@ -7,8 +7,10 @@
         </div>
         <div class="conte">
             <img class="img_24" alt="Bateria">
-            <p class= "Bat24_card"></p> 
-            <p>V</p>
+            <div class="parrafo">
+                <p class= "Bat24_card"></p> 
+                <p>V</p>
+            </div>
         </div>
     </div>
 
@@ -19,7 +21,10 @@
         </div>
         <div class="conte">
             <img class="img_48" alt="Bateria">
-            <p class= "Bat48_card"></p> 
-            <p>V</p>
+            <div class="parrafo">
+                <p class= "Bat48_card"></p> 
+                <p>V</p>
+            </div>
+
         </div>
     </div>

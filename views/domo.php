@@ -33,7 +33,12 @@
 
         <!-- iluminacion -->
         <div class="ilu">
-            <?php include_once __DIR__ . "/iluminacion.php";  ?>
+            <?php include_once __DIR__ . "/ilu.php";  ?>
+        </div>
+
+        <!-- Piscina -->
+        <div class="piscina">
+            <?php include_once __DIR__ . "/piscina.php";  ?>
         </div>
 
         <!-- Meteo -->
@@ -59,7 +64,8 @@
         </div>
 
 
-    <?php $script = '<script src="/build/js/script.js"></script>'; ?>
+    <?php $script = '<script src="/build/js/broker.js"></script>'; ?>
+    <?php $script .= '<script src="/build/js/funciones.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/tension24V.js"></script>'; ?>
