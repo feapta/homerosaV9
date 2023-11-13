@@ -19,8 +19,8 @@ class Router {
 
     // Comprobar rutas
     public function comprobarRutas() {
-        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
-        //$urlActual = explode('?', $_SERVER['REQUEST_URI'], 2) ?? '/';     Cambiar cuando se despliega
+        //$urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        $urlActual = explode('?', $_SERVER['REQUEST_URI'], 2) ?? '/'; // Solo cambiar cuando se despliega
         $method = $_SERVER['REQUEST_METHOD'];
 
       if ($method === 'GET') {
