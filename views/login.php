@@ -24,8 +24,8 @@
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <div class="campo Img">
-                <img class="seve ocultar" src="/build/img/mostrar.webp" alt="">
-                <img class="nove"  src="/build/img/esconder.webp" alt="">
+                <img class="seve"           src="/build/img/mostrar.webp" alt="">
+                <img class="nove ocultar"   src="/build/img/esconder.webp" alt="">
             </div>
         </div>
 
