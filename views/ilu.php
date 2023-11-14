@@ -70,9 +70,9 @@
             </div>
 
             <div class="contenedor_botones">
-                <button id="btn_on"   class="btn_pulsado" type="button" onclick="ilu_envio(1)">On</button>
-                <button id="btn_auto" class="btn_pulsado" type="button" onclick="ilu_envio(2)">Auto</button>
-                <button id="btn_off"  class="btn_pulsado" type="button" onclick="ilu_envio(0)">Off</button>
+                <button class="btn_pulsado on" type="button" onclick="ilu_envio(1)">On</button>
+                <button class="btn_pulsado auto" type="button" onclick="ilu_envio(2)">Auto</button>
+                <button class="btn_pulsado off" type="button" onclick="ilu_envio(0)">Off</button>
             </div>
         </div>
     </div>
