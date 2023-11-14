@@ -54,9 +54,9 @@
             </div>
 
             <div class="contenedor_botones">
-                <button id="btn_on"   class="btn_pulsado" type="button" onclick="envio_boton_piscina(1)">On</button>
-                <button id="btn_auto" class="btn_pulsado" type="button" onclick="envio_boton_piscina(2)">Auto</button>
-                <button id="btn_off"  class="btn_pulsado" type="button" onclick="envio_boton_piscina(0)">Off</button>
+                <button id="btn_on_piscina"   class="btn_pulsado" type="button" onclick="envio_boton_piscina(1)">On</button>
+                <button id="btn_auto_piscina" class="btn_pulsado" type="button" onclick="envio_boton_piscina(2)">Auto</button>
+                <button id="btn_off_piscina"  class="btn_pulsado" type="button" onclick="envio_boton_piscina(0)">Off</button>
             </div>
         </div>
     </div>
