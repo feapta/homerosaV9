@@ -51,7 +51,7 @@
                 </div>
 
                 <div class="conte_derecha">
-                    <div class="nuevas_horas">
+                    <div class="nuevo_horario_ilu">
                         <h5 class="titulo_horas">Nueva hora</h5>
                         
                         <hr>
