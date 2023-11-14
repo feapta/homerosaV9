@@ -24,8 +24,8 @@
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <div class="campo Img">
-                <img id="ima-1" class="ocultarPass"src="/build/img/mostrar.webp" alt="">
-                <img id="ima-2" src="/build/img/esconder.webp" alt="">
+                <img class="seve ocultar" src="/build/img/mostrar.webp" alt="">
+                <img class="nove"  src="/build/img/esconder.webp" alt="">
             </div>
         </div>
 
@@ -36,6 +36,6 @@
 
 </div>
 
-<?php $script = '<script src="/build/js/mostrar_pass_acceso.js"></script>'; ?>
+<?php $script = '<script src="/build/js/mostrar_pass.js"></script>'; ?>
 
 
