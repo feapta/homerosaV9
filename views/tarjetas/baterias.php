@@ -25,6 +25,10 @@
                 <p class= "Bat48_card"></p> 
                 <p>V</p>
             </div>
+            <div class="parrafo">
+                <p class="porcentaje"></p>
+                <p>%</p>
+            </div>
 
         </div>
     </div>
