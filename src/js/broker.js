@@ -148,31 +148,36 @@ var n = 0;
         if (topic == "domo/Taller/medidas") {
             let msg_gen = message.toString();
             let dividir = msg_gen.split(",");
+            let bateria24 = dividir[0];
+            let nivelagua = dividir[1];
+            let iptaller = dividir[2];
+            let bateria48 = dividir[3];
+            let consumo24 = dividir[4];
 
-            Bat24 = document.querySelector('.Bat24_card').innerHTML = dividir[0];
+            Bat24 = document.querySelector('.Bat24_card').innerHTML = bateria24;
             if (Bat24) {
               batCard24v(Bat24);
             } else {
               document.querySelector('.img_24').src = "/build/img/baterias/vacia.png";
             }
 
-            document.getElementById("agua").innerHTML = dividir[1];
+            document.getElementById("agua").innerHTML = nivelagua;
             let agua = dividir[1];
 
-            console.log("IP Taller -> " + dividir[2]);
+            console.log("IP Taller -> " + iptaller);
 
             let agua_calculada = agua/100;
             $('#barra-agua').width(agua_calculada + "%").attr('aria-valuenow', agua_calculada);
             nivel_agua(agua);
               
-            let Bat48 = document.querySelector('.Bat48_card').innerHTML = dividir[3];
+            let Bat48 = document.querySelector('.Bat48_card').innerHTML = bateria48;
             if (Bat48) {
               batCard48v(Bat48);
             } else {
               document.querySelector('.img_24').src = "/build/img/baterias/vacia.png";
             }
 
-            console.log(dividir[4]);
+            console.log(consumo24);
         }
 
         // Datos del motor
