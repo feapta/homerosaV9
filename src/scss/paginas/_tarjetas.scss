@@ -1,0 +1,86 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/colores' as c;
+@use 'base/tipografia' as t;
+
+
+.tarjetas {
+    display: flex;
+    
+    .bat_24,
+    .bat_48,
+    .temp,
+    .hume,
+    .agua,
+    .solar {
+        display: block;
+        border: 1px solid lighten(c.$blue-grey-200, 10%);
+        border-radius: 0.5rem;
+
+        width: 50%;
+
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .conte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .parrafo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 0.5rem;
+        
+        p:first-child {
+            margin-right: 0.2rem;
+        }
+    }
+
+    // imageness
+    .bat_24,
+    .bat_48 {
+        img {
+            max-width: 3rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .temp,
+    .hume {
+        img {
+            max-width: 4rem;
+            margin: 0 0.5rem;
+        }
+    }
+   
+    .agua {
+        img {
+            max-width: 4rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .solar {
+        .img_solar {
+            max-width: 5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .cont {
+        display: block;
+        text-align: center;
+    }
+
+    .tit {
+        text-align: center;
+    }
+}

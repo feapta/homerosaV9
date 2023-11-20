@@ -1,0 +1,240 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/colores' as c;
+@use 'base/tipografia' as t;
+
+.meteo {
+
+    .contenedor_meteo {
+
+        .conte_uno,
+        .conte_dos,
+        .conte_tres {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 0.5rem;
+        }
+
+        .conte_linea {
+            display: flex;
+            justify-content: center;
+            
+            hr {
+                margin: 0.5rem 0;
+            }
+        }
+
+        .conte_uno {
+
+            h5 {
+                text-transform: uppercase;
+            }
+            .parra {
+                display: flex;
+            }
+        }
+
+        .conte_dos {
+
+            .izquierda,
+            .derecha {
+            
+                .contenido {
+                    display: flex;
+                }
+            }
+
+            .centro {
+                img {
+                    max-width: 10rem;
+                }
+            }
+            .unoI,
+            .dosI,
+            .tresI,
+            .unoD,
+            .dosD {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                margin: 0.3rem 0;
+
+                img {
+                    max-width: 2.3rem;
+                    padding-right: 0.5rem;
+                }
+            }
+
+        }
+        
+        .conte_tres {
+            margin: 0 1rem;
+            padding: 0;
+
+            .viento {
+                display: flex;
+                justify-content: center;
+                margin-top: 0.25rem;
+
+                h5 {
+                    padding-right: 0.5rem;
+                }
+                p {
+                    padding-right: 0.2rem;
+                }
+            }
+        }
+
+        .conte_aire {
+            margin: 1rem 0; 
+
+            .calidad {
+                margin: 0.25rem 1rem ;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+        
+                .izd {
+                    display: flex;
+                    h5 {
+                        margin: 0;
+                        padding-right: 0.5rem;
+                    }
+        
+                    .ica {
+                        padding: 0.2rem 1rem;
+        
+                        border-radius: 0.5rem;
+        
+                        text-align: center;
+                        font-weight: 600;
+                        color: c.$blanco;
+                    }
+                }
+
+            }
+
+            .contenido_aire {
+                margin-right: 0.5rem;
+            
+                display: grid;
+                grid-template-rows: 2;
+                grid-template-columns: repeat(4, 2fr);
+
+                @include m.tablet {
+                    grid-template-rows: 1;
+                    grid-template-columns: repeat(8, 2fr);
+                }
+                .c_uno,
+                .c_dos,
+                .c_tres,
+                .c_cuatro {
+                    display: flex;
+                    align-items: center;
+
+                    border: 1px solid lighten(c.$negro, 80%);
+                    border-radius: 0.5rem;
+
+                    padding: 0.2rem;
+                    margin: 0.2rem;
+
+                    h5 {
+                        padding-right: 0.5rem;
+                    }
+                    p {
+                        padding: 0.3rem;
+                    }
+                }
+            }
+
+
+            .conte_leyenda {
+                margin: 0 1rem 1rem 1rem;
+                padding: 1rem;
+                
+                border: 1px solid lighten(c.$blue-grey-200, 10%);
+                border-radius: 0.5rem;
+
+                display: flex;
+                justify-content: space-around;
+
+                p {
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+
+        .conte_cuatro {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 0.5rem;
+    
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+
+            .conte_dia0,
+            .conte_dia1,
+            .conte_dia2,
+            .conte_dia3 {
+                border: 1px solid lighten(c.$blue-grey-200, 10%);
+                border-radius: 0.5rem;
+                padding: 0.5rem;
+
+                .titulo {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .columnas {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .contenido {
+                        display: flex;
+                    }
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .conte_temp_max {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .tmax,
+                    .tmin {
+                        display: flex;
+                        p {
+                            padding-right: 0.2rem;
+                        }
+                    }
+                }   
+
+                
+            }
+
+        }
+
+        .conte_cinco {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem;
+            margin-top: 1rem;
+
+            .horaamanece,
+            .horaanochece {
+                display: flex;
+                justify-content: flex-start;
+                
+                h5 {
+                    padding-right: 0.5rem;
+                    color: c.$negro;
+                }
+            }
+        }
+    }
+}

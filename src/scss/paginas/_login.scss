@@ -1,0 +1,106 @@
+
+// Pagina acceso
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/colores' as c;
+@use 'base/tipografia' as t;
+
+
+
+.contenedorLogin{
+        width: 90%;
+        margin: 0 auto;
+        
+
+    
+        @include m.telefono{
+            width: 80%;
+        }
+    
+        @include m.tablet{
+            width: 50%;
+        }
+    
+
+    .formulario{
+        border: 1px solid lighten(c.$blue-grey-200, 10%);
+        border-radius: 0.5rem;
+
+        padding: 1rem;
+        margin-top: 2rem;
+        
+        background-image: url('/build/img/colorido.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+        .campo{
+            display: block;
+            margin: 1rem 0 1rem 0;
+            justify-content: center;
+        
+            .titulo_login {
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+                background-color: lighten( c.$verde, 52%);
+                width: 100%;
+                border-radius: 0.5rem;
+            }
+            label{
+                width: 100%;
+                justify-content: center;
+                color: c.$negro;
+            }
+
+            input {
+                width: 100%;
+                margin: 1rem 0 1rem 0;
+                padding: 1rem;
+                border: 1px solid lighten(c.$negro, 70%);
+                border-radius: 0.4rem;
+            }
+
+            @include m.tablet{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
+                label{
+                    width: 10rem;
+                    justify-content: flex-start;
+                }
+
+                input {
+                    width: 80%;
+                    height: 4rem;
+                    margin: 0;
+                    padding: 0.5rem;
+                    border: 1px solid grey;
+                }
+            }
+        }
+ 
+        .mostrarPassword{      
+                position: relative;
+                width: 100%;
+
+            .Img{
+                position: absolute;
+                top: 2.1rem;
+                right: 1.5rem;
+                filter: opacity(25%);
+
+                img {
+                    width: 3.5rem;
+                }
+
+                @include m.tablet{
+                    top: -0.8rem;
+                    right: 2.5rem;
+                }
+            }
+        }
+    }
+}

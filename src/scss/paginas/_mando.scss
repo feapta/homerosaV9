@@ -1,0 +1,24 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'base/colores' as c;
+@use 'base/tipografia' as t;
+
+
+.mando {
+    .contenedor_mando {
+        
+        .inversor {
+            margin: 0.5rem 0;
+        }
+        
+        .termo {
+            margin-top: 1rem;
+        }
+     
+        .botones_inversor,
+        .botones_termo {
+            display: flex;
+        }
+
+    }
+}
