@@ -352,7 +352,7 @@ var n = 0;
 
     function publicar() {
       client.publish('domo/Salon/peticion', 'hola');
-      client.publish('domo/Taller/peticion', 'hola');
+      client.publish('domo/Taller/recibe/peticion', 'hola');
       client.publish('domo/Puerta/peticion', 'hola'); 
   
     }
@@ -370,13 +370,13 @@ var n = 0;
     // Inversor
     function inversor(inv){
         let msg_inversor = inv.toString();
-        client.publish('domo/Taller/inversor/ordenes', msg_inversor);
+        client.publish('domo/Taller/recibe/inversor/ordenes', msg_inversor);
     }
 
     // Rele de reserva
     function termo(ter){
         let msg_termo = ter.toString();
-        client.publish('domo/Taller/termo/ordenes', msg_termo);
+        client.publish('domo/Taller/recibe/termo/ordenes', msg_termo);
     }
 
     // Abrir y cerrar puertas

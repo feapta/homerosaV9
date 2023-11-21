@@ -60,11 +60,11 @@ document.addEventListener('DOMContentLoaded', function(){
         let final = hora_apagado.toString();
     
         let msg = inicio + ',' + final; 
-        client.publish('domo/Taller/piscina/horario', msg);
+        client.publish('domo/Taller/recibe/piscina/horario', msg);
     };
 
     // Ordenes piscina
     function envio_boton_piscina(n){
       let msg_piscina = n.toString();
-      client.publish('domo/Taller/piscina/boton', msg_piscina);
+      client.publish('domo/Taller/recibe/piscina/boton', msg_piscina);
     }
