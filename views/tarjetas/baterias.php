@@ -21,14 +21,15 @@
         </div>
         <div class="conte">
             <img class="img_48" alt="Bateria">
-            <div class="parrafo">
-                <p class= "Bat48_card"></p> 
-                <p>V</p>
+            <div class="conte_info">
+                <div class="parrafo">
+                    <p class= "Bat48_card"></p> 
+                    <p>V</p>
+                </div>
+                <div class="parrafo">
+                    <p class="porcentaje"></p>
+                    <p>%</p>
+                </div>
             </div>
-            <div class="parrafo">
-                <p class="porcentaje"></p>
-                <p>%</p>
-            </div>
-
         </div>
     </div>
