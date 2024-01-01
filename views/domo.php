@@ -72,3 +72,4 @@
     <?php $script .= '<script src="/build/js/tension48V.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/meteo.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/relog.js"></script>'; ?>
+    <?php $script .= '<script type="module" src="/build/js/Chart.min.js" ><script>'; ?>
