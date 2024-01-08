@@ -15,17 +15,11 @@
             <?php include_once __DIR__ . "/tarjetas/aguasolar.php";  ?>
         </div>
         
-        <!-- Nivel gas cocina -->
+        <!-- Nivel gas cocina y lluvias-->
         <div class="tarjetas">
-            <?php include_once __DIR__ . "/tarjetas/gas.php";  ?>
+            <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
         </div>
 
-        <!-- Nivel lluvia -->
-        <div class="tarjetas">
-            <?php include_once __DIR__ . "/tarjetas/lluvia.php";  ?>
-        </div>
-
-        
         <!-- Puerta verja -->
         <div class="puerta">
             <?php include_once __DIR__ . "/puerta.php";  ?>
