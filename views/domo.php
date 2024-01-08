@@ -14,6 +14,16 @@
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/aguasolar.php";  ?>
         </div>
+        
+        <!-- Nivel gas cocina -->
+        <div class="tarjetas">
+            <?php include_once __DIR__ . "/tarjetas/gas.php";  ?>
+        </div>
+
+        <!-- Nivel lluvia -->
+        <div class="tarjetas">
+            <?php include_once __DIR__ . "/tarjetas/lluvia.php";  ?>
+        </div>
 
         
         <!-- Puerta verja -->
