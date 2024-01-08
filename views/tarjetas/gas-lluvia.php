@@ -1,6 +1,6 @@
 
-  <!-- Gas -->
-  <div class="gases sombraTarjetas">
+    <!-- Gas -->
+    <div class="gases sombraTarjetas">
         <div class="tit">
             <h5>Nivel de gas</h5>
         </div>
@@ -20,7 +20,6 @@
             <div class="conte_info">
                 <div class="parrafo">
                     <p class= "lluvia"></p> 
-                </div>
                 </div>
             </div>
         </div>
