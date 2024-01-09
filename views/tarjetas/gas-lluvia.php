@@ -6,7 +6,7 @@
         </div>
         <div class="conte">
             <div class="parrafo">
-                <p class= "nivel_gas"></p> 
+                <canvas id="chart-gas"></canvas>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="conte">
             <div class="conte_info">
                 <div class="parrafo">
-                    <p class= "lluvia"></p> 
+                    <canvas id="chart-lluvia"></canvas>
                 </div>
             </div>
         </div>
