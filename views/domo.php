@@ -69,6 +69,7 @@
 
    
     <?php $script =  '<script src="/build/js/gas.js" type="module"></script>'; ?>
+    <?php $script =  '<script src="/node_modules/chart.js/auto" type="module"></script>'; ?>
     <?php $script .= '<script src="/build/js/broker.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/funciones.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
