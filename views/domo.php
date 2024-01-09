@@ -78,4 +78,3 @@
     <?php $script .= '<script src="/build/js/relog.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/gas.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/lluvia.js"></script>'; ?>
-    <?php $script .= '<script type="module" src="/build/js/chart.js" ><script>'; ?>
