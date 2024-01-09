@@ -68,9 +68,8 @@
         </div>
 
    
-    <?php $script =  '<script src="/build/js/gas.js" type="module"></script>'; ?>
-    <?php $script =  '<script src="/node_modules/chart.js/auto" type="module"></script>'; ?>
-    <?php $script .= '<script src="/build/js/broker.js"></script>'; ?>
+   
+    <?php $script = '<script src="/build/js/broker.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/funciones.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
@@ -78,5 +77,5 @@
     <?php $script .= '<script src="/build/js/tension48V.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/meteo.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/relog.js"></script>'; ?>
-    <?php $script .= '<script src="/build/js/gas.js"></script>'; ?>
-    <?php $script .= '<script src="/build/js/lluvia.js"></script>'; ?>
+    <?php $script .= '<script src="/build/js/gas.js" type="module"></script>'; ?>
+    <?php $script .= '<script src="/build/js/lluvia.js" type="module"></script>'; ?>
