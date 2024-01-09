@@ -67,8 +67,9 @@
             </a>
         </div>
 
-
-    <?php $script = '<script src="/build/js/broker.js"></script>'; ?>
+   
+    <?php $script = '<script src="gas.js" type="module"></script>'; ?>
+    <?php $script .= '<script src="/build/js/broker.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/funciones.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
     <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
