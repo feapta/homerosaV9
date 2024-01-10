@@ -69,7 +69,7 @@
 
    
    
-        <?php $script .= '<script src="/build/js/funciones.js"></script>'; ?>
+        <?php $script = '<script src="/build/js/funciones.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/tension24V.js"></script>'; ?>
@@ -78,4 +78,4 @@
         <?php $script .= '<script src="/build/js/relog.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/gas.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/lluvia.js"></script>'; ?>
-        <?php $script = '<script src="/build/js/broker.js"></script>'; ?>
+        <?php $script .= '<script src="/build/js/broker.js"></script>'; ?>
