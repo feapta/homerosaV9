@@ -4,7 +4,7 @@
         <div class="tit">
             <h5>Nivel de gas</h5>
         </div>
-        <div class="conte" style="position: relative; height:20rem; width:20rem">
+        <div class="conte" style="position: relative; height:15rem; width:25rem">
            <canvas id="chart_gas"></canvas>
         </div>
     </div>
@@ -14,7 +14,7 @@
         <div class="tit">
             <h5>Nivel de lluvia</h5>
         </div>
-        <div class="conte" style="position: relative; height:20rem; width:20rem">
+        <div class="conte" style="position: relative; height:15rem; width:25rem">
             <canvas id="chart_lluvia"></canvas>
         </div>
     </div>
