@@ -19,8 +19,8 @@
             <h5>Nivel de lluvia</h5>
         </div>
         <div class="cuadros">
-            <p class="lluvia">Lluvia</p>
             <p class="seco">Seco</p>
+            <p class="lluvia">Lluvia</p>
         </div>
         <div class="canvas_lluvia" >
             <canvas id="chart_lluvia"></canvas>
