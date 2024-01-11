@@ -8,7 +8,7 @@
             <p class="gases">Gases</p>
             <p class="limpio">Limpio</p>
         </div>
-        <div class="canvas">
+        <div class="canvas_gas">
            <canvas id="chart_gas"></canvas>
         </div>
     </div>
@@ -22,7 +22,7 @@
             <p class="lluvia">Lluvia</p>
             <p class="seco">Seco</p>
         </div>
-        <div class="canvas" >
+        <div class="canvas_lluvia" >
             <canvas id="chart_lluvia"></canvas>
         </div>
     </div>
