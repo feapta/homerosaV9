@@ -17,7 +17,7 @@
                         <h5 class="marcha ocultar">Marcha</h5>
                         <h5 class="parada">Parada</h5>
                     </div>
-                    <div>
+                    <div class="conte_relog">
                         <p class="hora"></p>
                     </div>
                 </div>
