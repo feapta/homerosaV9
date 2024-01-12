@@ -17,6 +17,9 @@
                         <h5 class="marcha ocultar">Marcha</h5>
                         <h5 class="parada">Parada</h5>
                     </div>
+                    <div>
+                        <p id="hora"></p>
+                    </div>
                 </div>
                 
                 <!-- Control por horario -->
