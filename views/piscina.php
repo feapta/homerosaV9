@@ -18,7 +18,7 @@
                         <h5 class="parada">Parada</h5>
                     </div>
                     <div>
-                        <p id="hora"></p>
+                        <p class="hora"></p>
                     </div>
                 </div>
                 
