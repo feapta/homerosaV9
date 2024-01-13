@@ -20,6 +20,14 @@
             <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
         </div>
 
+        <!-- Alertas -->
+        <div class="alerta_gas ocultar">
+            <h4>!!! FUGA DE GAS !!!</h4>
+        </div>
+        <div class="alerta_lluvia ocultar">
+            <h4>!! Ha comenzado a llover !!</h4>
+        </div>
+
         <!-- Puerta verja -->
         <div class="puerta">
             <?php include_once __DIR__ . "/puerta.php";  ?>
