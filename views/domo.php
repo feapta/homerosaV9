@@ -1,6 +1,6 @@
 
 
-        <!-- Tarejtas bateria y temperatura -->
+        <!-- Baterias -->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/baterias.php";  ?>
         </div>
@@ -21,10 +21,10 @@
         </div>
 
         <!-- Alertas -->
-        <div class="alerta_gas ocultar">
+        <div class="alerta_gas ocultar alert">
             <h4>!!! FUGA DE GAS !!!</h4>
         </div>
-        <div class="alerta_lluvia ocultar">
+        <div class="alerta_lluvia ocultar alert">
             <h4>!! Ha comenzado a llover !!</h4>
         </div>
 
