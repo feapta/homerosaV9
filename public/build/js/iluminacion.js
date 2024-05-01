@@ -1,0 +1,1 @@
+function escucha_boton_envio_iluminacion(){document.querySelector(".guardar_nueva_hora").addEventListener("click",enviar_horas)}function enviar_horas(){const e=document.querySelector(".nuevo_anochecer").value,o=document.querySelector(".nuevo_amanecer").value;let n=e.toString()+","+o.toString();client.publish("domo/Salon/ilu/horarios",n)}
