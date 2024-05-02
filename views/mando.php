@@ -12,8 +12,8 @@
                         <img  class="img_inver" src="/build/img/inversor.png" alt="">
                     </div>
                     <div class="conte_h5">
-                        <h5 class="marcha_inver ocultar">On</h5>
-                        <h5 class="parada_inver">Off</h5>
+                        <h4 class="marcha_inver ocultar">On</h4>
+                        <h4 class="parada_inver">Off</h4>
                     </div>
                     </div>
                     
@@ -31,8 +31,8 @@
                         <img  class="img_termo" src="/build/img/termo.jpg" alt="">
                     </div>
                     <div class="conte_h5">
-                        <h5 class="marcha_termo ocultar">On</h5>
-                        <h5 class="parada_termo">Off</h5>
+                        <h4 class="marcha_termo ocultar">On</h4>
+                        <h4 class="parada_termo">Off</h4>
                     </div>
                 </div>
                
