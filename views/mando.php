@@ -25,7 +25,7 @@
             </div>
             
             <div class="termo">
-                <div class="suprior">
+                <div class="superior">
                     <h5>Termo</h5>
                     <div class="conte_img">
                         <img  class="img_termo" src="/build/img/termo.jpg" alt="">
