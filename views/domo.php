@@ -35,7 +35,11 @@
 
         <!-- Mando del taller -->
         <div class="mando">
-            <?php include_once __DIR__ . "/mando.php";  ?>
+            <?php include_once __DIR__ . "/inversor.php";  ?>
+        </div>
+        <!-- Termo -->
+        <div class="termo">
+            <?php include_once __DIR__ . "/termo.php";  ?>
         </div>
 
         <!-- Motor -->

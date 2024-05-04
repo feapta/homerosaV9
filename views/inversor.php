@@ -1,10 +1,10 @@
 
     <button type="button" class="boton_verde">
         <img class="img" src="/build/img/mando.png" alt="">
-        <h4>Mando</h4>
+        <h4>Inversor</h4>
     </button>
     <div class="desple">
-        <div class="contenedor_mando">
+        <div class="contenedor_inversor">
             <div class="inversor">
                 <div class="superior">
                     <h5>Inversor</h5>

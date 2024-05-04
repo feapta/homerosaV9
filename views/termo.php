@@ -1,10 +1,10 @@
 
-<button type="button" class="boton_verde">
+    <button type="button" class="boton_verde">
         <img class="img" src="/build/img/mando.png" alt="">
         <h4>Termo</h4>
     </button>
     <div class="desple">
-        <div class="contenedor_mando">
+        <div class="contenedor_termo">
         <div class="termo1">
                 <div class="superior">
                     <h5>Termo 1</h5>
