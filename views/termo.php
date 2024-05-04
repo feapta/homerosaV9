@@ -18,9 +18,9 @@
                 </div>
                
                 <div class="botones_termo">
-                    <button type="button" class="btn_pulsado pulsacion termo_on" id="termo_on" onclick="termo1(1)">On</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_auto" id="termo_auto" onclick="termo1(2)">Auto</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_off" id="termo_off" onclick="termo1(0)">Off</button>
+                    <button type="button" class="btn_pulsado pulsacion termo1_on" id="termo1_on" onclick="termo1(1)">On</button>
+                    <button type="button" class="btn_pulsado pulsacion termo1_auto" id="termo1_auto" onclick="termo1(2)">Auto</button>
+                    <button type="button" class="btn_pulsado pulsacion termo1_off" id="termo1_off" onclick="termo1(0)">Off</button>
                 </div>
             </div>
             
@@ -37,9 +37,9 @@
                 </div>
                
                 <div class="botones_termo">
-                    <button type="button" class="btn_pulsado pulsacion termo_on" id="termo_on" onclick="termo3(1)">On</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_auto" id="termo_auto" onclick="termo3(2)">Auto</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_off" id="termo_off" onclick="termo3(0)">Off</button>
+                    <button type="button" class="btn_pulsado pulsacion termo3_on" id="termo3_on" onclick="termo3(1)">On</button>
+                    <button type="button" class="btn_pulsado pulsacion termo3_auto" id="termo3_auto" onclick="termo3(2)">Auto</button>
+                    <button type="button" class="btn_pulsado pulsacion termo3_off" id="termo3_off" onclick="termo3(0)">Off</button>
                 </div>
             </div>
         </div>
