@@ -23,24 +23,4 @@
                         <button type="button" class="btn_pulsado pulsacion inver_off" id="inversor_off" onclick="inversor(0)">Off</button>
                     </div>
             </div>
-            
-            <div class="termo">
-                <div class="superior">
-                    <h5>Termo</h5>
-                    <div class="conte_img">
-                        <img  class="img_termo" src="/build/img/termo.jpg" alt="">
-                    </div>
-                    <div class="conte_h5">
-                        <h4 class="marcha_termo ocultar">On</h4>
-                        <h4 class="parada_termo">Off</h4>
-                    </div>
-                </div>
-               
-                <div class="botones_termo">
-                    <button type="button" class="btn_pulsado pulsacion termo_on" id="termo_on" onclick="termo(1)">On</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_auto" id="termo_auto" onclick="termo(2)">Auto</button>
-                    <button type="button" class="btn_pulsado pulsacion termo_off" id="termo_off" onclick="termo(0)">Off</button>
-                </div>
-            </div>
-        </div>
     </div>
