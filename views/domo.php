@@ -85,6 +85,7 @@
         <?php $script .= '<script src="/build/js/agua.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/iluminacion.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/piscina.js"></script>'; ?>
+        <?php $script .= '<script src="/build/js/termos.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/gasoil.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/tension24V.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/tension48V.js"></script>'; ?>
