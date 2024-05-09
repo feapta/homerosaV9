@@ -48,10 +48,10 @@
                         <hr>
                         
                         <h5>Encendido</h5>
-                        <input type="time" class="inicio" placeholder="00:00">
+                        <input type="time" class="inicio_p" placeholder="00:00">
                         
                         <h5>Apagado</h5>
-                        <input type="time" class="final" placeholder="00:00">
+                        <input type="time" class="final_p" placeholder="00:00">
                     </div>
                 </div>
             </div>

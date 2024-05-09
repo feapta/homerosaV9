@@ -43,16 +43,16 @@
                     </div>
 
                     <div class="conte_derecha">
-                        <div class="nuevo_horario_termo">
+                        <div class="nuevo_horario_termo1">
                             <h5 class="titulo_horas">Nuevo horario</h5>
                             
                             <hr>
                             
                             <h5>Encendido</h5>
-                            <input type="time" class="inicio" placeholder="00:00">
+                            <input type="time" class="inicio_t1" placeholder="00:00">
                             
                             <h5>Apagado</h5>
-                            <input type="time" class="final" placeholder="00:00">
+                            <input type="time" class="final_t1" placeholder="00:00">
                         </div>
                     </div>
                 </div>
