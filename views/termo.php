@@ -15,8 +15,8 @@
                             <h5>Termo 1</h5>
                         </div>
                         <div class="conte_h5">
-                            <h5 class="marcha_termo ocultar">Marcha</h5>
-                            <h5 class="parada_termo">Parada</h5>
+                            <h5 class="marcha_termo1 ocultar">ON</h5>
+                            <h5 class="parada_termo1">OFF</h5>
                         </div>
                         <div class="conte_relog">
                             <p class="hora"></p>
@@ -71,8 +71,8 @@
                         <img  class="img_termo3" src="/build/img/termo.jpg" alt="">
                     </div>
                     <div class="conte_h5">
-                        <h4 class="marcha_termo ocultar">On</h4>
-                        <h4 class="parada_termo">Off</h4>
+                        <h4 class="marcha_termo3 ocultar">ON</h4>
+                        <h4 class="parada_termo3">OFF</h4>
                     </div>
                 </div>
                
