@@ -9,7 +9,7 @@
                 <div class="superior">
                     <div class="conte_izquierda">
                         <div class="conte_img">
-                            <img  class="img_termo1" src="/build/img/termo.jpg" alt="">
+                            <img  class="img_termo" src="/build/img/termo.jpg" alt="">
                         </div>
                         <div class="titulo_termo"> 
                             <h5>Termo 1</h5>
