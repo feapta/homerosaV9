@@ -4,7 +4,7 @@
         <h4>Termo</h4>
     </button>
     <div class="desple">
-        <div class="contenedor_info">
+        <div class="contenedor_termo">
             <div class="termo1">
                 <div class="superior">
                     <div class="conte_izquierda">
