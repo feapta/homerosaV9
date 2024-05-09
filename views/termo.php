@@ -13,7 +13,7 @@
                         </div>
                         <div class="titulo_termo"> 
                             <h5>Termo 1</h5>
-                        </div>envio_boton_termo1
+                        </div>
                         <div class="conte_h5">
                             <h5 class="marcha_termo ocultar">Marcha</h5>
                             <h5 class="parada_termo">Parada</h5>
