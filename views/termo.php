@@ -9,7 +9,7 @@
                 <div class="superior">
                     <div class="conte_izquierda">
                         <div class="conte_img">
-                            <img  class="img_termo" src="/build/img/termo.jpg" alt="">
+                            <img  class="img_termo1" src="/build/img/termo.jpg" alt="">
                         </div>
                         <div class="titulo_termo"> 
                             <h5>Termo 1</h5>
@@ -25,7 +25,7 @@
                     
                     <!-- Control por horario -->
                     <div class="conte_centro">
-                        <div class="horas_placa_piscina">
+                        <div class="horas_placa_termo1">
                             <h5 class="titulo_horas">Horario</h5>
                             
                             <hr>
@@ -43,8 +43,8 @@
                     </div>
 
                     <div class="conte_derecha">
-                        <div class="nuevo_horario_piscina">
-                            <h5 class="titulo_horas">Nueva horario</h5>
+                        <div class="nuevo_horario_termo">
+                            <h5 class="titulo_horas">Nuevo horario</h5>
                             
                             <hr>
                             
@@ -68,7 +68,7 @@
                 <div class="superior">
                     <h5>Termo 3</h5>
                     <div class="conte_img">
-                        <img  class="img_termo" src="/build/img/termo.jpg" alt="">
+                        <img  class="img_termo3" src="/build/img/termo.jpg" alt="">
                     </div>
                     <div class="conte_h5">
                         <h4 class="marcha_termo ocultar">On</h4>

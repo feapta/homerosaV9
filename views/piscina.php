@@ -43,7 +43,7 @@
 
                 <div class="conte_derecha">
                     <div class="nuevo_horario_piscina">
-                        <h5 class="titulo_horas">Nueva horario</h5>
+                        <h5 class="titulo_horas">Nuevo horario</h5>
                         
                         <hr>
                         
