@@ -72,7 +72,8 @@
         </div>
 
 
-        <a href="/master" > Truck</a>
+        <a href="/truck" > Truck</a>
+
         <!-- Cerrar sesion -->
         <div class="cerrar">
             <a class="boton_rojo cerrar_sesion" href="/logout"> 
