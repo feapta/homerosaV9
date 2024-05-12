@@ -39,15 +39,25 @@ class Usuarios extends ActiveRecord {
         return self::$alertas;
     }
 
-    // Comprobar el password confirmado y verificado
-    public function validarPass($password) {
-        $resultado = password_verify($password, $this->password);
+    // // Comprobar el password confirmado y verificado
+    // public function validarPass($password) {
+    //     $resultado = password_verify($password, $this->password);
 
-        if(!$resultado) {
-            self::$alertas['error'][] = 'Password Incorrecto';
-        } else {
-            return true;
+    //     if(!$resultado) {
+    //         self::$alertas['error'][] = 'Password Incorrecto';
+    //     } else {
+    //         return true;
+    //     }
+    // }
+
+    public function validarPass(){
+        if(!$this->password){
+            self::$alertas['error'] [] = 'El password es obligatorio';
         }
+        if(strlen($this->password) < 6 ){
+            self::$alertas['error'] [] = 'El password debe contener al menos 6 caracteres';
+        }
+        return self::$alertas;
     }
 
 }
