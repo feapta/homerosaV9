@@ -6,6 +6,7 @@
 
     use MVC\Router;
     use Controllers\UsuariosControllers;
+    use Controllers\TruckControllers;
 
     $router = new Router();
 
@@ -16,6 +17,10 @@
     $router->get('/domo', [UsuariosControllers::class, 'domo']);
 
     $router->get('/logout', [UsuariosControllers::class, 'logout']);
+
+
+    // TRUCK
+    $router->get('/master', [TruckControllers::class, 'master']);
 
     $router->comprobarRutas();
 
