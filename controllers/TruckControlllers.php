@@ -8,8 +8,8 @@ use MVC\Router;
 class TruckControllers{    
 
 public static function master(Router $router) {
-debuguear("hola");
-    $router->rendertruck('truck/master', [
+    
+    $router->rendertruck('master', [
 
     ]);
 }
