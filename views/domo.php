@@ -72,7 +72,7 @@
         </div>
 
 
-        <a href="/truck"> Truck</a>
+        <a href="/truck/truck"> Truck</a>
 
         <!-- Cerrar sesion -->
         <div class="cerrar">
