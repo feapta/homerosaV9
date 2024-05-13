@@ -47,6 +47,7 @@ class Router {
         $contenido = ob_get_clean();                    // Limpia el Buffer
         include_once __DIR__ . '/views/master.php';     // Pagina maestra que muestra el contenido de la variable contenido
     }
+    
     // Muestra las paginas de truck
     public function rendertruck($view, $datos = []){
         foreach ($datos as $key => $value) {
