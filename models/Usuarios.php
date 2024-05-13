@@ -50,14 +50,4 @@ class Usuarios extends ActiveRecord {
          }
      }
 
-    // public function validarPass(){
-    //     if(!$this->password){
-    //         self::$alertas['error'] [] = 'El password es obligatorio';
-    //     }
-    //     if(strlen($this->password) < 6 ){
-    //         self::$alertas['error'] [] = 'El password debe contener al menos 6 caracteres';
-    //     }
-    //     return self::$alertas;
-    // }
-
 }
