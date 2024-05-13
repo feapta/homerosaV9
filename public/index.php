@@ -20,7 +20,7 @@
 
 
     // TRUCK
-    $router->get('/truck', [TruckControllers::class, 'master']);
+    $router->get('/master', [TruckControllers::class, 'master']);
 
     $router->comprobarRutas();
 

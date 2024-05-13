@@ -9,7 +9,7 @@ class TruckControllers{
 
 public static function master(Router $router) {
     debuguear("hola");
-    $router->rendertruck('/truck');
+    $router->rendertruck('truck');
 }
 
 
