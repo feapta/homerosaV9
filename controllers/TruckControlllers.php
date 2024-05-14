@@ -7,9 +7,9 @@ namespace Controllers;
 use MVC\Router;
 class TruckControllers{    
 
-public static function master(Router $router) {
+public static function truck(Router $router) {
     
-    $router->rendertruck('truck/truck');
+    $router->rendertruck('master');
 }
 
 
