@@ -52,6 +52,11 @@ class UsuariosControllers{
 
     }
 
+
+    public static function truck(Router $router) {
+    
+        $router->render('truck');
+    }
 }
 
 ?>
