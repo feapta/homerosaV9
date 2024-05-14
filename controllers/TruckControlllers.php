@@ -6,7 +6,7 @@ namespace Controllers;
 
 use MVC\Router;
 
-class TruckControllers{    
+class TruckControllers {    
 
     public static function truck(Router $router) {
         debug("holas");
@@ -15,3 +15,6 @@ class TruckControllers{
 
 
 }
+
+?>
+
