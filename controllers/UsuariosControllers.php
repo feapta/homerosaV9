@@ -51,12 +51,6 @@ class UsuariosControllers{
         header("Location: /");
 
     }
-
-
-    public static function truck(Router $router) {
-    
-        $router->render('truck');
-    }
 }
 
 ?>

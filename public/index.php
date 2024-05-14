@@ -7,7 +7,6 @@
     use MVC\Router;
     use Controllers\UsuariosControllers;
     use Controllers\TruckControllers;
-use Model\Usuarios;
 
     $router = new Router();
 
@@ -21,7 +20,7 @@ use Model\Usuarios;
     
     
     // TRUCK
-    $router->get('/truck', [UsuariosControllers::class, 'truck']);
+    $router->get('/truck', [TruckControllers::class, 'truck']);
 
     $router->comprobarRutas();
 
