@@ -9,7 +9,7 @@ class TruckControllers{
 
 public static function truck(Router $router) {
     
-    $router->rendertruck('/truck');
+    $router->render('/truck');
 }
 
 
