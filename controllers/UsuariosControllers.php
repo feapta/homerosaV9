@@ -6,6 +6,7 @@ namespace Controllers;
 
 use Model\Usuarios;
 use MVC\Router;
+
 class UsuariosControllers{    
 
     public static function login(Router $router){
@@ -38,7 +39,6 @@ class UsuariosControllers{
     }    
 
     public static function domo(Router $router){
-
         $router->render('domo');
     }
 
@@ -51,6 +51,8 @@ class UsuariosControllers{
         header("Location: /");
 
     }
+
+
 }
 
 ?>
