@@ -47,7 +47,7 @@
 
 
     <div class="content">
-        <main class="contenedor domo">
+        <main class="contenedor_truck">
             <?php echo $contenido_truck; ?>
         </main>
     </div>
