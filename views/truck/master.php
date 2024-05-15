@@ -35,9 +35,9 @@
                 </div>
 
                 <nav class="navegacion">
-                    <a href="/novedades">Contacto</a>
-                    <a href="/productos">Nosotros</a>
-                    <a href="/pruebas">Blog</a>
+                    <a href="/novedades">Novedades</a>
+                    <a href="/productos">Productos</a>
+                    <a href="/pruebas">Pruebas</a>
 
                     <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
                 </nav>
