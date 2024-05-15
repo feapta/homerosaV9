@@ -23,11 +23,11 @@
 
 <body>
 
-    <header class="header <?php echo $inicio ? 'inicio' : '' ?>">
+    <header class="header">
         <div class="contenedor contenido_header">
             <div class="barra">
                 <a class="logo" href="/">
-                    <img src="/build/img/logo1.png" alt="">
+                    <img src="/build/img/logotruck.png" alt="">
                 </a>
 
                 <div class="mobile_menu">
@@ -57,6 +57,7 @@
         <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
     </footer>
 
+    
     <script src="/build/js/modernizr.js"></script>
     <script src="/build/js/jquery-3-7-1.js"></script>
         

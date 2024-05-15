@@ -4,7 +4,10 @@
 
     require_once __DIR__ . '/../includes/app.php';
 
-    use MVC\Router;
+use Controllers\NovedadesControllers;
+use Controllers\ProductosControllers;
+use Controllers\PruebasControllers;
+use MVC\Router;
     use Controllers\UsuariosControllers;
     use Controllers\TruckControllers;
 
@@ -27,6 +30,13 @@
     $router->get('/productos', [TruckControllers::class, 'productos']);
     $router->get('/pruebas', [TruckControllers::class, 'pruebas']);
 
+    // Porductos
+    $router->get('/productos/categorias', [ProductosControllers::class, 'productos/categorias']);
+    $router->post('/productos/categorias', [ProductosControllers::class, 'productos/categorias']);
+
+    // Pruebas
+    $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
+    $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
 
     $router->comprobarRutas();
