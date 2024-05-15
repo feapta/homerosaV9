@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>TruckHomeRosa</title>
-    <meta name="description" content="Truck" />
+    <meta name="description" content="Truck, cosas de para camiones" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -23,22 +23,39 @@
 
 <body>
 
+    <header class="header <?php echo $inicio ? 'inicio' : '' ?>">
+        <div class="contenedor contenido_header">
+            <div class="barra">
+                <a class="logo" href="/">
+                    <img src="/build/img/logo1.png" alt="">
+                </a>
+
+                <div class="mobile_menu">
+                    <img class="nav_movil" src="/build/img/barras.svg" alt="Icono navegacion resposive">
+                </div>
+
+                <nav class="navegacion">
+                    <a href="/novedades">Contacto</a>
+                    <a href="/productos">Nosotros</a>
+                    <a href="/pruebas">Blog</a>
+
+                    <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
     <div class="content">
-        <header> 
-            <h3>cosas de TRUCK</h3>
-        </header>
-        
         <main class="contenedor domo">
             <?php echo $contenido_truck; ?>
         </main>
-
-        <footer>
-            <?php $fecha = date('Y'); ?>
-            <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
-        </footer>
     </div>
 
-
+    <footer>
+        <?php $fecha = date('Y'); ?>
+        <p class="copyright">Todos los derechos reservados, Sistemar - <?php echo $fecha ?> &copy;</p>
+    </footer>
 
     <script src="/build/js/modernizr.js"></script>
     <script src="/build/js/jquery-3-7-1.js"></script>

@@ -22,6 +22,13 @@
     // TRUCK
     $router->get('/truck', [TruckControllers::class, 'truck']);
 
+    // Navegacion
+    $router->get('/novedades', [TruckControllers::class, 'novedades']);
+    $router->get('/productos', [TruckControllers::class, 'productos']);
+    $router->get('/pruebas', [TruckControllers::class, 'pruebas']);
+
+
+
     $router->comprobarRutas();
 
 ?>
