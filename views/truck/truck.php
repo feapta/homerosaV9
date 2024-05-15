@@ -7,16 +7,16 @@
 <div class="contenedor_imagenes">
     <a href="/novedades">
         <img loading="lazy" src="/build/img/truck/novedades.jpg" alt="">
-        Novedades
+        <h3>Novedades</h3>
     </a>
 
     <a href="/productos">
         <img loading="lazy" src="/build/img/truck/productos.webp" alt="">
-        Productos
+        <h3>Productos</h3>
     </a>
 
     <a href="/pruebas">
         <img loading="lazy" src="/build/img/truck/pruebas.jpg" alt="">
-        Pruebas
+        <h3>Pruebas</h3>
     </a>
 </div>
