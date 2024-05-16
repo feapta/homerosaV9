@@ -23,10 +23,10 @@
 
 <body>
 
-    <header class="header">
-        <div class="contenedor contenido_header">
+    <header class="contenedor header">
+        <div class="contenido_header">
             <div class="barra">
-                <a class="logo" href="/">
+                <a class="logo" href="/truck">
                     <img src="/build/img/logotruck.png" alt="">
                 </a>
 
