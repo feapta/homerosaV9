@@ -27,7 +27,7 @@
         <div class="contenedor contenido_header">
             <div class="barra">
                 <a class="logo" href="/">
-                    <img src="/build/img/logotruck.jpg" alt="">
+                    <img src="/build/img/logotruck.png" alt="">
                 </a>
 
                 <div class="mobile_menu">
