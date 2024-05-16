@@ -40,8 +40,8 @@ use MVC\Router;
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
     // Administracion 
-    $router->get('/categorias', [CategoriasControllers::class, 'categorias']);
-    $router->get('/productos', [ProductosControllers::class, 'productos']);
+    $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
+    $router->get('/productos/admin', [ProductosControllers::class, 'productos_admin']);
 
     $router->comprobarRutas();
 

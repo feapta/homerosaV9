@@ -10,7 +10,7 @@ use Intervention\Image\ImageManagerStatic as Image;
 
 class CategoriasControllers{
     
-    public static function listar(Router $router){
+    public static function categorias_admin(Router $router){
         $categorias = Categorias::all();
 
         $router->rendertruck('admin\categorias\index', [
