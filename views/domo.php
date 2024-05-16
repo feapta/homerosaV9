@@ -72,6 +72,21 @@
         </div>
 
 
+        <!-- Truck -->
+        <div class="truck">
+            <button type="button" class="boton_verde">
+                <img class="img" src="/build/img/meteorologia.png" alt="">
+                <h4>ZONA TRUCK</h4>
+            </button>
+
+            <div class="desple">
+                <div class="contenedor_truck">
+                    <?php include_once __DIR__ . "/camiones.php";  ?>
+                </div>
+            </div>
+        </div>
+
+
         <a href="/truck"> Truck</a>
 
         <!-- Cerrar sesion -->
