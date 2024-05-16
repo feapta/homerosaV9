@@ -12,8 +12,8 @@ class CategoriasControllers{
     
     public static function categorias_admin(Router $router){
         $categorias = Categorias::all();
-        debuguear($categorias);
-        $router->rendertruck('admin\categorias\categorias', [
+        
+        $router->rendertruck('admin/categorias/categorias', [
             'categorias' => $categorias
         ]);
 
