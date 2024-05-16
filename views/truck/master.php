@@ -35,6 +35,7 @@
                 </div>
 
                 <nav class="navegacion">
+                    <a href="/truck">Inicio</a>
                     <a href="/novedades">Novedades</a>
                     <a href="/productos">Productos</a>
                     <a href="/pruebas">Pruebas</a>
