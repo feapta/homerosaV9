@@ -7,9 +7,10 @@
 use Controllers\NovedadesControllers;
 use Controllers\ProductosControllers;
 use Controllers\PruebasControllers;
+use Controllers\UsuariosControllers;
+use Controllers\TruckControllers;
+use Controllers\CategoriasControllers;
 use MVC\Router;
-    use Controllers\UsuariosControllers;
-    use Controllers\TruckControllers;
 
     $router = new Router();
 
@@ -38,6 +39,9 @@ use MVC\Router;
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
+    // Administracion 
+    $router->get('/categorias', [CategoriasControllers::class, 'categorias']);
+    $router->get('/productos', [ProductosControllers::class, 'productos']);
 
     $router->comprobarRutas();
 

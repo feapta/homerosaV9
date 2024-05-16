@@ -4,7 +4,7 @@
 
 
     <div class="contenedor_botones">
-        <a href="/truck">Truck</a>
-        <a href="/categorias">Categorias</a>
-        <a href="/productos">Productos</a>
+        <a class="boton_verde" src="/truck">Truck</a>
+        <a class="boton_verde" src="/categorias">Categorias</a>
+        <a class="boton_verde" src="/productos">Productos</a>
     </div>

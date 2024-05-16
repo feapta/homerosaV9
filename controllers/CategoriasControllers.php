@@ -13,7 +13,7 @@ class CategoriasControllers{
     public static function listar(Router $router){
         $categorias = Categorias::all();
 
-        $router->rendertruck('/categorias/index', [
+        $router->rendertruck('admin\categorias\index', [
             'categorias' => $categorias
         ]);
 
