@@ -12,7 +12,7 @@ class CategoriasControllers{
     
     public static function categorias_admin(Router $router){
         $categorias = Categorias::all();
-
+debuguear("hola");
         $router->rendertruck('admin\categorias\categorias', [
             'categorias' => $categorias
         ]);
