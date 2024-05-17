@@ -27,7 +27,7 @@ class CategoriasControllers{
             $jsonstring = json_encode($json);
             echo $jsonstring;
     
-            $router->rendertruck('/dashboard', []);    
+            $router->rendertruck('admin/categorias/categorias', []);    
     }
 
 
