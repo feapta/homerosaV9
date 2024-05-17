@@ -20,6 +20,18 @@ class CategoriasControllers{
 
     }
 
+    public static function categorias_admin_P(Router $router){
+        $categorias = Categorias::all();
+        foreach($categorias as $data){
+            $json['data'][] = $data;
+            }
+    
+            $jsonstring = json_encode($json);
+            echo $jsonstring;
+    
+            $router->rendertruck('/admin/categorias/categorias', []);    
+    }
+
     // Crear
     public static function crear(Router $router){
         $alertas = [];
