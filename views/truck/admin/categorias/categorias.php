@@ -2,7 +2,7 @@
 <!-- Pagina principal de categorias -->
 
 
-<div class="contenedor contenedor_tablas">
+<div class="contenedor categorias">
     <h3>Administracion de categorías</h3>
 
     <div class="contenedor_botones">
@@ -11,9 +11,9 @@
     
         <ul class="tabla">
             <?php foreach($categorias as $cate) { ?>
-                <p><?php echo $cate->id; ?></p>
+                <p><?php echo $cate->idcatepro; ?></p>
                 <p><?php echo $cate->categoria; ?></p>
-                <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagenes">
+                <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen">
             <?php } ?>
         </ul>
 </div>
