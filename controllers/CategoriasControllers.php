@@ -18,20 +18,6 @@ class CategoriasControllers{
         ]);
 
     }
-    public static function categorias_P(Router $router){
-        $categorias = Categorias::all();
-        foreach($categorias as $data){
-            $json['data'][] = $data;
-            }
-    
-            $jsonstring = json_encode($json);
-            echo $jsonstring;
-            debuguear($jsonstring);
-    
-          //  $router->rendertruck('admin/categorias/categorias', []);    
-    }
-
-
 
     // ADMINISTRACION   /////////////////////////
     
@@ -70,7 +56,7 @@ class CategoriasControllers{
         ]);
     }
 
-    public static function actualizar(Router $router){
+    public static function categorias_edicion(Router $router){
         $id = validar0Redireccionar('/admin/categorias');
         $categorias = Categorias::find($id);
         $alertas = [];
@@ -109,4 +95,20 @@ class CategoriasControllers{
         ]);
     }
 
+       /* Eliminar*/
+       public static function eliminar(Router $router) {
+   
+        if($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $categoria = Categorias::find($_POST['idcatepro']);
+
+            if($categoria->imagen){
+                $imagen = $categoria->imagen;
+                $categoria->setImagen($imagen, CARPETA_IMAGEN_CATEGORIAS);
+            }
+
+            $resultado = $categoria->eliminar();
+            
+        }
+
+    }
 }
