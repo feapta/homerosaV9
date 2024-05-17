@@ -11,12 +11,9 @@
     
         <ul class="tabla">
             <?php foreach($categoria as $cate) { ?>
-                <li class="seleccion">
-                    <a href="/cartas/listado?id=<?php echo $cate->id; ?>" >
-                        <h4> <?php echo $cate->categoria; ?> </h4>
-                        <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagenes">
-                    </a>
-                </li>
+                <p><?php echo $categoria->id; ?></p>
+                <p><?php echo $categoria->categoria; ?></p>
+                <img src="/imagenes_categorias/<?php echo $categoria->imagen; ?>" alt="Imagenes">
             <?php } ?>
         </ul>
 </div>
