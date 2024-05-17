@@ -14,14 +14,6 @@ class CategoriasControllers{
     public static function categorias_admin(Router $router){
         $categorias = Categorias::all();
         
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            foreach($categorias as $data){
-                $json['data'][] = $data;
-                }
-        
-                $jsonstring = json_encode($json);
-                echo $jsonstring;
-        }
         $router->rendertruck('admin/categorias/categorias', [
             'categorias' => $categorias
         ]);
