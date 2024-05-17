@@ -18,7 +18,7 @@ class CategoriasControllers{
         ]);
 
     }
-    public static function listar_P(Router $router){
+    public static function categorias_P(Router $router){
         $categorias = Categorias::all();
         foreach($categorias as $data){
             $json['data'][] = $data;
