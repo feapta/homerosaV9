@@ -13,7 +13,11 @@
             <?php foreach($categorias as $cate) { ?>
                 <li>
                     <p><?php echo $cate->idcatepro; ?></p>
+                </li>
+                <li>
                     <p><?php echo $cate->categoria; ?></p>
+                </li>
+                <li>
                     <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen">
                 </li>
             <?php } ?>
