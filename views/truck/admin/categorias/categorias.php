@@ -10,7 +10,7 @@
     </div>
     
     <div class="contenedor_tabla">
-        <table id="categorias" class="display" style="width:100%">
+        <table id="categorias" class="display" style="width:100%"> <!-- Entrada datatables-->
             <thead class="head_tabla">
                 <tr>
                     <th>Id</th>
