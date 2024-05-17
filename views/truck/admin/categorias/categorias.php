@@ -26,8 +26,8 @@
                             <td><p><?php echo $cate->idcatepro; ?></p></td>
                             <td><p><?php echo $cate->categoria; ?></p></td>
                             <td><img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen"></td>
-                            <td>Edicion</td>
-                            <td>Eliminar</td>
+                            <td><a href="/categorias/admin/edicion"></a>Edición</td>
+                            <td><a href="/categorias/admin/eliminar"></a>Eliminar</td>
                         </tr>
                     <?php } ?>
                 </tbody>
