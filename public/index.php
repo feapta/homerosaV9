@@ -41,6 +41,7 @@ use MVC\Router;
 
     // Administracion 
     $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
+    $router->post('/categorias/admin_P', [CategoriasControllers::class, 'categorias_admin_P']);
     $router->get('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);
     $router->post('/categorias/admin/eliminar', [CategoriasControllers::class, 'categorias_eliminar']);
 
