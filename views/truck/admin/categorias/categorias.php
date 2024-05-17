@@ -9,22 +9,16 @@
         <a href="/admin/categorias/crear" class="boton_verde ">Crear categoría</a>
     </div>
     
-    <div class="contenedor_tabla">
-        <table id="categorias" class="display" style="width:100%">
-            <thead class="head_tabla">
-                <tr>
-                    <th>Id</th>
-                    <th class="C_imagen">Imagen</th>
-                    <th>Categoría</th>
-                    <th></th>
-                    <th></th>
-                </tr>
-            </thead>
-
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+        <ul class="tabla">
+            <?php foreach($categoria as $cate) { ?>
+                <li class="seleccion">
+                    <a href="/cartas/listado?id=<?php echo $cate->id; ?>" >
+                        <h4> <?php echo $cate->categoria; ?> </h4>
+                        <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagenes">
+                    </a>
+                </li>
+            <?php } ?>
+        </ul>
 </div>
 
 
