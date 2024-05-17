@@ -21,15 +21,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <?php foreach($categorias as $cate) { ?>
+                    <?php foreach($categorias as $cate) { ?>
+                        <tr>
                             <td><p><?php echo $cate->idcatepro; ?></p></td>
                             <td><p><?php echo $cate->categoria; ?></p></td>
                             <td><img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen"></td>
                             <td>Edicion</td>
                             <td>Eliminar</td>
-                        <?php } ?>
-                    </tr>
+                        </tr>
+                    <?php } ?>
                 </tbody>
                 
             </table>
