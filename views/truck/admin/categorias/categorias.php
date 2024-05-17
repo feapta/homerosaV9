@@ -11,9 +11,11 @@
     
         <ul class="tabla">
             <?php foreach($categorias as $cate) { ?>
-                <p><?php echo $cate->idcatepro; ?></p>
-                <p><?php echo $cate->categoria; ?></p>
-                <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen">
+                <li>
+                    <p><?php echo $cate->idcatepro; ?></p>
+                    <p><?php echo $cate->categoria; ?></p>
+                    <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen">
+                </li>
             <?php } ?>
         </ul>
 </div>
