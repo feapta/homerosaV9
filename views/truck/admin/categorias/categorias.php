@@ -19,4 +19,4 @@
 </div>
 
 
-<?php  $script = '<script src="/build/js/datatable/categorias.js"></script>'; ?>
+<!-- <?php  //$script = '<script src="/build/js/datatable/categorias.js"></script>'; ?> -->
