@@ -10,10 +10,10 @@
     </div>
     
         <ul class="tabla">
-            <?php foreach($categoria as $cate) { ?>
-                <p><?php echo $categoria->id; ?></p>
-                <p><?php echo $categoria->categoria; ?></p>
-                <img src="/imagenes_categorias/<?php echo $categoria->imagen; ?>" alt="Imagenes">
+            <?php foreach($categorias as $cate) { ?>
+                <p><?php echo $cate->id; ?></p>
+                <p><?php echo $cate->categoria; ?></p>
+                <img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagenes">
             <?php } ?>
         </ul>
 </div>
