@@ -9,7 +9,8 @@ use MVC\Router;
 use Intervention\Image\ImageManagerStatic as Image;
 
 class CategoriasControllers{
-    
+        
+    // ADMINISTRACION   /////////////////////////
     public static function categorias_admin(Router $router){
         $categorias = Categorias::all();
         
@@ -19,8 +20,19 @@ class CategoriasControllers{
 
     }
 
-    // ADMINISTRACION   /////////////////////////
+    public static function categorias_admin_P(Router $router){
+        $categorias = Categorias::all();
+        foreach($categorias as $data){
+            $json['data'][] = $data;
+            }
     
+            $jsonstring = json_encode($json);
+            echo $jsonstring;
+    
+            $router->rendertruck('categorias/categorias', []);    
+    }
+
+    // Crear
     public static function crear(Router $router){
         $alertas = [];
         $categorias = new Categorias;
@@ -56,6 +68,7 @@ class CategoriasControllers{
         ]);
     }
 
+    // Edicion
     public static function categorias_edicion(Router $router){
         $id = validar0Redireccionar('/admin/categorias');
         $categorias = Categorias::find($id);
@@ -95,8 +108,8 @@ class CategoriasControllers{
         ]);
     }
 
-       /* Eliminar*/
-       public static function eliminar(Router $router) {
+    // Eliminar
+    public static function eliminar(Router $router) {
    
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
             $categoria = Categorias::find($_POST['idcatepro']);

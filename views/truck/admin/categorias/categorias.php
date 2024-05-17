@@ -9,33 +9,24 @@
         <a href="/admin/categorias/crear" class="boton_verde ">Crear categoría</a>
     </div>
     
-        <div class="tabla">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Categoria</th>
-                        <th>Imagen</th>
-                        <th>Editar</th>
-                        <th>Eliminar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach($categorias as $cate) { ?>
-                        <tr>
-                            <td><p><?php echo $cate->idcatepro; ?></p></td>
-                            <td><p><?php echo $cate->categoria; ?></p></td>
-                            <td><img src="/imagenes_categorias/<?php echo $cate->imagen; ?>" alt="Imagen"></td>
-                            <td><a href="/categorias/admin/edicion"></a>Edición</td>
-                            <td><a href="/categorias/admin/eliminar"></a>Eliminar</td>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-                
-            </table>
-        </div>
+    <div class="contenedor_tabla">
+        <table id="categorias" class="display" style="width:100%">
+            <thead class="head_tabla">
+                <tr>
+                    <th>Id</th>
+                    <th class="C_imagen">Imagen</th>
+                    <th>Categoría</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
 </div>
 
 
-<!-- <?php  //$script = '<script src="/build/js/datatable/categorias.js"></script>'; ?> -->
+<?php  $script = '<script src="/build/js/datatable/categorias.js"></script>'; ?>
