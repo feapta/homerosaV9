@@ -62,7 +62,7 @@
     <script src="/build/js/modernizr.js"></script>
     <script src="/build/js/jquery-3-7-1.js"></script>
     <script src="/build/js/datatable/datatables2.0.7.js"></script>
-    <script src="/build/js/datatable/idiomajs"></script>
+    <script src="/build/js/datatable/idioma.js"></script>
         
     <?php echo $script ?? ''; ?>
 
