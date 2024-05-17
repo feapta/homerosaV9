@@ -22,6 +22,7 @@ class CategoriasControllers{
 
     public static function categorias_admin_P(Router $router){
         $categorias = Categorias::all();
+        
         foreach($categorias as $data){
             $json['data'][] = $data;
             }
@@ -29,7 +30,7 @@ class CategoriasControllers{
             $jsonstring = json_encode($json);
             echo $jsonstring;
     
-            $router->rendertruck('categorias/categorias', []);    
+            //$router->rendertruck('categorias/categorias', []);    
     }
 
     // Crear
