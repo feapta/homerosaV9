@@ -44,10 +44,10 @@
 
 
 
-    <script src="/build/js/modernizr.js"></script>
-    <script src="/build/js/jquery-3-7-1.js"></script>
-    <script src="/build/js/mqtt.js"></script>
-    <script src="/build/js/chart-4.4.1.js"></script>
+    <script src="/build/js/librerias/modernizr.js"></script>
+    <script src="/build/js/librerias/jquery-3-7-1.js"></script>
+    <script src="/build/js/librerias/mqtt.js"></script>
+    <script src="/build/js/librerias/chart-4.4.1.js"></script>
   
         
     <?php echo $script ?? ''; ?>

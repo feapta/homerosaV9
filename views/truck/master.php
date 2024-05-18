@@ -59,9 +59,9 @@
     </footer>
 
     
-    <script src="/build/js/modernizr.js"></script>
-    <script src="/build/js/jquery-3-7-1.js"></script>
-    <script src="/build/js/datatable/datatable2.0.7.js"></script>
+    <script src="/build/js/librerias/modernizr.js"></script>
+    <script src="/build/js/librerias/jquery-3-7-1.js"></script>
+    <script src="/build/js/librerias/datatable2.0.7.js"></script>
     <script src="/build/js/datatable/idioma.js"></script>
 
         
