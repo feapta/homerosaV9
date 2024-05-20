@@ -24,6 +24,7 @@
         <div class="alerta_gas ocultar alert">
             <h4>!!! FUGA DE GAS !!!</h4>
         </div>
+        
         <div class="alerta_lluvia ocultar alert">
             <h4>!! Ha comenzado a llover !!</h4>
         </div>
