@@ -4,13 +4,14 @@
 
     require_once __DIR__ . '/../includes/app.php';
 
+    use MVC\Router;
+
 use Controllers\NovedadesControllers;
 use Controllers\ProductosControllers;
 use Controllers\PruebasControllers;
 use Controllers\UsuariosControllers;
 use Controllers\TruckControllers;
 use Controllers\CategoriasControllers;
-use MVC\Router;
 
     $router = new Router();
 
