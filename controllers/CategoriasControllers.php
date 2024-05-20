@@ -25,8 +25,9 @@ class CategoriasControllers{
         foreach($categorias as $data){
             $json['data'][] = $data;
             }
-    
+            
             $jsonstring = json_encode($json);
+            debuguear($jsonstring);
             echo $jsonstring;
 
             //$router->rendertruck('/admin/categorias/categorias', []);    
