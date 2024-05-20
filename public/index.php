@@ -40,7 +40,7 @@ use Controllers\CategoriasControllers;
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
-    // Administracion 
+    // Administracion de categorias
     $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
     $router->post('/categorias/admin_P', [CategoriasControllers::class, 'categorias_admin_P']);
     $router->get('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);

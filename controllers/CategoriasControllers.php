@@ -29,7 +29,7 @@ class CategoriasControllers{
             $jsonstring = json_encode($json);
             echo $jsonstring;
 
-            $router->rendertruck('/admin/categorias/categorias', []);    
+            //$router->rendertruck('/admin/categorias/categorias', []);    
     }
 
     // Crear
