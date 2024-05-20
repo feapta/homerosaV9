@@ -60,7 +60,6 @@
 
     
     <script src="/build/js/librerias/modernizr.js"></script>
-
     <script src="/build/js/librerias/datatable2.0.7.js"></script>
     <script src="/build/js/librerias/idioma.js"></script>
 
