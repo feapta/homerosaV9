@@ -29,5 +29,5 @@
 </div>
 
 <?php  $script = '<script src="/build/js/librerias/idioma.js"></script>'; ?>
-<?php  $script .= '<script src="/build/js/datatable2.0.7.js"></script>'; ?>
+<?php  $script .= '<script src="/build/js/librerias/datatable2.0.7.js"></script>'; ?>
 <?php  $script .= '<script src="/build/js/datatable/categorias.js"></script>'; ?>
