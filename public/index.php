@@ -18,7 +18,7 @@ use Model\Productos;
 
     $router = new Router();
 
-    // Paginas
+// Paginas
     $router->get('/', [UsuariosControllers::class, 'login']);
     $router->post('/', [UsuariosControllers::class, 'login']);
 
@@ -27,25 +27,25 @@ use Model\Productos;
     $router->get('/logout', [UsuariosControllers::class, 'logout']);
     
     
-    // TRUCK
+// TRUCK
     $router->get('/truck', [TruckControllers::class, 'truck']);
 
-    // Navegacion
+// Navegacion
     $router->get('/novedades', [TruckControllers::class, 'novedades']);
     $router->get('/categorias', [CategoriasControllers::class, 'categorias']);
     $router->get('/pruebas', [TruckControllers::class, 'pruebas']);
 
-    // Porductos
+// Productos
     $router->get('/productos', [ProductosControllers::class, 'listadoProductos']);
 
-    // Pruebas
+// Pruebas
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
     
-    // Administracion
+// Administracion
 
-    // Categorias
+// Categorias
     $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
     $router->post('/categorias/admin_P', [CategoriasControllers::class, 'categorias_admin_P']);
 
@@ -55,7 +55,7 @@ use Model\Productos;
     $router->get('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);
     $router->post('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);
 
-    // Productos
+// Productos
     $router->get('/productos/admin', [ProductosControllers::class, 'productos_admin']);
     $router->post('/productos/admin_P', [ProductosControllers::class, 'productos_admin_P']);
 
