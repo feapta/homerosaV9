@@ -6,8 +6,8 @@
 <div class="contenedor contenido_centrado contenedor_actualizar_categorias">
     <h3>Actualizar categorías</h3>
 
-    <div class="contenedo_botones">
-        <a href="/categorias" class="boton_verde">Volver</a>
+    <div class="contenedor_botones">
+        <a href="/categorias/admin" class="boton_verde">Volver</a>
     </div>
     
     <div class="contenedor_formulario">

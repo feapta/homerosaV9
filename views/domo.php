@@ -31,60 +31,42 @@
 
         <!-- Puerta verja -->
         <div class="puerta">
-            <?php include_once __DIR__ . "/puerta.php";  ?>
+            <?php include_once __DIR__ . "/paginas/puerta.php";  ?>
         </div>
 
         <!-- Mando del taller -->
         <div class="mando">
-            <?php include_once __DIR__ . "/inversor.php";  ?>
+            <?php include_once __DIR__ . "/paginas/inversor.php";  ?>
         </div>
         <!-- Termo -->
         <div class="termo">
-            <?php include_once __DIR__ . "/termo.php";  ?>
+            <?php include_once __DIR__ . "/paginas/termo.php";  ?>
         </div>
 
         <!-- Motor -->
         <div class="motor">
-            <?php include_once __DIR__ . "/motor.php";  ?>
+            <?php include_once __DIR__ . "/paginas/motor.php";  ?>
         </div>
 
         <!-- iluminacion -->
         <div class="ilu">
-            <?php include_once __DIR__ . "/ilu.php";  ?>
+            <?php include_once __DIR__ . "/paginas/ilu.php";  ?>
         </div>
 
         <!-- Piscina -->
         <div class="piscina">
-            <?php include_once __DIR__ . "/piscina.php";  ?>
+            <?php include_once __DIR__ . "/paginas/piscina.php";  ?>
         </div>
 
         <!-- Meteo -->
         <div class="meteo">
-            <button type="button" class="boton_verde">
-                <img class="img" src="/build/img/meteorologia.png" alt="">
-                <h4>Meteorología</h4>
-            </button>
-
-            <div class="desple">
-                <div class="contenedor_meteo">
-                    <?php include_once __DIR__ . "/meteo.php";  ?>
-                </div>
-            </div>
+            <?php include_once __DIR__ . "/paginas/meteo.php";  ?>
         </div>
 
 
         <!-- Truck -->
         <div class="truck">
-            <button type="button" class="boton_verde">
-                <img class="img" src="/build/img/meteorologia.png" alt="">
-                <h4>ZONA TRUCK</h4>
-            </button>
-
-            <div class="desple">
-                <div class="contenedor_truck">
-                    <?php include_once __DIR__ . "/camiones.php";  ?>
-                </div>
-            </div>
+            <?php include_once __DIR__ . "/paginas/camiones.php";  ?>
         </div>
 
         
