@@ -1,21 +1,26 @@
 <?php
 
-// Modelo Categorias
+// Modelo de productos
 
 namespace Model;
 
 class Categorias extends ActiveRecord {
     protected static $tabla = 'categorias';
-    protected static $columnasDB = ['idcatepro','categoria', 'imagen'];
+    protected static $columnasDB = ['id', 'categoria', 'imagen'];
 
-    public $idcatepro;
+    public $id;
     public $categoria;
     public $imagen;
 
-    public function __construct($args = []){
-        $this->idcatepro = $args['idcatepro'] ?? null;
-        $this->categoria = $args['categoria'] ?? '';
-        $this->imagen = $args['imagen'] ?? '';
+
+    public function __construct($args = []) {
+        $this->id = $args['id'] ?? null;
+        $this->categoria = $args['categoria'] ?? null;
+        $this->imagen = $args['imagen'] ?? null;
+        
     }
 
 }
+
+
+?>

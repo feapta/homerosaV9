@@ -12,6 +12,9 @@ use Controllers\PruebasControllers;
 use Controllers\UsuariosControllers;
 use Controllers\TruckControllers;
 use Controllers\CategoriasControllers;
+use Controllers\EliminarControllers;
+use Model\Categorias;
+use Model\Productos;
 
     $router = new Router();
 
@@ -29,27 +32,46 @@ use Controllers\CategoriasControllers;
 
     // Navegacion
     $router->get('/novedades', [TruckControllers::class, 'novedades']);
-    $router->get('/productos', [TruckControllers::class, 'productos']);
+    $router->get('/categorias', [CategoriasControllers::class, 'categorias']);
     $router->get('/pruebas', [TruckControllers::class, 'pruebas']);
 
     // Porductos
-    $router->get('/productos/categorias', [ProductosControllers::class, 'productos/categorias']);
-    $router->post('/productos/categorias', [ProductosControllers::class, 'productos/categorias']);
+    $router->get('/productos', [ProductosControllers::class, 'listadoProductos']);
 
     // Pruebas
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
-    // Administracion de categorias
+    
+    // Administracion
+
+    // Categorias
     $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
     $router->post('/categorias/admin_P', [CategoriasControllers::class, 'categorias_admin_P']);
+
+    $router->get('/categorias/admin/crear', [CategoriasControllers::class, 'categorias_crear']);
+    $router->post('/categorias/admin/crear', [CategoriasControllers::class, 'categorias_crear']);
+
     $router->get('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);
-    $router->post('/categorias/admin/eliminar', [CategoriasControllers::class, 'categorias_eliminar']);
+    $router->post('/categorias/admin/edicion', [CategoriasControllers::class, 'categorias_edicion']);
 
+    // Productos
     $router->get('/productos/admin', [ProductosControllers::class, 'productos_admin']);
+    $router->post('/productos/admin_P', [ProductosControllers::class, 'productos_admin_P']);
 
+    $router->get('/productos/admin/crear', [ProductosControllers::class, 'productos_crear']);
+    $router->post('/productos/admin/crear', [ProductosControllers::class, 'productos_crear']);
+
+    $router->get('/productos/admin/edicion', [ProductosControllers::class, 'productos_edicion']);
+    $router->post('/productos/admin/edicion', [ProductosControllers::class, 'productos_edicion']);
+
+
+    // Eliminar
+    $router->post('/eliminar', [EliminarControllers::class, 'eliminar']);
 
 
     $router->comprobarRutas();
 
+
+    
 ?>

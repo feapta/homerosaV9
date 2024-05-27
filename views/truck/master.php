@@ -31,13 +31,13 @@
                 </a>
 
                 <div class="mobile_menu">
-                    <img class="nav_movil" src="/build/img/barras.svg" alt="Icono navegacion resposive">
+                    <img class="nav_movil" src="/build/img/truck/barras.svg" alt="Icono navegacion resposive">
                 </div>
 
                 <nav class="navegacion">
                     <a href="/truck">Inicio</a>
                     <a href="/novedades">Novedades</a>
-                    <a href="/productos">Productos</a>
+                    <a href="/categorias">Productos</a>
                     <a href="/pruebas">Pruebas</a>
 
                     <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
@@ -60,6 +60,11 @@
 
     <script src="/build/js/librerias/jquery-3-7-1.js"></script>
     <script src="/build/js/librerias/modernizr.js"></script>
+    <script src="/build/js/librerias/idioma.js"></script>
+    <script src="/build/js/librerias/datatable2.0.7.js"></script>
+    <script src="/build/js/librerias/sweetalert2.js"></script>
+    <script src="/build/js/eliminar.js"></script>
+  
 
         
     <?php echo $script ?? ''; ?>

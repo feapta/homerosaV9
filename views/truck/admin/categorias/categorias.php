@@ -6,7 +6,9 @@
     <h3>Administracion de categorías</h3>
 
     <div class="contenedor_botones">
-        <a href="/admin/categorias/crear" class="boton_verde ">Crear categoría</a>
+        <a href="/categorias/admin/crear" class="boton_verde ">Crear categoría</a>
+        <a href="/productos/admin" class="boton_verde ">Productos</a>
+        <a href="/domo" class="boton_verde ">Volver a domo</a>
     </div>
     
     <div class="contenedor_tabla">
@@ -28,6 +30,5 @@
 
 </div>
 
-<?php  $script = '<script src="/build/js/librerias/idioma.js"></script>'; ?>
-<?php  $script .= '<script src="/build/js/librerias/datatable2.0.7.js"></script>'; ?>
-<?php  $script .= '<script src="/build/js/datatable/categorias.js"></script>'; ?>
+
+<?php  $script = '<script src="/build/js/datatable/categorias.js"></script>'; ?>

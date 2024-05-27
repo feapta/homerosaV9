@@ -4,9 +4,9 @@ define('TEMPLATES_URL', __DIR__ . 'templates');        // Super global de php pa
 define('FUNCIONES_URL',  __DIR__ . 'funciones.php');
 
 define('CARPETA_IMAGEN_USUARIOS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_usuarios/');
-define('CARPETA_IMAGEN_CATEGORIAS', $_SERVER['DOCUMENT_ROOT']. '/public/imagenes_categorias/');
-define('CARPETA_IMAGEN_PRODUCTOS', $_SERVER['DOCUMENT_ROOT']. '/public/imagenes_productos/');
-define('CARPETA_VIDEOS', $_SERVER['DOCUMENT_ROOT']. '/public/videos/');
+define('CARPETA_IMAGEN_CATEGORIAS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_categorias/');
+define('CARPETA_IMAGEN_PRODUCTOS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_productos/');
+define('CARPETA_VIDEOS_PRODUCTOS', $_SERVER['DOCUMENT_ROOT']. '/videos_productos/');
 
 
 function incluirTemplate(string $nombre, bool $inicio = false ){
@@ -42,5 +42,10 @@ function validar0Redireccionar(string $url){
     return $id;
 }
 
+function validarTipoContenido($tipo) {
+    $tipos = ['producto', 'categoria'];
+
+    return in_array($tipo, $tipos);
+}
 
 ?>

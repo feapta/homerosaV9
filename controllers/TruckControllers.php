@@ -14,9 +14,6 @@ class TruckControllers {
     public static function novedades(Router $router) {
         $router->rendertruck('novedades/novedades');
     }
-    public static function productos(Router $router) {
-        $router->rendertruck('productos/productos');
-    }
     public static function pruebas(Router $router) {
         $router->rendertruck('pruebas/pruebas');
     }

@@ -10,7 +10,7 @@
         <h3>Novedades</h3>
     </a>
 
-    <a href="/productos" class="imagen">
+    <a href="/categorias" class="imagen">
         <img loading="lazy" src="/build/img/truck/productos.webp" alt="">
         <h3>Productos</h3>
     </a>

@@ -9,7 +9,7 @@
 
         <?php include_once __DIR__ . "/../../templates/alertas.php" ?>
 
-        <form class="formulario" method="POST" action="/admin/categorias/crear" enctype="multipart/form-data">
+        <form class="formulario" method="POST" action="/categorias/admin/crear" enctype="multipart/form-data">
             <?php include __DIR__ . '/formulario.php'; ?>
         </form>
     </div>

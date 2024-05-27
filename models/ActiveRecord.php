@@ -10,7 +10,7 @@ class ActiveRecord{
     protected static $columnasDB = [];
     protected static $alertas = [];
     public $id;
-    public $imagen; 
+    public $imagen1; 
 
 // VALIDACIONES
     public static function setAlerta($tipo, $mensaje) {
@@ -37,7 +37,7 @@ class ActiveRecord{
         while($registro = $resultado->fetch_assoc()) {
             $array[] = static::crearObjeto($registro);
         }
-
+        
         $resultado->free();
         return $array;
     }
@@ -50,7 +50,7 @@ class ActiveRecord{
                 $objeto->$key = $value;
             }
         }
-
+        
         return $objeto;
     }
     // Identificar y unir los atributos de la BD
@@ -82,7 +82,7 @@ class ActiveRecord{
 
 
 // WHERE
-    // Busca un registro por columna y valor
+// Busca un registro por columna y valor
     public static function whereValor($columna, $valor) {
         $query = "SELECT * FROM " . static::$tabla  ." WHERE $columna = '$valor'";
 
@@ -91,24 +91,25 @@ class ActiveRecord{
     }
 
 // IMAGENES
-    // Subir archivo de imagenes
+// Subir archivo de imagenes
     public function setImagen($imagen, $carpeta){
+
         // Eliminar la imagen previa
         if(!is_null($this->id)){
             $this->borrarImagen($carpeta);
         }
         // Agrega la imagen
         if($imagen){
-            $this->imagen = $imagen;
+            $this->imagen1 = $imagen;
         }
     }
 
-    // Borrar archivos de imagen
+// Borrar archivos de imagen
     public function borrarImagen($carpeta){
-        $existeArchivo = file_exists($carpeta . $this->imagen);
+        $existeArchivo = file_exists($carpeta . $this->imagen1);
 
         if($existeArchivo){
-            unlink($carpeta . $this->imagen);
+            unlink($carpeta . $this->imagen1);
         }
     }
 
@@ -190,12 +191,35 @@ class ActiveRecord{
         return $resultado;
     }
 
+// SQL PLANA
+    // Consulta Plana de SQL (Utilizar cuando los métodos del modelo no son suficientes)
+    public static function SQL($query) {
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
 
 
+// Devuelve todos los registro en orden descendente
+    public static function allOrdenAlfa($columna) {
+        $query = "SELECT * FROM " . static::$tabla . " ORDER BY $columna ASC ";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
+
+// Devuelve todos los registro en orden descendente
+    public static function allOrdenAlfaGeneral($categoria) {
+        $query = "SELECT * FROM " . static::$tabla . " WHERE id = '$categoria' ORDER BY titulo ASC ";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
 
 
-
-
+// Busca un registro por array_shift
+   public static function where_array($columna, $valor) {
+    $query = "SELECT * FROM " . static::$tabla  ." WHERE $columna = '$valor'";
+    $resultado = self::consultarSQL($query);
+    return array_shift( $resultado ) ;
+}
 
 
 
