@@ -10,7 +10,7 @@ class ActiveRecord{
     protected static $columnasDB = [];
     protected static $alertas = [];
     public $id;
-    public $imagen1; 
+    public $imagen; 
 
 // VALIDACIONES
     public static function setAlerta($tipo, $mensaje) {
@@ -100,16 +100,16 @@ class ActiveRecord{
         }
         // Agrega la imagen
         if($imagen){
-            $this->imagen1 = $imagen;
+            $this->imagen = $imagen;
         }
     }
 
 // Borrar archivos de imagen
     public function borrarImagen($carpeta){
-        $existeArchivo = file_exists($carpeta . $this->imagen1);
+        $existeArchivo = file_exists($carpeta . $this->imagen);
 
         if($existeArchivo){
-            unlink($carpeta . $this->imagen1);
+            unlink($carpeta . $this->imagen);
         }
     }
 
