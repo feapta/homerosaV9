@@ -64,7 +64,8 @@
     <script src="/build/js/librerias/datatable2.0.7.js"></script>
     <script src="/build/js/librerias/sweetalert2.js"></script>
     <script src="/build/js/eliminar.js"></script>
-  
+    <script src="/build/js/navegaResponsive.js"></script>
+    <script src="/build/js/imagenAgrandar.js"></script>
 
         
     <?php echo $script ?? ''; ?>

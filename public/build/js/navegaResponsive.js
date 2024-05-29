@@ -1,0 +1,1 @@
+function eventListener(){document.querySelector(".mobile_menu").addEventListener("click",navegacionResposive)}function navegacionResposive(){document.querySelector(".navegacion").classList.toggle("mostrar")}document.addEventListener("DOMContentLoaded",(function(){eventListener()}));

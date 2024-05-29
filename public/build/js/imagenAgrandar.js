@@ -1,0 +1,1 @@
+function clickAgrandar(){document.querySelectorAll(".imas").forEach(e=>{e.addEventListener("click",cambia)})}function cambia(e){const c=e.currentTarget,n=c.querySelector("img");console.log(c),n.classList.toggle("grande")}document.addEventListener("DOMContentLoaded",(function(){clickAgrandar()}));
