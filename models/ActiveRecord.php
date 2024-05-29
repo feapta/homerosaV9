@@ -10,7 +10,8 @@ class ActiveRecord{
     protected static $columnasDB = [];
     protected static $alertas = [];
     public $id;
-    public $imagen1; 
+    public $imagen; 
+    public $video; 
 
 // VALIDACIONES
     public static function setAlerta($tipo, $mensaje) {
@@ -90,6 +91,30 @@ class ActiveRecord{
         return array_shift( $resultado ) ;
     }
 
+// VIDEOS
+// Subir archivo de imagenes
+    public function setVideo($video, $carpeta){
+
+        // Eliminar la imagen previa
+        if(!is_null($this->id)){
+            $this->borrarVideo($carpeta);
+        }
+        // Agrega la imagen
+        if($video){
+            $this->video = $video;
+        }
+    }
+
+// Borrar archivos de imagen
+    public function borrarVideo($carpeta){
+        $existeArchivo = file_exists($carpeta . $this->video);
+
+        if($existeArchivo){
+            unlink($carpeta . $this->video);
+        }
+    }
+
+
 // IMAGENES
 // Subir archivo de imagenes
     public function setImagen($imagen, $carpeta){
@@ -100,18 +125,43 @@ class ActiveRecord{
         }
         // Agrega la imagen
         if($imagen){
-            $this->imagen1 = $imagen;
+            $this->imagen = $imagen;
         }
     }
 
 // Borrar archivos de imagen
     public function borrarImagen($carpeta){
-        $existeArchivo = file_exists($carpeta . $this->imagen1);
+        $existeArchivo = file_exists($carpeta . $this->imagen);
 
         if($existeArchivo){
-            unlink($carpeta . $this->imagen1);
+            unlink($carpeta . $this->imagen);
         }
     }
+
+// Subir archivo de imagenes con cambio de nombre
+    public function setImagen_numero($imagen, $carpeta, $numero){
+        
+        // Eliminar la imagen previa
+        if(!is_null($this->id)){
+            $this->borrarImagen_numero($carpeta, $numero);
+        }
+        // Agrega la imagen
+        if($imagen){
+            $nombreimagen = "imagen".$numero;
+            $this->$nombreimagen = $imagen;
+        }
+    }
+
+// Borrar archivos de imagen
+    public function borrarImagen_numero($carpeta, $numero){
+        $existeArchivo = file_exists($carpeta . $this->imagen.$numero);
+
+        if($existeArchivo){
+            unlink($carpeta . $this->imagen.$numero);
+        }
+    }
+
+
 
 // TRUCK
       // Todos los registros
@@ -208,7 +258,8 @@ class ActiveRecord{
 
 // Devuelve todos los registro en orden descendente
     public static function allOrdenAlfaGeneral($categoria) {
-        $query = "SELECT * FROM " . static::$tabla . " WHERE id = '$categoria' ORDER BY titulo ASC ";
+        $query = "SELECT * FROM " . static::$tabla . " WHERE idcate = '$categoria' ORDER BY titulo ASC ";
+        //debuguear($query);
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
@@ -219,7 +270,7 @@ class ActiveRecord{
     $query = "SELECT * FROM " . static::$tabla  ." WHERE $columna = '$valor'";
     $resultado = self::consultarSQL($query);
     return array_shift( $resultado ) ;
-}
+    }
 
 
 

@@ -41,13 +41,12 @@ class CategoriasControllers{
 
           if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $categorias = new Categorias($_POST['categorias']);
-          
+          debuguear($categorias);
             // Seccion para subir imagenes
             $nombreImagen = md5( uniqid( rand(), true)) . ".jpg"; // 
             
             if($_FILES['categorias']['tmp_name']['imagen']){
                 $imagen = Image::make($_FILES['categorias']['tmp_name']['imagen'])->resize(350, 250);
-            
                 $categorias->setImagen($nombreImagen, $carpeta);                                   
                }
 

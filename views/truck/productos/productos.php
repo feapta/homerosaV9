@@ -24,7 +24,7 @@
                 
                 <li class="seleccion">
 
-                    <div class="imagen">
+                    <div class="imagen_productos">
                         <img src="/imagenes_productos/<?php echo $producto->imagen1; ?>" alt="Img">
                         <img src="/imagenes_productos/<?php echo $producto->imagen2; ?>" alt="Img">
                         <img src="/imagenes_productos/<?php echo $producto->imagen3; ?>" alt="Img">

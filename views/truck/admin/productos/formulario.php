@@ -91,11 +91,11 @@
 <!-- Video -->
     <div class="campo">
         <label for="video">Video</label>
-        <input type="file" id="video" name="producto[video]" placeholder="Imagen" accept="image/jpeg, image/png">
+        <input type="file" id="video" name="producto[video]" placeholder="Video" accept="video/mp4">
     </div>
     <div class="contenedor_video">
         <?php  if($productos->video) { ?>
-            <video class="video" src="/videos_productos/<?php echo $productos->video ?>"></video>
+            <video type="video/mp4" class="video" src="/videos_productos/<?php echo $productos->video ?>" controls></video>
         <?php } ?>
     </div>
 

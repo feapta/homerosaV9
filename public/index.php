@@ -43,6 +43,7 @@ use Model\Productos;
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
 
     
+
 // Administracion
 
 // Categorias
