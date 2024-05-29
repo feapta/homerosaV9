@@ -9,7 +9,7 @@
             <?php include_once __DIR__ . "/templates/alertas.php";  ?>
     <?php } ?>
 
-    <form class="formulario" method="POST" novalidate>
+    <form class="formulario_login" method="POST" novalidate>
         <div class="campo">
             <p class="titulo_login">Introduzca datos de acceso</p>
         </div>

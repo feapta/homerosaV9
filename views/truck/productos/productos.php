@@ -14,7 +14,7 @@
     </div>
   
     <div class="titulo">
-        <h3> Categoria <?php echo $categorias->categoria; ?> </h3>
+        <h3><?php echo $categorias->categoria; ?> </h3>
     </div>
 
     <?php include_once __DIR__ . '/../../templates/alertas.php'; ?>
@@ -23,16 +23,17 @@
             <?php foreach($productos as $producto) { ?>
                 
                 <li class="seleccion">
+                    <h4><?php echo $producto->titulo; ?></h4>
 
                     <div class="imagen_productos">
-                        <img src="/imagenes_productos/<?php echo $producto->imagen1; ?>" alt="Img">
-                        <img src="/imagenes_productos/<?php echo $producto->imagen2; ?>" alt="Img">
-                        <img src="/imagenes_productos/<?php echo $producto->imagen3; ?>" alt="Img">
+                        <img class="imagen1" src="/imagenes_productos/<?php echo $producto->imagen1; ?>" alt="Img">
+                        <img class="imagen2" src="/imagenes_productos/<?php echo $producto->imagen2; ?>" alt="Img">
+                        <img class="imagen3" src="/imagenes_productos/<?php echo $producto->imagen3; ?>" alt="Img">
+                        <video class="video" src="/videos_productos/<?php echo $producto->video; ?>"></video>
                     </div>
 
                     <div class="texto">
-                        <h4>    <?php echo $producto->titulo; ?></h4>
-                        <p>     <?php echo $producto->descripcion; ?></p>
+                        <p><?php echo $producto->descripcion; ?></p>
                         <h5>Precio</h5>
                         <h5><?php echo $producto->precio_venta; ?> €</h5>
 
