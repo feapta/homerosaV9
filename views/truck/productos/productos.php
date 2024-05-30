@@ -27,7 +27,10 @@
                         <img class="imagen1 imas" src="/imagenes_productos/<?php echo $producto->imagen1; ?>" alt="Img">
                         <img class="imagen2 imas" src="/imagenes_productos/<?php echo $producto->imagen2; ?>" alt="Img">
                         <img class="imagen3 imas" src="/imagenes_productos/<?php echo $producto->imagen3; ?>" alt="Img">
-                        <video class="video" src="/videos_productos/<?php echo $producto->video; ?>"></video>
+                        <?php if ( $producto->video ) { ?>
+                            <img class="imagen4 imas" src="/build/img/truck/video.png" alt="Img">
+                            <p class="urlvideo" hidden src="/videos_productos/<?php echo $producto->video; ?>"></p>
+                        <?php } ?>
                     </div>
 
                     <div class="texto">
@@ -41,6 +44,22 @@
             <?php } ?>
         </ul>
 
+        
+        <!-- Modal del video -->
+        <div class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>                       
+                </div>
+                <div class="modal-body">    
+                    <video class="video" autoplay width="100%" controls>
+                        <source src="/videos_productos/"  type="video/mp4">
+                        Su navegador no soporta HTML5 video.
+                    </video>
+                </div>
+            </div>
+        </div>
+                    
 </div>
 
 
