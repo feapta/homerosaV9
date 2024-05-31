@@ -24,25 +24,22 @@
 <body>
 
     <header class="header">
-        <div class="contenedor contenido_header">
-            <div class="barra">
-                <a class="logo" href="/truck">
-                    <img src="/build/img/truck/logotruck.png" alt="">
-                </a>
+        <div class="barra">
+            <a class="logo" href="/truck">
+                <img src="/build/img/truck/logotruck.png" alt="">
+            </a>
 
-                <div class="mobile_menu">
-                    <img class="nav_movil" src="/build/img/truck/barras.svg" alt="Icono navegacion resposive">
-                </div>
-
-                <nav class="navegacion">
-                    <a href="/truck">Inicio</a>
-                    <a href="/novedades">Novedades</a>
-                    <a href="/categorias">Productos</a>
-                    <a href="/pruebas">Pruebas</a>
-
-                    <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
-                </nav>
+            <div class="mobile_menu">
+                <img class="nav_movil" src="/build/img/truck/barras.svg" alt="Icono navegacion resposive">
             </div>
+
+            <nav class="navegacion">
+                <a href="/truck">Inicio</a>
+                <a href="/novedades">Novedades</a>
+                <a href="/categorias">Productos</a>
+                <a href="/pruebas">Pruebas</a>
+                <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
+            </nav>
         </div>
     </header>
 

@@ -1,7 +1,7 @@
 
 <!-- Pagina carta general -->
 
-<div class="contenedor productos">
+<div class="contenedor listado_productos">
     <h3>Listado de productos</h3>
 
     <div class="contenedor_botones">
