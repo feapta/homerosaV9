@@ -81,9 +81,8 @@ class productosControllers {
                 $imagen1->save($carpeta . $nombreImagen1);
                 $imagen2->save($carpeta . $nombreImagen2);
                 $imagen3->save($carpeta . $nombreImagen3);
-               // debuguear($productos);
+
                 move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
-                //$nombrevideo->save($carpeta_videos . $nombrevideo);
 
                 $productos->guardar();
                 header('Location: /productos/admin');
@@ -108,9 +107,10 @@ class productosControllers {
         $carpeta_videos = CARPETA_VIDEOS_PRODUCTOS;
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $alertas = $productos->validar();
             $args = $_POST['producto'];
             $productos->sincronizar($args);
+
+            $alertas = $productos->validar();
 
             // Seccion para subir imagenes y videos
             if ($_FILES['producto']['tmp_name']['imagen1'] ) {
@@ -130,7 +130,6 @@ class productosControllers {
             }
             // Video
             if ($_FILES['producto']['tmp_name']['video'] ) {
-
                 $file_temp = $_FILES['producto']['tmp_name']['video'];
                 $file_size = $_FILES['producto']['size']['video'];
 
@@ -142,15 +141,23 @@ class productosControllers {
                     echo "<script>window.location = '/productos/admin'</script>";
                 }
             }
-           
-            if(empty($alertas)){
+           //debuguear($productos);
+            if(empty($producto)) {
                 // Sube las imagenes
-                $imagen1->save($carpeta . $nombreImagen1);
-                $imagen2->save($carpeta . $nombreImagen2);
-                $imagen3->save($carpeta . $nombreImagen3);
+                if($_FILES['producto']['tmp_name']['imagen1']){
+                    $imagen1->save($carpeta . $nombreImagen1);
+                }
+                if($_FILES['producto']['tmp_name']['imagen2']){
+                    $imagen2->save($carpeta . $nombreImagen2);
+                }
+                if($_FILES['producto']['tmp_name']['imagen3']){
+                    $imagen3->save($carpeta . $nombreImagen3);
+                }
                 
                 // Sube el video
-                move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
+                if($_FILES['producto']['tmp_name']['video']){
+                    move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
+                }
 
                 // Guarda el producto actualizado
                 $productos->guardar();

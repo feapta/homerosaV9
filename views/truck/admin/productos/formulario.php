@@ -56,7 +56,7 @@
     </div>
 
 <!-- Imagen1 -->
-    <div class="campo">
+<div class="campo">
         <label for="imagen1">Imagen1</label>
         <input type="file" id="imagen1" name="producto[imagen1]" placeholder="Img" accept="image/jpeg, image/png">
     </div>
@@ -65,6 +65,7 @@
             <img src="/imagenes_productos/<?php echo $productos->imagen1 ?>" class="imagen">
         <?php } ?>
     </div>
+
 
 <!-- Imagen2 -->
     <div class="campo">

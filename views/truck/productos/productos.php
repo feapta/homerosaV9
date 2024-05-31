@@ -29,11 +29,12 @@
                         <img class="imagen3 imas" src="/imagenes_productos/<?php echo $producto->imagen3; ?>" alt="Img">
                         <?php if ( $producto->video ) { ?>
                             <img class="imagen4 imas" src="/build/img/truck/video.png" alt="Img">
-                            <p class="urlvideo" hidden src="/videos_productos/<?php echo $producto->video; ?>"></p>
+                            <p class="urlvideo" hidden src="/videos_productos/<?php echo $producto->video; ?>" value="<?php echo $producto->video; ?>"></p>
                         <?php } ?>
                     </div>
 
                     <div class="texto">
+
                         <p><?php echo $producto->descripcion; ?></p>
                         <h5>Precio</h5>
                         <h5><?php echo $producto->precio_venta; ?> €</h5>
