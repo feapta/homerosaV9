@@ -105,32 +105,57 @@ class productosControllers {
         $categorias = Categorias::all();
         $alertas = [];
         $carpeta = CARPETA_IMAGEN_PRODUCTOS;
+        $carpeta_videos = CARPETA_VIDEOS_PRODUCTOS;
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
+            $alertas = $productos->validar();
             $args = $_POST['producto'];
             $productos->sincronizar($args);
 
-            // Validacion
-            $alertas = $productos->validar();
-    
-            // Generar nombre unico para cada imagen
-            $nombreImagen = md5( uniqid( rand(), true)) . ".jpg"; // 
-            
-            // Setear la imagen a la clase
-            if($_FILES['producto']['tmp_name']['imagen1']){
-                $imagen = Image::make($_FILES['producto']['tmp_name']['imagen'])->resize(300, 200);
-                $productos->setImagen($nombreImagen, $carpeta);                                   
-               }
+            // Seccion para subir imagenes y videos
+            if ($_FILES['producto']['tmp_name']['imagen1'] ) {
+                $nombreImagen1 =  md5( uniqid( rand(), true)) . ".jpg";
+                $imagen1 = Image::make($_FILES['producto']['tmp_name']['imagen1'])->resize(350, 250);        // Tamaño de imagen
+                $productos->setImagen_numero($nombreImagen1, $carpeta, "1");                                 // Comprobamos si exite la imagen
+            }
+            if ($_FILES['producto']['tmp_name']['imagen2'] ) {
+                $nombreImagen2 = md5( uniqid( rand(), true)) . ".jpg"; 
+                $imagen2 = Image::make($_FILES['producto']['tmp_name']['imagen2'])->resize(350, 250); 
+                $productos->setImagen_numero($nombreImagen2, $carpeta, "2");                                     
+            }
+            if ($_FILES['producto']['tmp_name']['imagen3'] ) {
+                $nombreImagen3 = md5( uniqid( rand(), true)) . ".jpg"; 
+                $imagen3 = Image::make($_FILES['producto']['tmp_name']['imagen3'])->resize(350, 250); 
+                $productos->setImagen_numero($nombreImagen3, $carpeta, "3");                                     
+            }
+            // Video
+            if ($_FILES['producto']['tmp_name']['video'] ) {
 
-             // Inserta el registro en la base de datos si no hay errores
-            if(empty($alertas)){
-                if($_FILES['producto']['tmp_name']['imagen']){
-                    $imagen->save($carpeta . $nombreImagen);
+                $file_temp = $_FILES['producto']['tmp_name']['video'];
+                $file_size = $_FILES['producto']['size']['video'];
+
+                if($file_size < 20000000){
+                    $nombrevideo = md5( uniqid( rand(), true)) . ".mp4";
+                    $productos->setVideo($nombrevideo, $carpeta_videos);
+                }else{
+                    echo "<script>alert('Video demasiado grande')</script>";
+                    echo "<script>window.location = '/productos/admin'</script>";
                 }
+            }
+           
+            if(empty($alertas)){
+                // Sube las imagenes
+                $imagen1->save($carpeta . $nombreImagen1);
+                $imagen2->save($carpeta . $nombreImagen2);
+                $imagen3->save($carpeta . $nombreImagen3);
+                
+                // Sube el video
+                move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
 
+                // Guarda el producto actualizado
                 $productos->guardar();
                 header('Location: /productos/admin');
-             }
+            }
         }
 
          $router->rendertruck('/admin/productos/actualizar', [
