@@ -10,7 +10,7 @@
         <a href="/domo" class="boton_verde ">Volver a domo</a>
     </div>
 
-    <div class="contenedor_tabla">
+    <div class="contenedor tabla">
         <table id="productos" class="display" style="width:100%">
             <thead class="head_tabla">
                 <tr>

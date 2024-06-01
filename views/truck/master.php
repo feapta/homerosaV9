@@ -24,7 +24,7 @@
 <body>
 
     <header class="header">
-        <div class="barra">
+        <div class="barra contenedor">
             <a class="logo" href="/truck">
                 <img src="/build/img/truck/logotruck.png" alt="">
             </a>
@@ -45,7 +45,7 @@
 
 
     <div class="content">
-        <main class="contenedor_truck">
+        <main class="contenedor_master_truck">
             <?php echo $contenido_truck; ?>
         </main>
     </div>
