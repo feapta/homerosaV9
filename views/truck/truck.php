@@ -5,20 +5,34 @@
     </div>
 
     <div class="secciones">
-        <a href="/novedades" class="imagen">
-            <img loading="lazy" src="/build/img/truck/novedades.jpg" alt="">
-            <h3>Novedades</h3>
-        </a>
+        <div class="caja">
+            <a href="/categorias" class="imagen">
+                <img loading="lazy" src="/build/img/truck/productos.webp" alt="">
+                <h3 class="pro">Productos</h3>
+            </a>
+        </div>
+        
+        <div class="caja">
+            <a href="/novedades" class="imagen">
+                <img loading="lazy" src="/build/img/truck/novedades.jpg" alt="">
+                <h3 class="nove">Novedades</h3>
+            </a>
+        </div>
 
-        <a href="/categorias" class="imagen">
-            <img loading="lazy" src="/build/img/truck/productos.webp" alt="">
-            <h3>Productos</h3>
-        </a>
-
-        <a href="/pruebas" class="imagen">
-            <img loading="lazy" src="/build/img/truck/pruebas.jpg" alt="">
-            <h3>Pruebas</h3>
-        </a>
+        <div class="caja">
+            <a href="/pruebas" class="imagen">
+                <img loading="lazy" src="/build/img/truck/pruebas.jpg" alt="">
+                <h3 class="pru">Pruebas</h3>
+            </a>
+        </div>
+        
+        <div class="caja">
+            <a href="/trabajos" class="imagen">
+                <img loading="lazy" src="/build/img/truck/trabajos.png" alt="">
+                <h3 class="tra">Trabajos</h3>
+            </a>
+        </div>
+ 
     </div>
         
 

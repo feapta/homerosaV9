@@ -1,7 +1,7 @@
 
 <!-- Pagina carta general -->
 
-<div class="contenedor listado_productos">
+<div class="contenedor listado_trabajos">
     <div class="contenedor_botones">
         <a href="/productos/admin/crear" class="boton_verde ">Crear producto</a>
         <a href="/categorias/admin" class="boton_verde ">Categorias</a>
@@ -16,12 +16,12 @@
                 <tr>
                     <th>Id</th>
                     <th class="C_imagen">imagen</th>
-                    <th>Categoria</th>
                     <th>Título</th>
-                    <th>Uds.</th>
-                    <th>Precio C.</th>
-                    <th>Envio</th>
-                    <th>Precio V</th>
+                    <th>Descripcion</th>
+                    <th>img 1</th>
+                    <th>img 2</th>
+                    <th>img 3</th>
+                    <th>Video</th>
                     <th>Creada</th>
                     <th></th>
                     <th></th>
@@ -36,4 +36,4 @@
    
 </div>
 
-<?php $script = '<script src="/build/js/datatable/productos.js"></script>'; ?>
+<?php $script = '<script src="/build/js/datatable/trabajos.js"></script>'; ?>

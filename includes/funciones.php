@@ -7,6 +7,8 @@ define('CARPETA_IMAGEN_USUARIOS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_usuarios
 define('CARPETA_IMAGEN_CATEGORIAS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_categorias/');
 define('CARPETA_IMAGEN_PRODUCTOS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_productos/');
 define('CARPETA_VIDEOS_PRODUCTOS', $_SERVER['DOCUMENT_ROOT']. '/videos_productos/');
+define('CARPETA_IMAGEN_TRABAJOS', $_SERVER['DOCUMENT_ROOT']. '/imagenes_trabajos/');
+define('CARPETA_VIDEOS_TRABAJOS', $_SERVER['DOCUMENT_ROOT']. '/videos_trabajos/');
 
 
 function incluirTemplate(string $nombre, bool $inicio = false ){

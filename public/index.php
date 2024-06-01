@@ -9,12 +9,12 @@
 use Controllers\NovedadesControllers;
 use Controllers\ProductosControllers;
 use Controllers\PruebasControllers;
+use Controllers\TrabajosControllers;
 use Controllers\UsuariosControllers;
 use Controllers\TruckControllers;
 use Controllers\CategoriasControllers;
 use Controllers\EliminarControllers;
-use Model\Categorias;
-use Model\Productos;
+
 
     $router = new Router();
 
@@ -41,6 +41,11 @@ use Model\Productos;
 // Pruebas
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
     $router->post('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
+
+// Trabajos
+    $router->get('/trabajos', [TrabajosControllers::class, 'trabajos']);
+    
+
 
     
 

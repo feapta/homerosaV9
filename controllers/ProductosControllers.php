@@ -10,7 +10,7 @@ use Model\Productos;
 use Model\Joinproductos;
 use Model\Categorias;
 use Intervention\Image\ImageManagerStatic as Image;
-class productosControllers {    
+class ProductosControllers {    
      // Listar productos
      public static function productos_admin(Router $router){
         $productos = Productos::all();

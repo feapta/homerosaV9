@@ -38,6 +38,7 @@
                 <a href="/novedades">Novedades</a>
                 <a href="/categorias">Productos</a>
                 <a href="/pruebas">Pruebas</a>
+                <a href="/trabajos">Trabajos</a>
                 <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
             </nav>
         </div>
