@@ -10,7 +10,7 @@
 
     <h1 class="nombre_pagina">Listado</h1>
 
-    <div class="contenedor tabla">
+    <div class="contenedor_tabla">
         <table id="productos" class="display" style="width:100%">
             <thead class="head_tabla">
                 <tr>
