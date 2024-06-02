@@ -14,7 +14,7 @@ class TrabajosControllers {
      public static function trabajos_admin(Router $router){
         $trabajos = Trabajos::all();
 
-        $router->rendertruck('/admin/productos/productos', [
+        $router->rendertruck('/admin/trabajos/trabajos', [
             'trabajos' => $trabajos
         ]);
 
@@ -39,34 +39,37 @@ class TrabajosControllers {
         $carpeta_videos = CARPETA_VIDEOS_TRABAJOS;
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            
-            $productos = new Trabajos($_POST['producto']);
+            $trabajos = new Trabajos($_POST['trabajo']);
 
             // Seccion para subir imagenes y videos
-            if ($_FILES['trabajo']['tmp_name']['imagen1'] ) {
+            if ($_FILES['trabajo']['tmp_name']['imagen1'] ) {                                               // Comprobamos si exite la imagen
                 $nombreImagen1 =  md5( uniqid( rand(), true)) . ".jpg";
                 $imagen1 = Image::make($_FILES['trabajo']['tmp_name']['imagen1'])->resize(350, 250);        // Tamaño de imagen
-                $trabajos->setImagen_numero($nombreImagen1, $carpeta, "1");                                 // Comprobamos si exite la imagen
+                $trabajos->setImagen_numero($nombreImagen1, $carpeta, "1");                                 
+                $imagen1->save($carpeta . $nombreImagen1);
             }
             if ($_FILES['trabajo']['tmp_name']['imagen2'] ) {
                 $nombreImagen2 = md5( uniqid( rand(), true)) . ".jpg"; 
                 $imagen2 = Image::make($_FILES['trabajo']['tmp_name']['imagen2'])->resize(350, 250); 
-                $trabajos->setImagen_numero($nombreImagen2, $carpeta, "2");                                     
+                $trabajos->setImagen_numero($nombreImagen2, $carpeta, "2");
+                $imagen2->save($carpeta . $nombreImagen2);
+                                                   
             }
             if ($_FILES['trabajo']['tmp_name']['imagen3'] ) {
                 $nombreImagen3 = md5( uniqid( rand(), true)) . ".jpg"; 
                 $imagen3 = Image::make($_FILES['trabajo']['tmp_name']['imagen3'])->resize(350, 250); 
-                $trabajos->setImagen_numero($nombreImagen3, $carpeta, "3");                                     
+                $trabajos->setImagen_numero($nombreImagen3, $carpeta, "3"); 
+                $imagen3->save($carpeta . $nombreImagen3);                                    
             }
             // Video
             if ($_FILES['trabajo']['tmp_name']['video'] ) {
-
                 $file_temp = $_FILES['trabajo']['tmp_name']['video'];
                 $file_size = $_FILES['trabajo']['size']['video'];
 
                 if($file_size < 20000000){
                     $nombrevideo = md5( uniqid( rand(), true)) . ".mp4";
                     $trabajos->setVideo($nombrevideo, $carpeta_videos);
+                    move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
                 }else{
                     echo "<script>alert('Video demasiado grande')</script>";
                     echo "<script>window.location = '/productos/admin'</script>";
@@ -76,20 +79,14 @@ class TrabajosControllers {
             $alertas = $trabajos->validar();
            
             if(empty($alertas)){
-                $imagen1->save($carpeta . $nombreImagen1);
-                $imagen2->save($carpeta . $nombreImagen2);
-                $imagen3->save($carpeta . $nombreImagen3);
-
-                move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
-
                 $trabajos->guardar();
-                header('Location: /trabajos');
+                header('Location: /trabajos/admin');
             }
         }
 
         $router->rendertruck('/admin/trabajos/crear', [
             'alertas' => $alertas,
-            'productos' => $productos,
+            'trabajos' => $trabajos,
 
         ]);
     }

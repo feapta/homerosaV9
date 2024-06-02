@@ -6,7 +6,6 @@
 
     use MVC\Router;
 
-use Controllers\NovedadesControllers;
 use Controllers\ProductosControllers;
 use Controllers\PruebasControllers;
 use Controllers\TrabajosControllers;
@@ -80,7 +79,7 @@ use Controllers\EliminarControllers;
     $router->post('/trabajos/admin/crear', [TrabajosControllers::class, 'trabajos_crear']);
 
     $router->get('/trabajos/admin/edicion', [TrabajosControllers::class, 'trabajos_edicion']);
-$router->post('/trabajos/admin/edicion', [TrabajosControllers::class, 'trabajos_edicion']);
+    $router->post('/trabajos/admin/edicion', [TrabajosControllers::class, 'trabajos_edicion']);
 
 
 // Eliminar
