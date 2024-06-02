@@ -15,11 +15,12 @@ class UsuariosControllers{
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $usuario = new Usuarios($_POST);
             $alertas = $usuario->validarDatos();
-
+            
             if(empty($alertas)){
                 $user =  Usuarios::whereValor('email', $usuario->email);
+                
                 if($user) {
-                    if($user->validarPass($usuario->password)){
+                    if( $user->validarPass( $usuario->password ) ){
                         session_start();
                         $_SESSION['admin'] = $user->admin;
                         $_SESSION['nombreSolo'] = $user->nombre;

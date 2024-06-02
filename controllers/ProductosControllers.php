@@ -45,31 +45,40 @@ class ProductosControllers {
             $productos = new Productos($_POST['producto']);
 
             // Seccion para subir imagenes y videos
-            if ($_FILES['producto']['tmp_name']['imagen1'] ) {
+            // Imagen 1
+            if ($_FILES['producto']['tmp_name']['imagen1'] !="") {
                 $nombreImagen1 =  md5( uniqid( rand(), true)) . ".jpg";
                 $imagen1 = Image::make($_FILES['producto']['tmp_name']['imagen1'])->resize(350, 250);        // Tamaño de imagen
-                $productos->setImagen_numero($nombreImagen1, $carpeta, "1");                                 // Comprobamos si exite la imagen
+                $productos->setImagen_numero($nombreImagen1, $carpeta, "1");                             // Comprobamos si exite la imagen
+                $imagen1->save($carpeta . $nombreImagen1);
             }
-            if ($_FILES['producto']['tmp_name']['imagen2'] ) {
+
+            // Imagen 2
+            if ( $_FILES['producto']['tmp_name']['imagen2'] ) {
                 $nombreImagen2 = md5( uniqid( rand(), true)) . ".jpg"; 
                 $imagen2 = Image::make($_FILES['producto']['tmp_name']['imagen2'])->resize(350, 250); 
-                $productos->setImagen_numero($nombreImagen2, $carpeta, "2");                                     
+                $productos->setImagen_numero($nombreImagen2, $carpeta, "2");
+                $imagen2->save($carpeta . $nombreImagen2);                                     
             }
+
+            // Imagen 3
             if ($_FILES['producto']['tmp_name']['imagen3'] ) {
                 $nombreImagen3 = md5( uniqid( rand(), true)) . ".jpg"; 
                 $imagen3 = Image::make($_FILES['producto']['tmp_name']['imagen3'])->resize(350, 250); 
-                $productos->setImagen_numero($nombreImagen3, $carpeta, "3");                                     
+                $productos->setImagen_numero($nombreImagen3, $carpeta, "3");
+                $imagen3->save($carpeta . $nombreImagen3);                                     
             }
+
             // Video
             if ($_FILES['producto']['tmp_name']['video'] ) {
-
                 $file_temp = $_FILES['producto']['tmp_name']['video'];
                 $file_size = $_FILES['producto']['size']['video'];
 
-                if($file_size < 20000000){
+                if ( $file_size < 20000000 ){
                     $nombrevideo = md5( uniqid( rand(), true)) . ".mp4";
                     $productos->setVideo($nombrevideo, $carpeta_videos);
-                }else{
+                    move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
+                } else {
                     echo "<script>alert('Video demasiado grande')</script>";
                     echo "<script>window.location = '/productos/admin'</script>";
                 }
@@ -78,12 +87,6 @@ class ProductosControllers {
             $alertas = $productos->validar();
            
             if(empty($alertas)){
-                $imagen1->save($carpeta . $nombreImagen1);
-                $imagen2->save($carpeta . $nombreImagen2);
-                $imagen3->save($carpeta . $nombreImagen3);
-
-                move_uploaded_file($file_temp, $carpeta_videos.$nombrevideo);
-
                 $productos->guardar();
                 header('Location: /productos/admin');
             }

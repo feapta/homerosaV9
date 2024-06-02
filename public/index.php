@@ -72,7 +72,18 @@ use Controllers\EliminarControllers;
     $router->post('/productos/admin/edicion', [ProductosControllers::class, 'productos_edicion']);
 
 
-    // Eliminar
+// Trabajos
+    $router->get('/trabajos/admin', [TrabajosControllers::class, 'trabajos_admin']);
+    $router->post('/trabajos/admin_P', [TrabajosControllers::class, 'trabajos_admin_P']);
+
+    $router->get('/trabajos/admin/crear', [TrabajosControllers::class, 'trabajos_crear']);
+    $router->post('/trabajos/admin/crear', [TrabajosControllers::class, 'trabajos_crear']);
+
+    $router->get('/trabajos/admin/edicion', [TrabajosControllers::class, 'trabajos_edicion']);
+$router->post('/trabajos/admin/edicion', [TrabajosControllers::class, 'trabajos_edicion']);
+
+
+// Eliminar
     $router->post('/eliminar', [EliminarControllers::class, 'eliminar']);
 
 

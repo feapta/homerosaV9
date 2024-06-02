@@ -95,7 +95,7 @@ class TrabajosControllers {
     }
 
     // Edicion
-    public static function productos_edicion(Router $router){
+    public static function trabajos_edicion(Router $router){
         $id = validar0Redireccionar('/trabajos/admin');
         $trabajos = Trabajos::find($id);
         $alertas = [];
@@ -103,7 +103,7 @@ class TrabajosControllers {
         $carpeta_videos = CARPETA_VIDEOS_TRABAJOS;
 
         if($_SERVER['REQUEST_METHOD'] === 'POST'){
-            $args = $_POST['producto'];
+            $args = $_POST['trabajo'];
             $trabajos->sincronizar($args);
 
             $alertas = $trabajos->validar();

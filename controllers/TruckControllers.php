@@ -4,6 +4,7 @@
 
 namespace Controllers;
 
+use Model\Productos;
 use MVC\Router;
 
 class TruckControllers {    
@@ -12,7 +13,11 @@ class TruckControllers {
         $router->rendertruck('truck');
     }
     public static function novedades(Router $router) {
-        $router->rendertruck('novedades/novedades');
+        $productos = Productos::filtroFecha();
+
+        $router->rendertruck('novedades/novedades', [
+            'productos' => $productos
+        ]);
     }
     public static function pruebas(Router $router) {
         $router->rendertruck('pruebas/pruebas');

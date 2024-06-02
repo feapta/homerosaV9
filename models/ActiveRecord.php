@@ -170,6 +170,14 @@ class ActiveRecord{
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
+    public static function filtroFecha() {
+        $fecha_actual = date("Y-m-d");
+        $query = "SELECT * FROM " . static::$tabla ." WHERE fechafin_novedad >= '$fecha_actual' ORDER BY fecha_entrada ASC";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
+
+
 
     // Guardar o actualizar
     public function guardar() {
