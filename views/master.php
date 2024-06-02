@@ -1,3 +1,14 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+$admin = $_SESSION['admin'] ?? false;
+$nombreSolo = $_SESSION['nombreSolo'] ?? '';
+
+?>
+
 
 <html lang="es">
 
@@ -28,6 +39,9 @@
             <div class="contenedor">
                 <h5 id="hora"></h5>
                 <h3>Home Rosa</h3>
+                <?php if($admin === '1'): ?>
+                    <a href="/domo"><?php echo $nombreSolo?></a>
+                <?php endif?>
                 <h5 id="fecha"></h5>
             </div>
         </header>

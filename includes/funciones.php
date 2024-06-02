@@ -44,10 +44,20 @@ function validar0Redireccionar(string $url){
     return $id;
 }
 
+// Valida el tipo para eliminar
+
 function validarTipoContenido($tipo) {
-    $tipos = ['producto', 'categoria'];
+    $tipos = ['producto', 'categoria', 'trabajo'];
 
     return in_array($tipo, $tipos);
 }
+
+// Para proteger el panel de control o administracion
+function isAdmin() : void {
+    if(!isset($_SESSION['admin'])) {
+        header('Location: /');
+    }
+}
+
 
 ?>

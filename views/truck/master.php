@@ -1,3 +1,13 @@
+<?php
+
+if(!isset($_SESSION)){
+    session_start();
+}
+
+$admin = $_SESSION['admin'] ?? false;
+$nombreSolo = $_SESSION['nombreSolo'] ?? '';
+
+?>
 
 <html lang="es">
 
@@ -39,6 +49,9 @@
                 <a href="/categorias">Productos</a>
                 <a href="/pruebas">Pruebas</a>
                 <a href="/trabajos">Trabajos</a>
+                <?php if($admin === '1'): ?>
+                        <a href="/domo"><?php echo $nombreSolo?></a>
+                    <?php endif?>
                 <img class="dark_mode_boton" src="/build/img/dark-mode.svg" alt="">
             </nav>
         </div>

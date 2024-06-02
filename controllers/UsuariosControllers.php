@@ -18,10 +18,11 @@ class UsuariosControllers{
 
             if(empty($alertas)){
                 $user =  Usuarios::whereValor('email', $usuario->email);
-
                 if($user) {
                     if($user->validarPass($usuario->password)){
                         session_start();
+                        $_SESSION['admin'] = $user->admin;
+                        $_SESSION['nombreSolo'] = $user->nombre;
 
                         header('Location: /domo');
                     }
