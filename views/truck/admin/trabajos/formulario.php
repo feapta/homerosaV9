@@ -26,8 +26,6 @@
         <?php } ?>
     </div>
 
-
-
 <!-- Imagen2 -->
     <div class="campo">
         <div class="file-2">
@@ -55,12 +53,12 @@
 <!-- Video -->
     <div class="campo">
         <div class="file-4">
-            <input type="file" id="video" name="trabajo[video]" placeholder="Video" accept="video/mp4">
+            <input type="file" name="trabajo[video]" placeholder="Video" accept="video/mp4">
         </div>
     </div>
     <div class="contenedor_video">
         <?php  if($trabajos->video) { ?>
-            <video type="video/mp4" class="video" src="/videos_trabajos/<?php echo $trabajos->video ?>" controls></video>
+            <video type="video/mp4" src="/videos_trabajos/<?php echo $trabajos->video ?>"></video>
         <?php } ?>
     </div>
 

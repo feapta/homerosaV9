@@ -61,7 +61,7 @@ class TrabajosControllers {
                 $trabajos->setImagen_numero($nombreImagen3, $carpeta, "3"); 
                 $imagen3->save($carpeta . $nombreImagen3);                                    
             }
-            // Video
+            // <Video>           
             if ($_FILES['trabajo']['tmp_name']['video'] ) {
                 $file_temp = $_FILES['trabajo']['tmp_name']['video'];
                 $file_size = $_FILES['trabajo']['size']['video'];

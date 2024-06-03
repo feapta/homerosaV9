@@ -96,7 +96,7 @@
 <!-- Video -->
     <div class="campo">
         <div class="file-4">
-            <input type="file" id="video" name="producto[video]" placeholder="Video" accept="video/mp4">
+            <input type="file" name="producto[video]" placeholder="Video" accept="video/mp4">
         </div>
     </div>
     <div class="contenedor_video">
