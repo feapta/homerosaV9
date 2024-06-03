@@ -122,12 +122,12 @@
         <!-- Fecha entrada -->
         <div class="campo">
                 <label for="fecha_entrada">Entrada</label>
-                <input type="date" id="fecha_entrada" class="fechas" name="producto[fecha_entrada]" value="<?php echo s($productos->fecha_entrada); ?>">
+                <input type="date" id="fecha_entrada" class="fechas" name="producto[fecha_entrada]" value="<?php echo s($productos->fecha_entrada); ?>" required>
             </div>
         <!-- Fecha fin novedad -->
             <div class="campo">
                 <label for="fechafin_novedad">Fin novedad</label>
-                <input type="date" id="fechafin_novedad" class="fechas" name="producto[fechafin_novedad]" value="<?php echo s($productos->fechafin_novedad); ?>">
+                <input type="date" id="fechafin_novedad" class="fechas" name="producto[fechafin_novedad]" value="<?php echo s($productos->fechafin_novedad); ?>" required>
             </div>
     </div>
 

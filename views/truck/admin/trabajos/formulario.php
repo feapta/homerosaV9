@@ -67,7 +67,7 @@
 <!-- Fecha entrada -->
         <div class="campo">
             <label for="fecha_entrada">Entrada</label>
-            <input type="date" id="fecha_entrada" class="fechas" name="trabajo[fecha_entrada]" value="<?php echo s($trabajos->fecha_entrada); ?>">
+            <input type="date" id="fecha_entrada" class="fechas" name="trabajo[fecha_entrada]" value="<?php echo s($trabajos->fecha_entrada); ?>" required>
         </div>
 
 
