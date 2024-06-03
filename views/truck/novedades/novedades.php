@@ -10,7 +10,7 @@
     </div>
   
     <div class="titulo">
-        <h1 class="nombre_pagina">Trabajos realizados</h1>
+        <h1 class="nombre_pagina">Novedades</h1>
     </div>
 
     <?php include_once __DIR__ . '/../../templates/alertas.php'; ?>
