@@ -15,13 +15,9 @@
             <thead class="head_tabla">
                 <tr>
                     <th>Id</th>
-                    <th class="C_imagen">imagen</th>
                     <th>Categoria</th>
                     <th>Título</th>
                     <th>Uds.</th>
-                    <th>Precio C.</th>
-                    <th>Envio</th>
-                    <th>Precio V</th>
                     <th>Creada</th>
                     <th></th>
                     <th></th>

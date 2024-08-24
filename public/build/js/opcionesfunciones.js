@@ -1,0 +1,1 @@
+var arrayOpciones=[],objetOpciones={idO:"",tituloOp:"",descripcionOp:"",precio_compraOp:"",envioOp:"",precio_ventaOp:"",imagen1Op:"",imagen2Op:"",imagen3Op:""};

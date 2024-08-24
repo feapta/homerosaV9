@@ -77,6 +77,7 @@ $nombreSolo = $_SESSION['nombreSolo'] ?? '';
     <script src="/build/js/eliminar.js"></script>
     <script src="/build/js/navegaResponsive.js"></script>
     <script src="/build/js/imagenAgrandar.js"></script>
+    
 
         
     <?php echo $script ?? ''; ?>

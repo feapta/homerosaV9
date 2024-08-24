@@ -12,6 +12,7 @@ class ActiveRecord{
     public $id;
     public $imagen; 
     public $video; 
+    public $autonumero; 
 
 // VALIDACIONES
     public static function setAlerta($tipo, $mensaje) {
@@ -140,7 +141,6 @@ class ActiveRecord{
 
 // Subir archivo de imagenes con cambio de nombre
     public function setImagen_numero($imagen, $carpeta, $numero){
-        
         // Eliminar la imagen previa
         if(!is_null($this->id)){
             $this->borrarImagen_numero($carpeta, $numero);
@@ -164,12 +164,27 @@ class ActiveRecord{
 
 
 // TRUCK
-      // Todos los registros
+// Todos los registros
     public static function all() {
         $query = "SELECT * FROM " . static::$tabla;
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
+// Todas las opciones por producto
+    public static function allporProducto($idproducto) {
+        $query = "SELECT * FROM " . static::$tabla ." WHERE idproducto = $idproducto ";;
+        $resultado = self::consultarSQL($query);
+        return $resultado ;
+    }
+
+// Busca un todos los registros por su id
+    public static function findAll($id) {
+        $query = "SELECT * FROM " . static::$tabla  ." WHERE id = $id ";
+        $resultado = self::consultarSQL($query);
+        return $resultado;
+    }
+
+// Filtrar registros entra dos fechas
     public static function filtroFecha() {
         $fecha_actual = date("Y-m-d");
         $query = "SELECT * FROM " . static::$tabla ." WHERE fechafin_novedad >= '$fecha_actual' ORDER BY fecha_entrada ASC";
@@ -178,7 +193,7 @@ class ActiveRecord{
     }
 
 
-
+// GUARDAR O ACTUALIZAR 
     // Guardar o actualizar
     public function guardar() {
         $resultado = '';
@@ -194,7 +209,7 @@ class ActiveRecord{
     public function crear() {
         // Sanitizar los datos
         $atributos = $this->sanitizarAtributos();
-
+      
         // Insertar en la base de datos
         $query = " INSERT INTO " . static::$tabla . " ( ";
         $query .= join(', ', array_keys($atributos));
@@ -280,7 +295,24 @@ class ActiveRecord{
     return array_shift( $resultado ) ;
     }
 
-
-
+// AUTONUMERO
+    // Busca el ultimo numero de una tabla
+    public static function autonumero() {
+        $query = "SELECT MAX(autonumero) AS autonumero FROM " . static::$tabla ;
+        $resultado = self::consultarSQL($query);
+        $numero = array_shift( $resultado );
+        
+        if (!$numero->autonumero){
+            $suma = 0;
+        } else {
+            $suma = $numero->autonumero;
+        }
+        
+        $suma++;
+        return $suma;
+    }
     
+
+
+
 }

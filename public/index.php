@@ -36,6 +36,7 @@ use Controllers\EliminarControllers;
 
 // Productos
     $router->get('/productos', [ProductosControllers::class, 'listadoProductos']);
+    $router->get('/productosSeleccionado', [ProductosControllers::class, 'productoSeleccionado']);
 
 // Pruebas
     $router->get('/pruebas/categorias', [PruebasControllers::class, 'pruebas/catergorias']);
@@ -63,12 +64,21 @@ use Controllers\EliminarControllers;
 // Productos
     $router->get('/productos/admin', [ProductosControllers::class, 'productos_admin']);
     $router->post('/productos/admin_P', [ProductosControllers::class, 'productos_admin_P']);
+    $router->post('/productos/admin/guardar', [ProductosControllers::class, 'guardar']);
 
     $router->get('/productos/admin/crear', [ProductosControllers::class, 'productos_crear']);
     $router->post('/productos/admin/crear', [ProductosControllers::class, 'productos_crear']);
 
     $router->get('/productos/admin/edicion', [ProductosControllers::class, 'productos_edicion']);
     $router->post('/productos/admin/edicion', [ProductosControllers::class, 'productos_edicion']);
+    $router->post('/productos/admin/edicion_P', [ProductosControllers::class, 'productos_edicion_P']);
+
+// Opciones
+    $router->get('/opciones/admin/crear', [ProductosControllers::class, 'opciones_crear']);
+    $router->post('/opciones/admin/crear', [ProductosControllers::class, 'opciones_crear']);
+
+    $router->get('/opciones/admin/edicion', [ProductosControllers::class, 'opciones_edicion']);
+    $router->post('/opciones/admin/edicion', [ProductosControllers::class, 'opciones_edicion']);
 
 
 // Trabajos

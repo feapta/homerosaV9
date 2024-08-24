@@ -41,7 +41,7 @@ class CategoriasControllers{
 
           if($_SERVER['REQUEST_METHOD'] === 'POST'){
             $categorias = new Categorias($_POST['categorias']);
-          debuguear($categorias);
+
             // Seccion para subir imagenes
             $nombreImagen = md5( uniqid( rand(), true)) . ".jpg"; // 
             
