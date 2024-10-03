@@ -8,11 +8,8 @@
     <div class="desple">
         <div class="contenedor_puerta">
             <div class="abrir_puerta">
-                <button type="button" class="btn_pulsado"  id="paso" onclick="puerta(2)">Puerta paso</button>
-                <button type="button" class="btn_pulsado"  id="vehiculos" onclick="puerta(1)">Puerta vehiculos</button>
-            </div>
-            <div class="cerrar_puerta">
-                <button type="button" class="btn_pulsado"  id="cierro" onclick="puerta(3)">Cerrar</button>
+                <button type="button" class="btn_pulsado"  id="paso" onclick="puerta(1)">Puerta paso</button>
+                <button type="button" class="btn_pulsado"  id="vehiculos" onclick="puerta(2)">Puerta vehiculos</button>
             </div>
 
             <div class="foco">
