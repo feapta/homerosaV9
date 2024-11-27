@@ -34,10 +34,6 @@
             <?php include_once __DIR__ . "/paginas/puerta.php";  ?>
         </div>
 
-        <!-- Mando del taller -->
-        <div class="mando">
-            <?php include_once __DIR__ . "/paginas/inversor.php";  ?>
-        </div>
         <!-- Termo -->
         <div class="termo">
             <?php include_once __DIR__ . "/paginas/termo.php";  ?>
