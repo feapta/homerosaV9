@@ -66,7 +66,7 @@
                 <h5>Foco piscina</h5>
 
                 <div class="botones_focoPiscina">
-                    <button type="button" class="btn_pulsado" id="focoP_on" onclick="focoPiscina(1)">On</button>
+                    <button type="button" class="btn_pulsado" id="focoP_on" onclick="focoPicina(1)">On</button>
                     <button type="button" class="btn_pulsado" id="focoP_off" onclick="focoPiscina(0)">Off</button>
                 </div>
             </div>
