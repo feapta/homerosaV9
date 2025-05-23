@@ -61,5 +61,14 @@
                 <button class="btn_pulsado auto_piscina" type="button" onclick="envio_boton_piscina(2)">Auto</button>
                 <button class="btn_pulsado off_piscina" type="button" onclick="envio_boton_piscina(0)">Off</button>
             </div>
+
+            <div class="foco">
+                <h5>Foco piscina</h5>
+
+                <div class="botones_foco">
+                    <button type="button" class="btn_pulsado" id="focoP_on" onclick="focoPiscina(1)">On</button>
+                    <button type="button" class="btn_pulsado" id="focoP_off" onclick="focoPiscina(0)">Off</button>
+                </div>
+            </div>
         </div>
     </div>
