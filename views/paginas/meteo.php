@@ -174,6 +174,127 @@
 
             <div class="conte_cuatro">
 
+    <!-- Radiacion IUV -->
+        <div class="container-lg shadow p-3 mt-3 mb-3 border border-secundary bg-body rounded">
+          <div class="card">
+
+                <div class="card-header text-center">
+                  <h4 class="titulo_iuv">Indice UV</h4>
+                </div>
+
+                <div class="card-body cuerpo-iv d-flex text-center ">
+
+                      <div class="col-1 cuadrado0">
+                        <div class="row">
+                          <div>0</div>
+                        </div>
+                        <div class="row">
+                          <div>Bajo</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado1">
+                        <div class="row">
+                          <div>1</div>
+                        </div>
+                        <div class="row">
+                          <div>Bajo</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado2">
+                        <div class="row">
+                          <div>2</div>
+                        </div>
+                        <div class="row">
+                          <div>Bajo</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado3">
+                        <div class="row">
+                          <div>3</div>
+                        </div>
+                        <div class="row">
+                          <div>Moderado</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado4">
+                        <div class="row">
+                          <div>4</div>
+                        </div>
+                        <div class="row">
+                          <div>Moderado</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado5">
+                        <div class="row">
+                          <div>5</div>
+                        </div>
+                        <div class="row">
+                          <div>Moderado</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado6">
+                        <div class="row">
+                          <div>6</div>
+                        </div>
+                        <div class="row">
+                          <div>Alto</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado7">
+                        <div class="row">
+                          <div>7</div>
+                        </div>
+                        <div class="row">
+                          <div>Muy alto</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado8">
+                        <div class="row">
+                          <div>8</div>
+                        </div>
+                        <div class="row">
+                          <div>Muy alto</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado9">
+                        <div class="row">
+                          <div>9</div>
+                        </div>
+                        <div class="row">
+                          <div>Muy alto</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado10">
+                        <div class="row">
+                          <div>10</div>
+                        </div>
+                        <div class="row">
+                          <div>Muy alto</div>
+                        </div>
+                      </div>
+
+                      <div class="col-1 cuadrado11">
+                        <div class="row">
+                          <div>11</div>
+                        </div>
+                        <div class="row">
+                          <div>Extermo</div>
+                        </div>
+                      </div>
+
+                  </div> <!---->
+            </div>
+        </div>
             
             </div>
 
