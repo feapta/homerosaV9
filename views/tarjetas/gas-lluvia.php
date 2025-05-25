@@ -5,11 +5,11 @@
             <h5>Nivel de gas</h5>
         </div>
         <div class="cuadros">
-            <p class="gases">Gases</p>
+            <p class="gases">Gas</p>
             <p class="limpio">Limpio</p>
         </div>
-        <div class="canvas_gas">
-           <canvas id="chart_gas"></canvas>
+        <div class="alarma_gas">
+            <h3 class="alarmaGas">Sin alarma</h3>
         </div>
     </div>
 
@@ -22,7 +22,7 @@
             <p class="seco">Seco</p>
             <p class="lluvia">Lluvia</p>
         </div>
-        <div class="canvas_lluvia" >
-            <canvas id="chart_lluvia"></canvas>
+        <div class="alarma_lluvia" >
+            <h3 class="alamaLluvia">Alarma lluvia</h3>
         </div>
     </div>
