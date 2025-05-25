@@ -182,7 +182,7 @@
                   <h4 class="titulo_iuv">Indice UV</h4>
                 </div>
 
-                <div class="card-body cuerpo-iv d-flex text-center ">
+                <div class="cuerpo-iv">
 
                       <div class="col-1 cuadrado0">
                         <div class="row">
