@@ -1,9 +1,6 @@
 
     <!-- Gas -->
     <div class="gas sombraTarjetas">
-        <div class="tit">
-            <h5>Alarma de gas</h5>
-        </div>
 
         <div class="alarma_gas">
             <h4 class="alarmaGas"></h4>
@@ -12,9 +9,6 @@
 
     <!-- Lluvia -->
     <div class="lluvias sombraTarjetas">
-        <div class="tit">
-            <h5>Alarma de lluvia</h5>
-        </div>
 
         <div class="alarma_lluvia" >
             <h4 class="alamaLluvia"></h4>
