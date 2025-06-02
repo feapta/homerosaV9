@@ -1,6 +1,6 @@
 
 
-    <!-- Bateria 24V -->
+    <!-- Pilotos de estado-->
     <div class="pilotos">
         <div class="conte">
             <div class="pilotopiscina">
@@ -16,7 +16,7 @@
 
             </div>
             <div class="pilototinaja">
-                
+
             </div>
         </div>
     </div>
