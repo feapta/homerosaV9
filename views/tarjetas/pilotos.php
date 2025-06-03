@@ -24,8 +24,7 @@
 <div class="radiacion_hoy">
     <div class="conte">
         <p>Indice UV  </p>
-        <div class="cuadrado_iv">
-
-        </div>
+        <div class="cuadrado_iv"></div>
+        <p class="texto_nivel"></p>
     </div>
 </div>
