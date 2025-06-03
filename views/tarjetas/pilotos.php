@@ -23,7 +23,7 @@
 
 <div class="radiacion_hoy">
     <div class="conte">
-        <p>Indice UV</p>
+        <p>Indice UV  </p>
         <div class="cuadrado_iv">
 
         </div>
