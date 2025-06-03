@@ -4,7 +4,7 @@
     <div class="pilotos">
         <div class="conte">
             <div class="pilotopiscina">
-                <h5>PI</h5>
+                <p>PI</p>
             </div>
             <div class="pilotopuerta">
                 <p>PU</p>
