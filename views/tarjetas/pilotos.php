@@ -23,8 +23,8 @@
 
 <div class="radiacion_hoy">
     <div class="conte">
-        <div class="indice_iv">
-           
+        <div class="cuadrado_iv">
+
         </div>
     </div>
 </div>
