@@ -24,7 +24,7 @@
 <div class="radiacion_hoy">
     <div class="conte">
         <div class="indice_iv">
-            <p class="in_iv cuadrado">indice iv</p>
+           
         </div>
     </div>
 </div>
