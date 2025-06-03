@@ -1,7 +1,7 @@
 
 
     <!-- Pilotos de estado-->
-    <div class="info">
+    <div class="informacion">
         <div class="conte">
             <div class="pilotopiscina">
                 <p>PI</p>
