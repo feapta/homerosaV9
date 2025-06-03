@@ -1,7 +1,7 @@
 
 
     <!-- Pilotos de estado-->
-    <div class="informacion">
+    <div class="conexion">
         <div class="conte">
             <div class="pilotopiscina">
                 <p>PI</p>
@@ -19,9 +19,12 @@
                 <p>TI</p>
             </div>
         </div>
-        <div class="conte">
-            <div class="indice_iv">
-                <p class="in_iv cuadrado"></p>
+        
+        <div class="radiacion_hoy">
+            <div class="conte">
+                <div class="indice_iv">
+                    <p class="in_iv cuadrado">indice iv</p>
+                </div>
             </div>
         </div>
     </div>
