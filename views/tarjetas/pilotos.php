@@ -1,7 +1,7 @@
 
 
     <!-- Pilotos de estado-->
-    <div class="pilotos">
+    <div class="info">
         <div class="conte">
             <div class="pilotopiscina">
                 <p>PI</p>
@@ -17,6 +17,11 @@
             </div>
             <div class="pilototinaja">
                 <p>TI</p>
+            </div>
+        </div>
+        <div class="conte">
+            <div class="indice_iv">
+                <p class="in_iv cuadrado"></p>
             </div>
         </div>
     </div>
