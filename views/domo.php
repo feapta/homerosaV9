@@ -1,9 +1,11 @@
 
 
-        <!-- Baterias -->
+        <!-- Informacion -->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/pilotos.php";  ?>
         </div>
+
+        <!-- Baterias -->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/baterias.php";  ?>
         </div>
