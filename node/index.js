@@ -4,10 +4,6 @@ const conexion = conexionDB();
 const moment = require('moment');
 
 
-var h;
-var d;
-var m;
-var y;
 var te;
 var te_in;
 var hu;
@@ -48,31 +44,28 @@ var suma2;
 // Por donde se reciben los mensajes
   client.on('message', function(topic, message){
     
-    if (topic == "sensores/puerta"){
+    if (topic == "domo/Sensores/puerta"){
         let msg = message.toString();
         let divide = msg.split(",");
         hu_su = divide[0];
-        let su0 = divide[1];
-        suma0 = parseInt(su0);
+        suma0 = 1;
     }
 
-    if (topic == "sensores/salon"){
+    if (topic == "domo/Sensores/salon"){
        let msg = message.toString();
         let divide = msg.split(",");
         te = divide[0];
         te_in = divide[1];
         hu = divide[2];
-        su1 = divide[3];
-        suma1 = parseInt(su1);
+        suma1 = 1;
         
     }
-    if (topic == "sensores/piscina"){
+    if (topic == "domo/Sensores/piscina"){
       let msg = message.toString();
         let divide = msg.split(",");
         uv = divide[0];
         wa = divide[1];
-        su2 = divide[2];
-        suma2 = parseInt(su2);
+        suma2 = 1;
     }
   
 }); 
@@ -88,6 +81,9 @@ if(suma0 + suma1 + suma2 == 3){
 
 function insertar_datos(){
         let ho =  moment().format('H');
+        let d =  moment().format('DD');
+        let m =  moment().format('MM');
+        let y =  moment().format('YYYY');
           
         var inserta = "INSERT INTO `sensores`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, `uv`, `wa`, `ho`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+","+hu_su+","+uv+","+wa+","+ho+");";
         conexion.query(inserta);
