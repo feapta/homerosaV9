@@ -54,6 +54,11 @@
         <div class="meteo">
             <?php include_once __DIR__ . "/paginas/meteo.php";  ?>
         </div>
+       
+        <!-- Graficas -->
+        <div class="graficas">
+            <?php include_once __DIR__ . "/paginas/graficas.php";  ?>
+        </div>
 
 
         <!-- Truck -->
