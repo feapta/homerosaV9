@@ -1,1 +1,0 @@
-const mysql=require("mysql");module.exports=()=>mysql.createConnection({host:"localhost",user:"homerosa",password:"homerosa120314",database:"admin_domoV9"});
