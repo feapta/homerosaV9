@@ -12,7 +12,8 @@ class SensoresControllers {
     public static function sensores_guardar_P() {
         $datos = $_POST;
         $mediciones = json_decode($datos[0]);
-        
+         debuguear($datos);
+         
         // Guarda las mediciones
         $mediciones = new Sensores($mediciones);
 
