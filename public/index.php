@@ -13,6 +13,7 @@ use Controllers\UsuariosControllers;
 use Controllers\TruckControllers;
 use Controllers\CategoriasControllers;
 use Controllers\EliminarControllers;
+use Controllers\SensoresControllers;
 
 
     $router = new Router();
@@ -50,6 +51,11 @@ use Controllers\EliminarControllers;
     
 
 // Administracion
+
+// Sensores
+    $router->get('/sensores/guardar', [SensoresControllers::class, 'sensores_guardar']);
+    $router->post('/sensores/guardar', [SensoresControllers::class, 'sensores_guardar_P']);
+
 
 // Categorias
     $router->get('/categorias/admin', [CategoriasControllers::class, 'categorias_admin']);
