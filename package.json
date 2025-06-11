@@ -8,7 +8,7 @@
   },
   "author": "Felix Aparicio",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "cssnano": "^6.0.1",
