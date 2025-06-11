@@ -54,7 +54,7 @@ use Controllers\SensoresControllers;
 
 // Sensores
     $router->get('/sensores/guardar', [SensoresControllers::class, 'sensores_guardar']);
-    $router->post('/sensores/guardar', [SensoresControllers::class, 'sensores_guardar_P']);
+    $router->post('/sensores/guardar_P', [SensoresControllers::class, 'sensores_guardar_P']);
 
 
 // Categorias
