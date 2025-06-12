@@ -30,7 +30,7 @@ const moment = require('moment');
   //  Conexion a la base de datos
   conexion.connect(function(err){
       console.log ("Conexion al broker");
-      
+
       if(err) throw err;
       console.log ("Conexion realizada correctamente a la base de datos");
       });
@@ -41,11 +41,13 @@ const moment = require('moment');
 
   // Una vez conectados nos subscribimos al topico
   client.on('connect', function(){
-      client.subscribe('domo/Sensores/#', function(err){
+      client.subscribe('domo/Sensores/#', (err) => {
       console.log ("Subcripcion realizada con exito al topico")
 
     });
   });
+
+
 
   // Por donde se reciben los mensajes
   client.on('message', function(topic, message){
