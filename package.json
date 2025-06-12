@@ -2,7 +2,7 @@
   "name": "domo-web-v-9",
   "version": "1.0.0",
   "description": "Domotica de casa",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "scripts": {
     "gulp": "gulp"
   },
