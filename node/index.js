@@ -29,8 +29,6 @@ const moment = require('moment');
 
   //  Conexion a la base de datos
   conexion.connect(function(err){
-      console.log ("Conexion al broker");
-
       if(err) throw err;
       console.log ("Conexion realizada correctamente a la base de datos");
       });
@@ -40,13 +38,21 @@ const moment = require('moment');
   var client = mqtt.connect("wss://homerosa.es:8084/mqtt", options);
 
   // Una vez conectados nos subscribimos al topico
-  client.on('connect', function(){
+  // client.on('connect', function(){
+  //     client.subscribe('domo/Sensores/#', (err) => {
+  //     console.log ("Subcripcion realizada con exito al topico")
+
+  //   });
+  // });
+
+      client.on("connect", () => {
+        console.log("conectando al broker");
       client.subscribe('domo/Sensores/#', (err) => {
-      console.log ("Subcripcion realizada con exito al topico")
-
+        if (!err) {
+         console.log("conexion realizada al broker");
+        }
+      });
     });
-  });
-
 
 
   // Por donde se reciben los mensajes
