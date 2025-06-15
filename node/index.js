@@ -24,7 +24,7 @@ const moment = require('moment');
       console.log ("Conexion realizada correctamente a la base de datos");
       });
 
-*/
+
        // Credenciales para conectar al broker mqtt
     const options = {
       clean: true, 
@@ -99,3 +99,24 @@ const moment = require('moment');
 
   //   });
   // });
+
+
+      // Datos de conexion al broker
+    const options = {
+      clean: true, 
+      connectTimeout: 4000,
+      clientId: 'homerosa_web-nueva',
+      username: 'homerosa_domo_v6',
+      password: 'homerosa_domo_mar120314mar@',
+      keepalive: 60,
+    }
+
+    const client = mqtt.connect('wss://sistemar.es:8084/mqtt', options);
+        
+    client.on("connect", () => {
+      client.subscribe('domo/Sensores/#', (err) => {
+        if (!err) {
+         console.log("conexion realizada");
+        }
+      });
+    });
