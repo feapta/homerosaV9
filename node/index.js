@@ -101,24 +101,47 @@ const moment = require('moment');
   // });
 
 
-      // Datos de conexion al broker
-    const options = {
-      clean: true, 
-      connectTimeout: 4000,
-      clientId: 'homerosa_web-nueva',
-      username: 'homerosa_domo_v6',
-      password: 'homerosa_domo_mar120314mar@',
-      keepalive: 60,
-    }
+   const mqtt = require('mqtt');
+const moment = require('moment');
+const ipInt = require('ip-to-int');
+const axios = require('axios');
 
-    const client = mqtt.connect('wss://sistemar.es:8084/mqtt', options);
-        
-    client.on("connect", () => {
-      client.subscribe('domo/Sensores/#', (err) => {
-        if (!err) {
-         console.log("conexion realizada");
-        }
-      });
+const conexionDB = require('./conexionDB');
+const conexion = conexionDB();
+
+var dia  =  moment().format('D');
+
+  // Credenciales para conectar al broker mqtt
+  var options = {
+    port: 1883,
+    host: 'sitemar.es',
+    
+    clientId:'domo_rosa' + Math.round(Math.random() * (0- 10000) * -1),
+    username: 'sistemasderiego',
+    password: 'sistemar120314mar',
+    
+    //clientId: 'homerosa_web-nueva',
+    //username: 'homerosa_domo_v6',
+    //password: 'homerosa_domo_mar120314mar@',
+
+    keepalive: 60,
+    reconnectPerid: 5000,
+    protocolId: 'MQIsdp',
+    protocolVersion: 3,
+    clean: true,
+    encoding: 'utf8'
+  };
+
+  // Conexion al broker
+  const client = mqtt.connect('wss://sistemar.es:8084/mqtt', options);  
+
+  // Una vez conectados nos subscribimos al topico
+  client.on('connect', function(){
+     console.log("conectado al broker")
+     client.subscribe('domo/Sensores/#', function(err){
+     console.log ("Subcripcion realizada con exito al topico")
     });
+  });
+
 
     console.log("hola mundo");
