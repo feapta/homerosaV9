@@ -125,12 +125,14 @@ const moment = require('moment');
   const client = mqtt.connect('wss://sistemar.es:8084/mqtt', options);  
 
   // Una vez conectados nos subscribimos al topico
-  client.on('connect', function(){
-     console.log("conectado al broker")
-     client.subscribe('domo/Sensores/#', function(err){
-     console.log ("Subcripcion realizada con exito al topico")
+     client.on("connect", () => {
+      client.subscribe('domo/Sensores/#', (err) => {
+        console.log(err);
+        if (!err) {
+         console.log("conexion realizada");
+        }
+      });
     });
-  });
 
 
     console.log("hola mundo");
