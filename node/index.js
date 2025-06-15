@@ -7,7 +7,7 @@ const mysqlDate = date.toISOString().split("T")[0];
 var mysql = require('mysql');
 var mqtt = require('mqtt');
 const moment = require('moment');
-
+/*
   // Credenciales para conectar a la base de datos
   var conexion = mysql.createConnection({
     host: "localhost",
@@ -16,7 +16,16 @@ const moment = require('moment');
     database: "admin_domoV9"
   });
 
-  // Credenciales para conectar al broker mqtt
+ 
+
+  //  Conexion a la base de datos
+  conexion.connect(function(err){
+      if(err) throw err;
+      console.log ("Conexion realizada correctamente a la base de datos");
+      });
+
+*/
+       // Credenciales para conectar al broker mqtt
     const options = {
       clean: true, 
       connectTimeout: 4000,
@@ -26,28 +35,13 @@ const moment = require('moment');
       keepalive: 60,
     }
 
-
-  //  Conexion a la base de datos
-  conexion.connect(function(err){
-      if(err) throw err;
-      console.log ("Conexion realizada correctamente a la base de datos");
-      });
-
-
   // Conexion al broker
   var client = mqtt.connect("wss://homerosa.es:8084/mqtt", options);
 
-  // Una vez conectados nos subscribimos al topico
-  // client.on('connect', function(){
-  //     client.subscribe('domo/Sensores/#', (err) => {
-  //     console.log ("Subcripcion realizada con exito al topico")
-
-  //   });
-  // });
-
       client.on("connect", () => {
         console.log("conectando al broker");
-      client.subscribe('domo/Sensores/#', (err) => {
+      
+        client.subscribe('domo/Sensores/#', (err) => {
         if (!err) {
          console.log("conexion realizada al broker");
         }
@@ -86,7 +80,7 @@ const moment = require('moment');
   }
 
 
-
+/*
   // PARA MANTENER LA CONEXION CON LA BASE DE DATOS ABIERTA SIEMPRE
   setInterval(function (){
       var query = 'SELECT 1 + 1 as result';
@@ -94,3 +88,14 @@ const moment = require('moment');
           if(err) throw err;
         });
   }, 5000);
+
+
+*/
+
+    // Una vez conectados nos subscribimos al topico
+  // client.on('connect', function(){
+  //     client.subscribe('domo/Sensores/#', (err) => {
+  //     console.log ("Subcripcion realizada con exito al topico")
+
+  //   });
+  // });
