@@ -100,17 +100,6 @@ const moment = require('moment');
   //   });
   // });
 
-
-   const mqtt = require('mqtt');
-const moment = require('moment');
-const ipInt = require('ip-to-int');
-const axios = require('axios');
-
-const conexionDB = require('./conexionDB');
-const conexion = conexionDB();
-
-var dia  =  moment().format('D');
-
   // Credenciales para conectar al broker mqtt
   var options = {
     port: 1883,
