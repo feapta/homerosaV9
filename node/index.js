@@ -34,7 +34,7 @@ const moment = require('moment');
     }
 
  // Conexion al broker
-  var client = mqtt.connect("wss://homerosa.es:8084/mqtt", options);
+  var client = mqtt.connect("wss://sistemar.es:8084/mqtt", options);
 
 // Una vez conectados nos subscribimos al topico
      client.connect("connect", () => {
