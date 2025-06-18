@@ -47,6 +47,55 @@ const moment = require('moment');
 
 
 
+    client.on('message', function(topic, message){
+       // Para insertar datos en la base de datos
+        if (topic == "domo/Sensores/puerta"){
+            let msg = message.toString();
+            let divide = msg.split(",");
+            hu_su = divide[0];
+            suma0 = 1;
+        }
+
+        if (topic == "domo/Sensores/salon"){
+          let msg = message.toString();
+            let divide = msg.split(",");
+            te = divide[0];
+            te_in = divide[1];
+            hu = divide[2];
+            suma1 = 1;
+            
+        }
+
+        if (topic == "domo/Sensores/piscina"){
+          let msg = message.toString();
+            let divide = msg.split(",");
+            uv = divide[0];
+            wa = divide[1];
+            suma2 = 1;
+        }
+
+        if(suma0 + suma1 + suma2 == 3){
+          suma0 = 0; 
+          suma1 = 0; 
+          suma2 = 0; 
+         
+          guardar_datos();
+          console.log(" Se activa la funcion de envio");
+    
+        }
+
+        if(suma0 == 1){
+          suma0 = 0; 
+          suma1 = 0; 
+          suma2 = 0; 
+         guardar_datos();
+          console.log(" Se activa la funcion de envio");
+    
+        }
+      });
+
+
+
       function guardar_datos(){
           let h =  moment().format('H');
           let d =  moment().format('D');
