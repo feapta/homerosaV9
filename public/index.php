@@ -53,8 +53,8 @@ use Controllers\SensoresControllers;
 // Administracion
 
 // Sensores
-    $router->post('/sensores/temp', [SensoresControllers::class, 'Temp_listar']);
-    $router->post('/sensores/hume', [SensoresControllers::class, 'Hume_listar']);
+    $router->get('/sensores/temp', [SensoresControllers::class, 'Temp_listar']);
+    $router->get('/sensores/hume', [SensoresControllers::class, 'Hume_listar']);
 
 
 // Categorias
