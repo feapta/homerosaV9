@@ -112,7 +112,8 @@ var wa;
           let d =  moment().format('D');
           let m =  moment().format('M');
           let y =  moment().format('YYYY');
-      
+          let fecha = moment().format('l');
+          
         var inserta = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, uv`, `w`, `fecha`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+", "+hu_su+", "+uv+", "+wa+", "+fecha+");";
               
         // Conexion base de datos
