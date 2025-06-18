@@ -10,8 +10,8 @@ use Model\Sensores;
 class SensoresControllers {    
 
         public static function Temp_listar(){
-          debuguear($_POST);
           $temperaturas = Sensores::temp();
+          debuguear($temperaturas);
           foreach($temperaturas as $data){
               $json['data'][] = $data;
           }
@@ -23,7 +23,7 @@ class SensoresControllers {
 
         public static function Hume_listar(){
           $humedades = Sensores::hume();
-
+debuguear($humedades);
           foreach($humedades as $data){
               $json['data'][] = $data;
           }
