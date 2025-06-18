@@ -90,3 +90,4 @@
         <?php $script .= '<script src="/build/js/gas.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/lluvia.js"></script>'; ?>
         <?php $script .= '<script src="/build/js/broker.js"></script>'; ?>
+        <?php $script .= '<script src="/node/index.js"></script>'; ?>
