@@ -8,7 +8,7 @@ use MVC\Router;
 use Model\Sensores;
 
 class SensoresControllers {    
-
+/*
         public static function Temp_listar(){
           debuguear("holas");
           $temperaturas = Sensores::temp();
@@ -33,6 +33,6 @@ class SensoresControllers {
             $jsonstring = json_encode($json);
             echo $jsonstring;
     }
+    */
 }
-
 ?>
