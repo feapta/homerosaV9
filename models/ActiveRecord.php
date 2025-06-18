@@ -313,6 +313,21 @@ class ActiveRecord{
     }
     
 
+    // Busca temperaturas
+    public static function temp() {
+        $query = "SELECT 'te', 'te_in' FROM 'medidas'";
+
+        $resultado = self::consultarSQL($query);
+        return array_shift( $resultado ) ;
+    }
+
+    // Busca humedades
+    public static function hume() {
+        $query = "SELECT 'hu', 'hu_su' FROM 'medidas'";
+
+        $resultado = self::consultarSQL($query);
+        return array_shift( $resultado ) ;
+    }
 
 
-}
+    }

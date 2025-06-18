@@ -9,16 +9,27 @@ use Model\Sensores;
 
 class SensoresControllers {    
 
-    public static function sensores_guardar_P() {
-        $datos = $_POST;
-          //debuguear($datos);
+        public static function Temp_listar(){
+          $temperaturas = Sensores::temp();
 
-        // Guarda las mediciones
-        $mediciones = new Sensores($datos);
+          foreach($temperaturas as $data){
+              $json['data'][] = $data;
+          }
+    
+            $jsonstring = json_encode($json);
+            echo $jsonstring;
+    }
 
-        $mediciones->guardar();
 
+        public static function Hume_listar(){
+          $humedades = Sensores::hume();
 
+          foreach($humedades as $data){
+              $json['data'][] = $data;
+          }
+    
+            $jsonstring = json_encode($json);
+            echo $jsonstring;
     }
 }
 
