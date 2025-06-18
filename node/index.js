@@ -2,11 +2,9 @@
 // Index.js de node
 ///////////////////////////////
 
-
 const mysql = require('mysql');
 const mqtt = require("mqtt");
 const moment = require('moment');
-
 
 // Base de datos
   // Credenciales
@@ -15,10 +13,7 @@ const moment = require('moment');
       user: "homerosa",
       password: "homerosa120314",
       database: "admin_domoV9"
-    });
-
-  
-   
+    });  
         
 
 // Broker
@@ -36,7 +31,7 @@ const moment = require('moment');
     };
 
     // Conexion
-    const client = mqtt.connect('mqtt://sistemar.es:1883', options);
+    var client = mqtt.connect('mqtt://sistemar.es:1883', options);
           
       client.on("connect", () => {
         client.subscribe('domo/Sensores/#', (err) => {
