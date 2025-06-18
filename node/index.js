@@ -6,6 +6,17 @@ const mysql = require('mysql');
 const mqtt = require("mqtt");
 const moment = require('moment');
 
+
+var suma0;
+var suma1;
+var suma2;
+var te;
+var te_in;
+var hu;
+var hu_su;
+var uv;
+var wa;
+
 // Base de datos
   // Credenciales
     var conexion = mysql.createConnection({
