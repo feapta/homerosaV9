@@ -10,12 +10,12 @@ const moment = require('moment');
 var suma0;
 var suma1;
 var suma2;
-var te;
-var te_in;
-var hu;
-var hu_su;
-var uv;
-var wa;
+var te = 1;
+var te_in = 2;
+var hu = 3;
+var hu_su = 4;
+var uv = 5;
+var wa = 6;
 
 // Base de datos
   // Credenciales
