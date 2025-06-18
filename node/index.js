@@ -18,7 +18,7 @@ const moment = require('moment');
 
 // Broker
   // Credenciales
-    var options = {
+    var option = {
       clientId: 'homerosa_web-nueva',
       username: 'homerosa_domo_v6',
       password: 'homerosa_domo_mar120314mar@',
@@ -31,7 +31,7 @@ const moment = require('moment');
     };
 
     // Conexion
-    var client = mqtt.connect('mqtt://sistemar.es:1883', options);
+    var client = mqtt.connect('mqtt://sistemar.es:1883', option);
           
       client.on("connect", () => {
         client.subscribe('domo/Sensores/#', (err) => {
