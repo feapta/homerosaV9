@@ -24,9 +24,9 @@ const moment = require('moment');
 // Broker
   // Credenciales
     var options = {
-    clientId: 'homerosa_web-nueva',
-    username: 'homerosa_domo_v6',
-    password: 'homerosa_domo_mar120314mar@',
+      clientId: 'homerosa_web-nueva',
+      username: 'homerosa_domo_v6',
+      password: 'homerosa_domo_mar120314mar@',
       keepalive: 60,
       reconnectPerid: 5000,
       protocolId: 'MQIsdp',
