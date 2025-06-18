@@ -1,102 +1,70 @@
-/*  NOTAS /////////////////////////////////////////////////
-const date = new Date();
-//YYYY-MM-DD format
-const mysqlDate = date.toISOString().split("T")[0];
-*/
+///////////////////////////////
+// Index.js de node
+///////////////////////////////
 
-var mysql = require('mysql');
-var mqtt = require('mqtt');
+
+const mysql = require('mysql');
+const mqtt = require("mqtt");
 const moment = require('moment');
 
-// Credenciales para conectar a la base de datos
-  var conexion = mysql.createConnection({
-    host: "localhost",
-    user: "homerosa",
-    password: "homerosa120314",
-    database: "admin_domoV9"
-  });
 
-//  Conexion a la base de datos
-  conexion.connect(function(err){
-      if(err) throw err;
-      console.log ("Conexion realizada correctamente a la base de datos");
-      });
-
-
-// Credenciales para conectar al broker mqtt
-    const options = {
-      clean: true, 
-      connectTimeout: 4000,
-      clientId: 'homerosa_Sensores',
-      username: 'homerosa_domo_v6',
-      password: 'homerosa_domo_mar120314mar@',
-      keepalive: 60,
-    }
-
- // Conexion al broker
-  var client = mqtt.connect("wss://sistemar.es:8084/mqtt", options);
-
-// Una vez conectados nos subscribimos al topico
-     client.on("connect", () => {
-      console.log("conectando");
-
-      client.subscribe('domo/Sensores/#', (err) => {
-        console.log(err);
-      
-        if (!err) {
-         console.log("conexion realizada");
-        }
-        
-      });
+// Base de datos
+  // Credenciales
+    var conexion = mysql.createConnection({
+      host: "localhost",
+      user: "homerosa",
+      password: "homerosa120314",
+      database: "admin_domoV9"
     });
 
+  
+   
+        
 
-  function enivar_datos(){
-      let h =  moment().format('H');
-      var d =  moment().format('D');
-      var m =  moment().format('M');
-      var y =  moment().format('YYYY');
+// Broker
+  // Credenciales
+    var options = {
+    clientId: 'homerosa_web-nueva',
+    username: 'homerosa_domo_v6',
+    password: 'homerosa_domo_mar120314mar@',
+      keepalive: 60,
+      reconnectPerid: 5000,
+      protocolId: 'MQIsdp',
+      protocolVersion: 3,
+      clean: true,
+      encoding: 'utf8'
+    };
 
-      if (topic == "domo/sensores"){
-        var msg = message.toString();
-        var dividir = msg.split(",");
-          var sensor1 = dividir[0];
-          var sensor2 = dividir[1];
-          var temp = dividir[2];
-          var hume = dividir[3];
+    // Conexion
+    const client = mqtt.connect('mqtt://sistemar.es:1883', options);
+          
+      client.on("connect", () => {
+        client.subscribe('domo/Sensores/#', (err) => {
 
-        var query = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, `uv`, `wa`, `fecha`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+","+hu_su+","+uv+","+wa+", CURRENT_DATE);";
-        console.log("datos enviados");
+          if (!err) {
+            console.log("Conexion realizada al broker");
+          } else {
+            console.log(err);
+          }
 
-        conexion.query(query, function (err, result, fields) {
-          if(err) throw err;
         });
+      });   
+
+
+
+      function guardar_datos(){
+          let h =  moment().format('H');
+          let d =  moment().format('D');
+          let m =  moment().format('M');
+          let y =  moment().format('YYYY');
+      
+        var inserta = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, uv`, `w`, `fecha`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+", "+hu_su+", "+uv+", "+wa+", "+fecha+");";
+              
+        // Conexion base de datos
+        conexion.connect(function(err){
+          if(err) throw err;
+            console.log ("Conexion realizada correctamente a la base de datos");
+            conexion.query(inserta);
+            conexion.end();
+          }); 
       }
-  }
-
-
-/*
-  // PARA MANTENER LA CONEXION CON LA BASE DE DATOS ABIERTA SIEMPRE
-  setInterval(function (){
-      var query = 'SELECT 1 + 1 as result';
-      conexion.query(query, function (err, result, fields) {
-          if(err) throw err;
-        });
-  }, 5000);
-
-
-*/
-
-    // Una vez conectados nos subscribimos al topico
-  // client.on('connect', function(){
-  //     client.subscribe('domo/Sensores/#', (err) => {
-  //     console.log ("Subcripcion realizada con exito al topico")
-
-  //   });
-  // });
-
-  // Conexion al broker
- 
-
-
-    console.log("hola mundo");
