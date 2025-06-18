@@ -315,7 +315,7 @@ class ActiveRecord{
 
     // Busca temperaturas
     public static function temp() {
-        $query = "SELECT 'te', 'te_in' FROM 'medidas'";
+        $query = "SELECT 'te', 'te_in' FROM " . static::$tabla ;
 
         $resultado = self::consultarSQL($query);
         return array_shift( $resultado ) ;
@@ -323,7 +323,7 @@ class ActiveRecord{
 
     // Busca humedades
     public static function hume() {
-        $query = "SELECT 'hu', 'hu_su' FROM 'medidas'";
+        $query = "SELECT 'hu', 'hu_su' FROM " . static::$tabla;
 
         $resultado = self::consultarSQL($query);
         return array_shift( $resultado ) ;

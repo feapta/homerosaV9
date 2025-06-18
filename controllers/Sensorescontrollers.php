@@ -23,7 +23,7 @@ class SensoresControllers {
 
         public static function Hume_listar(){
           $humedades = Sensores::hume();
-debuguear($humedades);
+          debuguear($humedades);
           foreach($humedades as $data){
               $json['data'][] = $data;
           }
