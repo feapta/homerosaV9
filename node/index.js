@@ -65,6 +65,7 @@ var wa;
             let divide = msg.split(",");
             hu_su = divide[0];
             suma0 = 1;
+            console.log("llego de puerta");
         }
 
         if (topic == "domo/Sensores/salon"){
@@ -74,6 +75,7 @@ var wa;
             te_in = divide[1];
             hu = divide[2];
             suma1 = 1;
+            console.log("llego de salon");
             
         }
 
@@ -83,6 +85,7 @@ var wa;
             uv = divide[0];
             wa = divide[1];
             suma2 = 1;
+            console.log("llego de piscina");
         }
 
         if(suma0 + suma1 + suma2 == 3){
