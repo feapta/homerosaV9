@@ -10,12 +10,12 @@ const moment = require('moment');
 var suma0;
 var suma1;
 var suma2;
-var te = 1;
-var te_in = 2;
-var hu = 3;
-var hu_su = 4;
-var uv = 5;
-var wa = 6;
+var te;
+var te_in;
+var hu;
+var hu_su;
+var uv;
+var wa;
 
 // Base de datos
   // Credenciales
@@ -94,17 +94,7 @@ var wa = 6;
           console.log(" Se activa la funcion de envio");
     
         }
-
-        if(suma0 == 1){
-          suma0 = 0; 
-          suma1 = 0; 
-          suma2 = 0; 
-         guardar_datos();
-          console.log(" Se activa la funcion de envio");
-    
-        }
       });
-
 
 
       function guardar_datos(){
