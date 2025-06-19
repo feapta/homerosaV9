@@ -30,7 +30,7 @@ var wa;
 // Broker
   // Credenciales
     var option = {
-      clientId: 'homerosa_web-nueva',
+      clientId: 'homerosa_node',
       username: 'homerosa_domo_v6',
       password: 'homerosa_domo_mar120314mar@',
       keepalive: 60,
