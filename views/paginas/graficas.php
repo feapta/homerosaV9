@@ -7,7 +7,7 @@
         <div class="contenedor_gra">
 
             <div>
-                canvas id="gra_tem"></canvas>
+                <canvas id="gra_tem"></canvas>
             </div>
 
 
@@ -16,7 +16,7 @@
           <div class="contenedor_gra">
 
             <div>
-                canvas id="gra_hume"></canvas>
+                <canvas id="gra_hume"></canvas>
             </div>
 
 
