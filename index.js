@@ -72,8 +72,8 @@ var wa;
           let msg = message.toString();
             let divide = msg.split(",");
             te = divide[0];
-            te_in = divide[1];
-            hu = divide[2];
+            hu = divide[1];
+            te_in = divide[2];
             suma1 = 1;
             console.log("llego de salon");
             
@@ -82,8 +82,8 @@ var wa;
         if (topic == "domo/Sensores/piscina"){
           let msg = message.toString();
             let divide = msg.split(",");
-            uv = divide[0];
-            wa = divide[1];
+            wa = divide[0];
+            uv = divide[1];
             suma2 = 1;
             console.log("llego de piscina");
         }
