@@ -14,7 +14,7 @@ class SensoresControllers {
             $mesCC = date ( 'm');
             $yeaCC = date ( 'Y');
               
-            $consulta = " SELECT te, te_in, hu, hu_su FROM medidas";
+            $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
             $consulta .= " WHERE d = $diaCC AND m= $mesCC AND y = $yeaCC";
 
             $respuesta = Sensores::SQL($consulta);
