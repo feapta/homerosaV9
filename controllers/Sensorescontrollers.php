@@ -11,6 +11,7 @@ class SensoresControllers {
 
         public static function listar(){
           $peticion = $_POST();
+          debuguear($peticion);
 
           if($peticion == 1){dia_curso();}
 
