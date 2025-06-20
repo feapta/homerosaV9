@@ -10,6 +10,7 @@ use Model\Sensores;
 class SensoresControllers {    
 
         public static function listar(){
+          debuguear($_POST);
           $peticion = $_POST();
          
           if($peticion == 1){dia_curso();}
