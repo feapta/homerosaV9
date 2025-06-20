@@ -30,11 +30,11 @@ var wa;
 // Broker
   // Credenciales
     var option = {
-      clientId: 'homerosa_node',
+      clientId: 'homerosa_node' + match.round(Math.random() * (0- 1000) * -1),
       username: 'homerosa_domo_v6',
       password: 'homerosa_domo_mar120314mar@',
-      keepalive: 60,
-      reconnectPerid: 5000,
+      keepalive: 15,
+      reconnectPerid: 1000,
       protocolId: 'MQIsdp',
       protocolVersion: 3,
       clean: true,

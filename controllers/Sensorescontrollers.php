@@ -9,28 +9,29 @@ use Model\Sensores;
 
 class SensoresControllers {    
 
-        public static function Temp_listar(){
-          $temperaturas = Sensores::temp();
+        public static function listar(){
+          $peticion = $_POST();
 
-          foreach($temperaturas as $data){
-              $json['data'][] = $data;
-          }
-    
-            $jsonstring = json_encode($json);
-            echo $jsonstring;
+          if($peticion == 1){dia_curso();}
+
+            
     }
+  }
+  
+  
+  // Grafica completa dia en curso
+    function dia_curso(){
+      $diaCC = date ( 'j');
+      $mesCC = date ( 'm');
+      $yeaCC = date ( 'Y');
+        
+      $consulta = " SELECT te, te_in, h, hu_su FROM medidas";
+      $consulta .= " WHERE d = $diaCC AND m= $mesCC AND y = $yeaCC";
 
+      $respuesta = Sensores::SQL($consulta);
 
-        public static function Hume_listar(){
-          $humedades = Sensores::hume();
-
-          foreach($humedades as $data){
-              $json['data'][] = $data;
-          }
-    
-            $jsonstring = json_encode($json);
-            echo $jsonstring;
+      $jsonstring_CC = json_encode($respuesta);
+      echo $jsonstring_CC;
     }
-    
-}
 ?>
+
