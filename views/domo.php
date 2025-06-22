@@ -5,6 +5,11 @@
             <?php include_once __DIR__ . "/tarjetas/pilotos.php";  ?>
         </div>
 
+        <!-- Botones puertas -->
+        <div class="tarjetas">
+            <?php include_once __DIR__ . "/tarjetas/puerta.php";  ?>
+        </div>
+
         <!-- Baterias -->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/baterias.php";  ?>
