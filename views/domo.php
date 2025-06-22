@@ -20,14 +20,14 @@
             <?php include_once __DIR__ . "/tarjetas/aguasolar.php";  ?>
         </div>
         
-        <!-- Nivel gas cocina y lluvias-->
-        <div class="tarjetas">
-            <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
-        </div>
-
-        <!-- Meteo aemet-->
+          <!-- Meteo aemet-->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/meteo-aemet.php";  ?>
+        </div>
+
+        <!-- Nivel gas cocina y lluvias-->
+        <div class="tarjetas meteo-aemet">
+            <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
         </div>
 
         <!-- Puerta verja -->
