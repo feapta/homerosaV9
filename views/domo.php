@@ -25,6 +25,11 @@
             <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
         </div>
 
+        <!-- Meteo aemet-->
+        <div class="tarjetas">
+            <?php include_once __DIR__ . "/tarjetas/meteo-aemet.php";  ?>
+        </div>
+
         <!-- Puerta verja -->
         <div class="puerta">
             <?php include_once __DIR__ . "/paginas/puerta.php";  ?>
