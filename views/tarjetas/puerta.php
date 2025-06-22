@@ -1,6 +1,6 @@
    
    
- <div class="puerta sombraTarjetas">
+ <div class="puertas sombraTarjetas">
     <div class="conte">
        <div class="abrir_puerta">
             <button type="button" class="btn_pulsado"  id="paso" onclick="puerta(1)">Puerta paso</button>
