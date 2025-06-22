@@ -20,11 +20,6 @@
             <?php include_once __DIR__ . "/tarjetas/aguasolar.php";  ?>
         </div>
         
-          <!-- Meteo aemet-->
-        <div class="tarjetas">
-            <?php include_once __DIR__ . "/tarjetas/meteo-aemet.php";  ?>
-        </div>
-
         <!-- Nivel gas cocina y lluvias-->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
