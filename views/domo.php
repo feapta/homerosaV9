@@ -26,7 +26,7 @@
         </div>
 
         <!-- Nivel gas cocina y lluvias-->
-        <div class="tarjetas meteo-aemet">
+        <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/gas-lluvia.php";  ?>
         </div>
 
