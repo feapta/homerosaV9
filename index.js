@@ -114,6 +114,6 @@ var wa;
           if(err) throw err;
             console.log ("Conexion realizada correctamente a la base de datos");
             conexion.query(inserta);
-            conexion.end();
+            
           }); 
       }
