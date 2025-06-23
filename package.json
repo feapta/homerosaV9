@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "index": "node index.js ",
-    "nodemon": "nodemon index.js"
+   "index": "node index.js & ",
+    "nodemon": "nodemon index.js &"
   },
   "author": "Felix Aparicio",
   "license": "ISC",

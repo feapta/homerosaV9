@@ -66,6 +66,7 @@ var wa;
             hu_su = divide[0];
             suma0 = 1;
             console.log("llego de puerta");
+            guardar_datos();
         }
 
         if (topic == "domo/Sensores/salon"){
@@ -76,6 +77,7 @@ var wa;
             te_in = divide[2];
             suma1 = 1;
             console.log("llego de salon");
+            guardar_datos();
             
         }
 
@@ -86,17 +88,10 @@ var wa;
             uv = divide[1];
             suma2 = 1;
             console.log("llego de piscina");
+            guardar_datos();
         }
 
-        if(suma0 + suma1 + suma2 == 3){
-          suma0 = 0; 
-          suma1 = 0; 
-          suma2 = 0; 
-         
-          guardar_datos();
-          console.log(" Se activa la funcion de envio");
-    
-        }
+
       });
 
 
@@ -105,15 +100,22 @@ var wa;
           let d =  moment().format('D');
           let m =  moment().format('M');
           let y =  moment().format('YYYY');
+        
+        if(suma0 + suma1 + suma2 == 3){
           
-
-        var inserta = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, `uv`, `wa`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+", "+hu_su+", "+uv+", "+wa+");";
+          console.log(" Se activa la funcion de envio");
+          var inserta = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, `uv`, `wa`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+", "+hu_su+", "+uv+", "+wa+");";
               
-        // Conexion base de datos
-        conexion.connect(function(err){
+          // Conexion base de datos
+          conexion.connect(function(err){
           if(err) throw err;
             console.log ("Conexion realizada correctamente a la base de datos");
             conexion.query(inserta);
             
+            suma0 = 0; 
+            suma1 = 0; 
+            suma2 = 0; 
+
           }); 
+        }
       }
