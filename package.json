@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-   "index": "node index.js & ",
-    "nodemon": "nodemon index.js &"
+   "index": "node index.js ",
+    "nodemon": "nodemon index.js"
   },
   "author": "Felix Aparicio",
   "license": "ISC",
@@ -31,9 +31,9 @@
     "terser": "^5.22.0"
   },
     "dependencies": {
-    "moment": "^2.30.1",
-    "mqtt": "^5.13.1",
-    "mysql": "^2.18.1",
-    "nodemon": "^3.1.10"
+      "moment": "^2.30.1",
+      "mqtt": "^5.13.1",
+      "mysql": "^2.18.1",
+      "nodemon": "^3.1.10"
   }
 }
