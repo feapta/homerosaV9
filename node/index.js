@@ -4,7 +4,9 @@
 
 const mqtt = require("mqtt");
 const moment = require('moment');
-const conexionDB = conexionDB();
+
+const conexionDB = require('./conexionDB');
+const conexion = conexionDB();
 
 
 var suma0;
@@ -16,21 +18,6 @@ var hu;
 var hu_su;
 var uv;
 var wa;
-
-// Base de datos
-  // Credenciales
-    // var conexion = mysql.createConnection({
-    //   host: "localhost",
-    //   user: "homerosa",
-    //   password: "homerosa120314",
-    //   database: "admin_domoV9"
-    // });  
-        
-    // Conexion
-    // conexion.connect(function(err){
-    // if(err) throw err;
-    //   console.log ("Conexion realizada correctamente a la base de datos");
-    // }); 
 
 
 // Broker
@@ -61,7 +48,6 @@ var wa;
 
         });
       });   
-
 
 
     client.on('message', function(topic, message){
@@ -111,7 +97,7 @@ var wa;
           
           console.log(" Se activa la funcion de envio");
           var inserta = "INSERT INTO `medidas`(`h`,`d`,`m`,`y`,`te`,`te_in`,`hu`,`hu_su`, `uv`, `wa`) VALUES ("+h+","+d+","+m+","+y+","+te+","+te_in+","+hu+", "+hu_su+", "+uv+", "+wa+");";
-          conexionDB.query(inserta);
+          conexion.query(inserta);
             
             suma0 = 0; 
             suma1 = 0; 
