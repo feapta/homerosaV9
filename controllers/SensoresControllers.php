@@ -20,7 +20,7 @@ class SensoresControllers {
               
             $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
             $consulta .= " WHERE h";
-            $consulta .= " BETWEEN horaCC AND horadifposi AND m = $mesCC AND y = $yeaCC";
+            $consulta .= " BETWEEN $horaCC AND $horadifposi AND m = $mesCC AND y = $yeaCC";
 
             $respuesta = Sensores::SQL($consulta);
 
