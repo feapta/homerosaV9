@@ -13,9 +13,14 @@ class SensoresControllers {
             $diaCC = date ( 'j');
             $mesCC = date ( 'm');
             $yeaCC = date ( 'Y');
+            $horaCC = date ('h');
+
+            $horadif = $horaCC - 23;
+            $horadifposi = abs($horadif);
               
             $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
-            $consulta .= " WHERE d = $diaCC AND m= $mesCC AND y = $yeaCC";
+            $consulta .= " WHERE m= $mesCC AND y = $yeaCC";
+            $consulta .= " BETWEEN horaCC AND horadifposi";
 
             $respuesta = Sensores::SQL($consulta);
 
@@ -25,7 +30,39 @@ class SensoresControllers {
     }
   }
   
-  
- 
+  /* Graficas de las ultimas 6 horas
+if ($peticion == 5) {
+  date_default_timezone_set('Europe/Madrid');
+  $hora = date("G");
+  $dia = date("d");
+  $mes = date("m");
+  $yea = date("Y");
+  $today = date("Y-m-d H:i:s");    
+
+  if ($hora >= 6){$horaA = $hora - 5;}
+  if ($hora == 5){$horaA = 11;}
+  if ($hora == 4){$horaA = 10;}
+  if ($hora == 3){$horaA = 9;}
+  if ($hora == 2){$horaA = 8;}
+  if ($hora == 1){$horaA = 7;}
+
+
+  $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
+  $consulta .= " WHERE d = $diaCC AND m= $mesCC AND y = $yeaCC";
+
+  $consultaS = WHERE `h` BETWEEN '".$todayG."' AND '".$today."' AND `sen_dia`= '".$dia."' AND `sen_mes`= '".$mes."' AND `sen_yea`= '".$yea."' ORDER BY `sen_hora` ASC";
+  $resultadoS = mysqli_query($conexion, $consultaS);
+  $json = array();
+  while($row = mysqli_fetch_array($resultadoS)) {
+    $json[] = array(
+      'sen_hora' => $row['sen_hora'],
+      'sen_med_s1' => $row['sen_med_s1'],
+      'sen_med_s2' => $row['sen_med_s2'],
+    );
+  }
+  $jsonstringS = json_encode($json);
+    echo $jsonstringS;
+}
+ */
 ?>
 
