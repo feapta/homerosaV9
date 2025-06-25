@@ -11,7 +11,7 @@ class SensoresControllers {
 
         public static function listar(){
             date_default_timezone_set('Europe/Madrid');
-            $mesCC = date ( 'm');
+            $mesCC = date ( 'n');
             $yeaCC = date ( 'Y');
             $horaCC = date( 'G');
 
