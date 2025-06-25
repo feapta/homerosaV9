@@ -267,7 +267,7 @@ class ActiveRecord{
 // SQL PLANA
     // Consulta Plana de SQL (Utilizar cuando los métodos del modelo no son suficientes)
     public static function SQL($query) {
-        //debuguear($query);
+        debuguear($query);
         $resultado = self::consultarSQL($query);
         return $resultado;
     }
