@@ -11,6 +11,7 @@ class SensoresControllers {
 
         public static function listar(){
             date_default_timezone_set('Europe/Madrid');
+            $diaCC = date ( 'd');
             $mesCC = date ( 'n');
             $yeaCC = date ( 'Y');
             $horaCC = date( 'G');
@@ -19,9 +20,8 @@ class SensoresControllers {
             $horadifposi = abs($horadif);
               
             $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
-            $consulta .= " WHERE h";
-            $consulta .= " BETWEEN $horadifposi AND $horaCC";
-            $consulta .= " AND m = $mesCC AND y = $yeaCC";
+            $consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
+            //$consulta .= " BETWEEN $horadifposi AND $horaCC";
 
             $respuesta = Sensores::SQL($consulta);
 
