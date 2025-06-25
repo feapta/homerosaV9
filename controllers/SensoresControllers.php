@@ -10,10 +10,10 @@ use Model\Sensores;
 class SensoresControllers {    
 
         public static function listar(){
-            $diaCC = date ( 'j');
+            date_default_timezone_set('Europe/Madrid');
             $mesCC = date ( 'm');
             $yeaCC = date ( 'Y');
-            $horaCC = date ('h');
+            $horaCC = date( 'G');
 
             $horadif = $horaCC - 23;
             $horadifposi = abs($horadif);
