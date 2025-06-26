@@ -10,21 +10,8 @@ use Model\Sensores;
 class SensoresControllers {    
 
         public static function listar(){
-            //date_default_timezone_set('Europe/Madrid');
-            // $diaCC = date ( 'd');
-            // $mesCC = date ( 'n');
-            // $yeaCC = date ( 'Y');
-            // $horaCC = date( 'G');
-
-            // $horadif = $horaCC - 23;
-            // $horadifposi = abs($horadif);
-              
             $consulta = "SELECT id, h, te, te_in, hu, hu_su FROM medidas ORDER BY id DESC LIMIT 20";
-            //$consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
-            //$consulta .= " BETWEEN $horadifposi AND $horaCC";
-
             $respuesta = Sensores::SQL($consulta);
-
             $jsonstring_CC = json_encode($respuesta);
             echo $jsonstring_CC;
       
@@ -64,6 +51,18 @@ if ($peticion == 5) {
   $jsonstringS = json_encode($json);
     echo $jsonstringS;
 }
+
+            //date_default_timezone_set('Europe/Madrid');
+            // $diaCC = date ( 'd');
+            // $mesCC = date ( 'n');
+            // $yeaCC = date ( 'Y');
+            // $horaCC = date( 'G');
+
+            // $horadif = $horaCC - 23;
+            // $horadifposi = abs($horadif);
+              
+            //$consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
+            //$consulta .= " BETWEEN $horadifposi AND $horaCC";
  */
 ?>
 
