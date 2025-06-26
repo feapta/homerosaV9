@@ -19,8 +19,8 @@ class SensoresControllers {
             $horadif = $horaCC - 23;
             $horadifposi = abs($horadif);
               
-            $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas";
-            $consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
+            $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas ORDER BY DESC LIMIT 20";
+            //$consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
             //$consulta .= " BETWEEN $horadifposi AND $horaCC";
 
             $respuesta = Sensores::SQL($consulta);
