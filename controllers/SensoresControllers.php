@@ -19,7 +19,7 @@ class SensoresControllers {
             $horadif = $horaCC - 23;
             $horadifposi = abs($horadif);
               
-            $consulta = " SELECT h, te, te_in, hu, hu_su FROM medidas ORDER BY id DESC LIMIT 20";
+            $consulta = "SELECT h, te, te_in, hu, hu_su FROM medidas ORDER BY id DESC LIMIT 20";
             //$consulta .= " WHERE d = $diaCC AND m = $mesCC AND y = $yeaCC";
             //$consulta .= " BETWEEN $horadifposi AND $horaCC";
 
