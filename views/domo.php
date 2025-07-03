@@ -5,11 +5,6 @@
             <?php include_once __DIR__ . "/tarjetas/pilotos.php";  ?>
         </div>
 
-        <!-- Botones puertas -->
-        <div class="tarjetas">
-            <?php include_once __DIR__ . "/tarjetas/puerta.php";  ?>
-        </div>
-
         <!-- Baterias -->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/baterias.php";  ?>
@@ -25,6 +20,11 @@
             <?php include_once __DIR__ . "/tarjetas/aguasolar.php";  ?>
         </div>
         
+         <!-- Botones puertas -->
+        <div class="tarjetas">
+            <?php include_once __DIR__ . "/tarjetas/puerta.php";  ?>
+        </div>
+
           <!-- Meteo aemet-->
         <div class="tarjetas">
             <?php include_once __DIR__ . "/tarjetas/meteo-aemet.php";  ?>
