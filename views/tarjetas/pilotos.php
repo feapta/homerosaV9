@@ -18,6 +18,9 @@
         <div class="pilototinaja">
             <p>TI</p>
         </div>
+        <div class="pilotogrupo">
+            <p>GR</p>
+        </div>
     </div>
 </div>
 
